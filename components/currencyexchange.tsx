@@ -10,7 +10,7 @@ const CurrencyExchange = () => {
         <div className="rounded-2xl hidden lg:block  overflow-hidden min-h-[380px] lg:min-h-[420px] bg-white shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <div className="min-h-[380px] lg:min-h-0">
             <img
-              src="/sent.jpg"
+              src="/Sent.jpg"
               alt="Currency exchange"
               className="w-full h-[620px] object-cover object-center"
             />

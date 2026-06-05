@@ -318,7 +318,7 @@ export const Nnavbar = () => {
         { name: "VTU", href: "/vtu" },
         { name: "Gift Cards", href: "/giftcard" },
         { name: "Savings", href: "/savings" },
-        { name: "Virtual Cards", href: "/features/virtual-cards" },
+        { name: "Virtual Cards", href: "/virtualcard" },
         { name: "Physical Cards", href: "/features/physical-cards" },
         { name: "Rewards", href: "/features/rewards" },
         { name: "Cashback", href: "/features/cashback" },

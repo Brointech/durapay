@@ -50,14 +50,26 @@ const cards: Card[] = [
 export default function BeyondBanking() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // const handleNext = () => {
+  //   setCurrentIndex((prev) => (prev + 1) % cards.length);
+  // };
+
+  // const handlePrev = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + cards.length) % cards.length,
+  //   );
+  // };
+
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % cards.length);
+    if (currentIndex < cards.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
   };
 
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length,
-    );
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
   };
 
   return (
@@ -245,35 +257,37 @@ export default function BeyondBanking() {
           </div>
 
           {/* Grey Navigation Button - Right Side */}
-          <button
-            onClick={handleNext}
-            className="absolute right-4 sm:right-8 lg:right-12 top-1/2 -translate-y-1/2 z-20
+          {currentIndex < cards.length - 1 && (
+            <button
+              onClick={handleNext}
+              className="absolute right-4 sm:right-8 lg:right-12 top-1/2 -translate-y-1/2 z-20
                      w-12 h-20 sm:w-14 sm:h-24 lg:w-16 lg:h-28
                      bg-gray-300 hover:bg-gray-400 
                      rounded-xl sm:rounded-2xl
                      flex items-center justify-center
                      transition-all duration-200 hover:scale-105 active:scale-95
                      shadow-lg"
-            aria-label="Next slide"
-          >
-            <svg
-              className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              aria-label="Next slide"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+              <svg
+                className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          )}
         </div>
 
         {/* Grey Navigation Button - Left Side */}
-        <button
+        {/* <button
           onClick={handlePrev}
           className="absolute left-4 sm:left-8 lg:left-12 top-1/2 -translate-y-1/2 z-20
              w-12 h-20 sm:w-14 sm:h-24 lg:w-16 lg:h-28
@@ -297,7 +311,39 @@ export default function BeyondBanking() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-        </button>
+        </button> */}
+
+        {currentIndex > 0 && (
+          <button
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
+            className={`absolute left-4 sm:left-8 lg:left-10 top-10/15 -translate-y-1/2 z-20
+              w-12 h-20 sm:w-14 sm:h-24 lg:w-16 lg:h-28
+              rounded-xl sm:rounded-2xl
+              flex items-center justify-center
+              shadow-lg transition-all duration-300
+              ${
+                currentIndex === 0
+                  ? "bg-gray-200 opacity-0 pointer-events-none"
+                  : "bg-gray-300 hover:bg-gray-400 hover:scale-105"
+              }`}
+            aria-label="Previous slide"
+          >
+            <svg
+              className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+        )}
 
         {/* Progress Indicators */}
         <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
