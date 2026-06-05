@@ -1078,7 +1078,7 @@ export default function SavingsPage() {
             ].map((item, i) => (
               <div key={i} className="relative">
                 <div className="mb-6">
-                  <span className="text-6xl font-bold text-slate-100">
+                  <span className="text-6xl font-bold text-black">
                     {item.step}
                   </span>
                 </div>

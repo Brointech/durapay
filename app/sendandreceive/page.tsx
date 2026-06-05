@@ -9,7 +9,7 @@ const Sendandreceive = () => {
           {/* Text */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl font-bold lg:text-[52px] text-[#00246C] leading-tight">
-              SRecharge your phone easily with Durapay
+              Recharge your phone easily with Durapay
             </h1>
             <p className="mt-8 md:mt-8 text-base sm:text-lg  text-[#00246C] font-semibold lg:text-[16px] leading-relaxed">
               One app. Unlimited reach. Move money <br />
