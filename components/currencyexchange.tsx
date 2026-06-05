@@ -2,13 +2,13 @@
 
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 
-const MoneyTransfer = () => {
+const CurrencyExchange = () => {
   return (
     <section className="w-full px-6 py-16 bg-white">
       <div className="mx-auto max-w-6xl  grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch">
         {/* LEFT CARD — image */}
         <div className="rounded-2xl hidden lg:block  overflow-hidden min-h-[380px] lg:min-h-[420px] bg-white shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <div className="min-h-[380px] lg:min-h-0 ">
+          <div className="min-h-[380px] lg:min-h-0">
             <img
               src="/sent.jpg"
               alt="Currency exchange"
@@ -48,4 +48,4 @@ const MoneyTransfer = () => {
   );
 };
 
-export default MoneyTransfer;
+export default CurrencyExchange;

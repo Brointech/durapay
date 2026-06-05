@@ -18,15 +18,15 @@ const cards: Card[] = [
   {
     id: 1,
     type: "image",
-    imageUrl: "/person-card.jpg", // Replace with your actual image path
-    description: "with a need.",
+    imageUrl: "/AI.jpg",
+    description: "Physical Card.",
   },
   {
     id: 2,
     type: "feature",
     label: "BILL PAYMENT",
     title: "Pay the important bills before they are due.",
-    bgColor: "bg-[#5B4F8C]", // Purple color matching the screenshot
+    bgColor: "bg-[#5B4F8C]",
     phoneMockup: true,
   },
   {
@@ -103,13 +103,13 @@ export default function BeyondBanking() {
                     {/* Feature Card Content */}
                     <div className="relative w-full h-full flex flex-col p-6 sm:p-8 lg:p-10">
                       {/* Label */}
-                      <span className="text-white/80 text-xs sm:text-sm font-medium tracking-widest uppercase">
+                      <span className="text-white/80 text-xs sm:text-sm lg:text-[20px] font-medium tracking-widest uppercase">
                         {card.label}
                       </span>
 
                       {/* Phone Mockup */}
                       {card.phoneMockup && (
-                        <div className="absolute top-1/2 right-4 sm:right-8 lg:right-12 -translate-y-1/2">
+                        <div className="absolute top-1/2 right-4 sm:right-8 lg:right-0 -translate-y-1/2">
                           <div className="relative w-36 sm:w-44 lg:w-56 xl:w-64">
                             {/* Phone Frame */}
                             <div className="relative bg-black rounded-[2rem] sm:rounded-[2.5rem] p-1.5 sm:p-2 shadow-2xl">
@@ -227,7 +227,7 @@ export default function BeyondBanking() {
 
                       {/* Bottom Text */}
                       <div className="mt-auto max-w-[70%] sm:max-w-[60%]">
-                        <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight">
+                        <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl xl:text-[16px] font-medium leading-tight mr-4">
                           {card.title}
                         </h3>
                       </div>

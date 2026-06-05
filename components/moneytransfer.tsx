@@ -8,7 +8,7 @@ const MoneyTransfer = () => {
       <div className="mx-auto max-w-6xl  grid grid-cols-1 lg:grid-cols-2 gap-2 items-stretch">
         {/* LEFT CARD — image */}
         <div className="rounded-2xl overflow-hidden w-[480px] shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <div className="min-h-[380px] lg:min-h-0">
+          <div className="min-h-[380px] lg:min-h-0 ">
             <img
               src="/yellowdesign.png"
               alt="Currency exchange"
