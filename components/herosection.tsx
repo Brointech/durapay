@@ -149,16 +149,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Side */}
-        {/* <div className="w-full sm:w-1/2 flex lg:justify-end">
-          <img
-            src="/bluehero.png"
-            alt=""
-            loading="lazy"
-            className="max-w-none lg:w-280 sm:w-150 lg:mt-20 -mt-20 scale-110 translate-x-85
 
-object-cover shadow-none object-center"
-          />
-        </div> */}
         <div className="flex justify-center lg:justify-end w-full">
           <img
             src="/bluehero.png"

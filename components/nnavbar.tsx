@@ -269,7 +269,7 @@
 
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Children } from "react";
 import { RiMenu5Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
@@ -350,7 +350,7 @@ export const Nnavbar = () => {
         },
       ],
     },
-    { name: "Help Centre", href: "/help-centre" },
+    { name: "Help Centre", href: "/helpcentre" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];

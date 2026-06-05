@@ -54,6 +54,12 @@ export default function BeyondBanking() {
     setCurrentIndex((prev) => (prev + 1) % cards.length);
   };
 
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length,
+    );
+  };
+
   return (
     <section className="relative w-full min-h-screen bg-white overflow-hidden">
       <div>
@@ -265,6 +271,33 @@ export default function BeyondBanking() {
             </svg>
           </button>
         </div>
+
+        {/* Grey Navigation Button - Left Side */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-4 sm:left-8 lg:left-12 top-1/2 -translate-y-1/2 z-20
+             w-12 h-20 sm:w-14 sm:h-24 lg:w-16 lg:h-28
+             bg-gray-300 hover:bg-gray-400
+             rounded-xl sm:rounded-2xl
+             flex items-center justify-center
+             transition-all duration-200 hover:scale-105 active:scale-95
+             shadow-lg"
+          aria-label="Previous slide"
+        >
+          <svg
+            className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
 
         {/* Progress Indicators */}
         <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
