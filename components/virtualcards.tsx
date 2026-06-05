@@ -70,7 +70,7 @@ const brands = [
 
 const VirtualCardsSection = () => {
   return (
-    <section className="w-full px-6 py-16 bg-white">
+    <section className="w-full px-6 py-20 bg-white">
       {/* Keyframes for float animation */}
       <style>{`
         @keyframes floatUp {
@@ -79,22 +79,28 @@ const VirtualCardsSection = () => {
         }
       `}</style>
 
-      <div className="mx-auto max-w-6xl rounded-2xl bg-[#e8f5e3] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-stretch">
+      <div
+        className="mx-auto max-w-6xl  rounded-2xl bg-[#e8f5e3] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-stretch transition-transform
+    duration-400
+    ease-in-out
+    hover:-translate-y-2"
+      >
         {/* LEFT — content */}
-        <div className="px-10 pt-14 pb-14 flex flex-col justify-center">
-          <p className="text-xs lg:text-lg font-bold tracking-widest text-[#1154da] uppercase mb-4">
+        <div className="px-10 pt-20 pb-14 mb-20 flex flex-col justify-center">
+          <p className="text-xs lg:text-lg font-semibold tracking-widest text-[#1154da] uppercase mb-4">
             Virtual Cards
           </p>
-          <h2 className="text-[42px] sm:text-[52px] font-extrabold text-[#0d1f0a] leading-[1.1] mb-5">
+          <h2 className="text-[42px] sm:text-[52px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
             Shop and spend
             <br />
-            globally
+            wherever you are
           </h2>
-          <p className="text-[15px] text-[#1154da] font-semibold leading-relaxed mb-6 max-w-sm">
-            Make international payments with a virtual debit card that just
-            works — accepted everywhere Visa is, from any device, instantly.
+
+          <p className="text-[20px] text-black font-semibold leading-relaxed mb-40 max-w-sm">
+            Use a virtual debit card that simply works <br />
+            to make payments internationally.
           </p>
-          <div className="flex flex-col gap-3 mb-8">
+          {/* <div className="flex flex-col gap-3 mb-8">
             {perks.map((p) => (
               <div
                 key={p}
@@ -106,8 +112,8 @@ const VirtualCardsSection = () => {
                 {p}
               </div>
             ))}
-          </div>
-          <button className="inline-flex items-center gap-3 text-[#1154da] font-bold text-[15px] group w-fit">
+          </div> */}
+          <button className=" inline-flex items-center gap-3 text-[#1154da] font-bold text-[15px] group w-fit">
             Get your card
             <span className="w-8 h-8 rounded-full border-2 border-[#1154da] flex items-center justify-center group-hover:bg-[#1154da] transition-colors">
               <FiArrowRight className="w-4 h-4 group-hover:text-white transition-colors" />
@@ -140,9 +146,9 @@ const VirtualCardsSection = () => {
 
           {/* Image — z-[2] so it sits ON TOP of the bubbles */}
           <img
-            src="/phone.png"
+            src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-250 object-contain object-center z-2"
+            className="absolute inset-0 w-220 h-200 object-contain object-center mb-10 z-2"
           />
         </div>
       </div>

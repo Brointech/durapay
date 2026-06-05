@@ -1,5 +1,17 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
+import { motion } from "framer-motion";
+// framer-motion may not be installed in some environments.
+// Provide a lightweight fallback Motion wrapper so the component still renders.
+// const motion: any = {
+//   div: (props: any) => {
+//     const { children, ...rest } = props;
+//     return <div {...rest}>{children}</div>;
+//   },
+// };
+
 import { Wallet } from "lucide-react";
 import { useState } from "react";
 import {
@@ -13,6 +25,7 @@ import {
   FiCreditCard,
   FiZap,
 } from "react-icons/fi";
+import { link } from "fs";
 
 const accountDetails = [
   { label: "Account Holder", value: "Ifeoma Johnson" },
@@ -46,26 +59,50 @@ const GlobalAccountSection = () => {
     setTimeout(() => setCopied(null), 1500);
   };
 
+  const router = useRouter();
+
   return (
     <section className="w-full px-6 py-16 bg-white">
-      <div className="mx-auto max-w-6xl rounded-2xl bg-[#dce8fd] px-10 py-14 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* LEFT */}
-        <div>
-          <p className="text-xs lg:text-lg font-bold tracking-widest text-[#1154da] uppercase mb-4">
-            Easy Account Opening
+      {/* <motion.div
+        drag
+        dragElastic={0.2}
+        whileHover={{
+          y: -10,
+          boxShadow: "0px 20px 40px rgba(0,0,0,0.12)",
+        }}
+        transition={{ duration: 0.3 }}
+        className="
+    rounded-[32px]
+     cursor-grab
+    active:cursor-grabbing
+  "
+      > */}
+      <div
+        onClick={() => router.push("/sendandreceive")}
+        className="cursor-pointer mx-auto max-w-6xl rounded-2xl bg-[#dce8fd] px-10 py-14 grid grid-cols-1 lg:grid-cols-2 sm:gap-0 lg:gap-12 items-center transition-transform
+    duration-400
+    ease-in-out
+    hover:-translate-y-2"
+      >
+        {/************************* LEFT CONTENT **************************/}
+        <div className="max-w-xl">
+          <p className="mb-4 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-[#1154da]">
+            INTERNATIONAL BANK ACCOUNTS
           </p>
-          <h2 className="text-[38px] sm:text-[40px] font-extrabold text-[#0a1a3a] leading-[1.12] mb-5">
-            Dowload Durapay,
-            <br />
-            Enjoy welcome bonuses!
+          <h2 className="cursor-pointer text-[32px] sm:text-[42px] md:text-[48px] lg:text-[56px] font-bold text-[#0a1a3a] leading-[1.1] mb-5">
+            Create a global <br />
+            <span className="hidden lg:block" />
+            multi-currency
+            <span className="hidden lg:block" />
+            account.
           </h2>
-          <p className="text-[15px] font-semibold text-[#3a4e6e] leading-relaxed mb-7 max-w-md">
-            Everything you need exists in one app. Get a verified bank account
-            instantly. Send money, Receive money — no middlemen, no delays, no
-            hidden fees.
+          <p className="text-[16px] md:text-[17px] lg:text-[18px] font-semibold text-black leading-relaxed mb-7 max-w-md">
+            Get a verified bank account instantly. You can access and receive{" "}
+            your international payments <br className="hidden lg:block" />
+            at any time.
           </p>
 
-          <div className="flex flex-col gap-3 mb-8">
+          {/* <div className="flex flex-col gap-3 mb-8">
             {perks.map((perk, i) => (
               <div
                 key={i}
@@ -77,33 +114,41 @@ const GlobalAccountSection = () => {
                 {perk}
               </div>
             ))}
-          </div>
+          </div> */}
 
-          <button className="inline-flex items-center gap-2 bg-[#1154da] text-white font-bold text-[15px] px-7 py-3.5 rounded-xl hover:bg-[#023bac] transition-colors">
-            Open your account <FiArrowRight />
+          <button className="inline-flex items-center gap-3 text-[#1154da] font-semibold text-[15px] group w-fit">
+            Get it right away
+            <span className="w-8 h-8 rounded-full border-2 border-[#1154da] flex items-center justify-center group-hover:bg-[#1154da] transition-colors">
+              <FiArrowRight className="w-4 h-4 group-hover:text-white transition-colors" />
+            </span>
           </button>
         </div>
-
-        {/* RIGHT — UI mockup */}
-        <div className="relative flex justify-center items-end min-h-[380px]">
-          {/* Live badge */}
-          <div className="absolute top-0 right-0 z-10 flex items-center gap-1.5 bg-[#e8f1fd] border border-[#b5d4f4] rounded-full px-3 py-1.5 text-[11px] font-bold text-[#0c447c]">
+        {/* RIGHT — UI mockup  */}
+        <div className="w-full lg:w-[100%] relative flex justify-center items-end min-h-[380px]">
+          <img
+            src="/greyy.avif"
+            alt=""
+            className="absolute top-44 -right-10 md:top-0 md:right-0 lg:top-14 lg:right-0
+      w-full
+      max-w-[350px]
+      sm:max-w-[500px]
+      md:max-w-[450px]
+      lg:max-w-[650px]
+      h-auto
+      object-cover object-center
+      lg:translate-x-6
+      xl:translate-x-10"
+          />
+          {/* Live badge  */}
+          {/* <div className="absolute top-0 right-0 z-10 flex items-center gap-1.5 bg-[#e8f1fd] border border-[#b5d4f4] rounded-full px-3 py-1.5 text-[11px] font-bold text-[#0c447c]">
             <span className="w-2 h-2 rounded-full bg-[#1d9e75] animate-pulse" />
             Live account
-          </div>
-
+          </div> */}
           {/* Phone mockup */}
-          <div className="absolute left-0 bottom-0 w-[165px] bg-[#0a1a3a] rounded-[24px] p-2 z-[1]">
+          {/* <div className="absolute left-0 bottom-0 w-[165px] bg-[#0a1a3a] rounded-[24px] p-2 z-[1]">
             <div className="bg-white rounded-[18px] overflow-hidden">
               <div className="bg-[#1154da] px-3 py-2.5 flex items-center gap-2">
-                {/* <div className="w-6 h-6 bg-white rounded-md flex items-center justify-center">
-                  <img
-                    src="/duralogo.png"
-                    alt=""
-                    className="w-10 object-contain"
-                  />
-                 
-                </div> */}
+               
                 <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center">
                   <Wallet className="w-4 h-4 text-white" />
                 </div>
@@ -127,11 +172,10 @@ const GlobalAccountSection = () => {
                 ))}
               </div>
             </div>
-          </div>
-
+          </div> */}
           {/* Account details card */}
-          <div className="absolute right-0 top-8 w-[265px] bg-white rounded-2xl border border-[#c8d8f0] p-5 z-[2]">
-            {/* Currency flags */}
+          {/* <div className="absolute right-0 top-8 w-[265px] bg-white rounded-2xl border border-[#c8d8f0] p-5 z-[2]">
+            // Currency flags //
             <div className="flex mb-4">
               {["NG", "US", "GP"].map((flag, i) => (
                 <div
@@ -171,9 +215,10 @@ const GlobalAccountSection = () => {
                 </button>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
+      {/* </motion.div> */}
     </section>
   );
 };

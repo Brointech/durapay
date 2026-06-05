@@ -9,6 +9,11 @@ import GlobalAccountSection from "@/components/globalaccountsection";
 import CurrencyExchangeSection from "@/components/currencyexchangesection";
 import VirtualCardsSection from "@/components/virtualcards";
 import Testimonials from "@/components/testimonials";
+import CurrencyExchange from "@/components/currencyexchange";
+import MoneyTransfer from "@/components/moneytransfer";
+import CurvedBlackSection from "@/components/create";
+import Difference from "@/components/difference";
+import BeyondBanking from "@/components/beyondbanking";
 
 export default function Home() {
   return (
@@ -16,10 +21,15 @@ export default function Home() {
       <div>
         <HeroSection />
         <SocialProofSection />
-        <Order />
+        {/* <Order /> */}
         <GlobalAccountSection />
-        <CurrencyExchangeSection />
+        {/* <CurrencyExchangeSection /> */}
+        <CurrencyExchange />
         <VirtualCardsSection />
+        <MoneyTransfer />
+        <CurvedBlackSection />
+        <Difference />
+        <BeyondBanking />
         <Testimonials />
       </div>
     </section>
