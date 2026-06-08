@@ -1267,36 +1267,36 @@ function TestimonialsSection() {
 // }
 
 // ─── Footer ──
-function Footer() {
-  return (
-    <footer className="bg-[#0a1628] py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-[#00C896] rounded-lg flex items-center justify-center">
-              <BoltIcon />
-            </div>
-            <span className="font-black text-lg text-white">PaySwift</span>
-          </div>
-          <p className="text-white/30 text-xs text-center">
-            © 2025 PaySwift Nigeria Ltd · CBN Licensed · RC: 12345678
-          </p>
-          <div className="flex gap-5">
-            {["Privacy", "Terms", "Support"].map((l) => (
-              <a
-                key={l}
-                href="#"
-                className="text-white/40 hover:text-white/70 text-xs transition-colors"
-              >
-                {l}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
+// function Footer() {
+//   return (
+//     <footer className="bg-[#0a1628] py-12">
+//       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+//           <div className="flex items-center gap-2">
+//             <div className="w-7 h-7 bg-[#00C896] rounded-lg flex items-center justify-center">
+//               <BoltIcon />
+//             </div>
+//             <span className="font-black text-lg text-white">PaySwift</span>
+//           </div>
+//           <p className="text-white/30 text-xs text-center">
+//             © 2025 PaySwift Nigeria Ltd · CBN Licensed · RC: 12345678
+//           </p>
+//           <div className="flex gap-5">
+//             {["Privacy", "Terms", "Support"].map((l) => (
+//               <a
+//                 key={l}
+//                 href="#"
+//                 className="text-white/40 hover:text-white/70 text-xs transition-colors"
+//               >
+//                 {l}
+//               </a>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
 
 // ─── Page ──────────────────────────────────────────────────────────────────────
 export default function VTUPage() {
@@ -1308,7 +1308,7 @@ export default function VTUPage() {
       <VTUWidget />
       <TestimonialsSection />
       <DownloadSection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

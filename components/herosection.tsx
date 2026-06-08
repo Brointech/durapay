@@ -1,179 +1,128 @@
-"use client";
+// "use client";
 
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
 
-const HeroSection = () => {
-  return (
-    <section className="relative overflow-hidden w-full bg-[#4BA8D8] -mt-0 min-h-screen min-h-[90vh]">
-      {/* MOBILE BLOB — top sweep, hidden on lg+ */}
-      {/* <svg
-        className="absolute top-0 left-0 w-full h-[52%] lg:hidden mb-2"
-        viewBox="0 0 375 280"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M0,0 L375,0 L375,280 Q280,220 200,200 Q100,180 0,280 Z"
-          fill="#e8f1fd"
-        />
-      </svg> */}
+// const HeroSection = () => {
+//   return (
+//     <section className="relative overflow-hidden w-full bg-[#4BA8D8] -mt-0 min-h-screen min-h-[90vh]">
+//       {/* ── BACKGROUND LAYERS ── */}
 
-      {/* TABLET BLOB — right side, md to lg */}
-      {/* <svg
-        className="absolute top-0 right-0 w-[58%] h-full hidden md:block lg:hidden"
-        viewBox="0 0 440 360"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M440,0 L440,360 L0,360 Q60,300 120,220 Q160,160 140,100 Q160,40 280,10 Q360,0 440,0 Z"
-          fill="#e8f1fd"
-        />
-      </svg> */}
+//       {/* Base sky-blue gradient */}
+//       <div
+//         className="absolute inset-0"
+//         style={{
+//           background: `
+//             radial-gradient(ellipse 80% 80% at 72% 45%, rgba(160, 215, 245, 0.50) 0%, transparent 60%),
+//             radial-gradient(ellipse 55% 70% at 100% 85%, rgba(45, 130, 185, 0.40) 0%, transparent 55%),
+//             radial-gradient(ellipse 50% 55% at 0% 15%, rgba(180, 225, 250, 0.30) 0%, transparent 50%),
+//             linear-gradient(155deg, #7ecef0 0%, #4BA8D8 38%, #3490c0 68%, #2878aa 100%)
+//           `,
+//         }}
+//       />
 
-      {/* DESKTOP BLOB — right side, lg+ */}
-      {/* <svg
-        className="absolute inset-y-0 right-0 h-full w-[62%]"
-        viewBox="0 0 620 560"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M 620,0
-            L 620,560
-            L 0,560
-            Q 80,480 160,400
-            Q 220,340 200,240
-            Q 180,140 300,80
-            Q 420,20 520,0
-            Z
-          "
-          fill="#e8f1fd"
-        />
-      </svg> */}
+//       {/* Grain overlay for depth */}
+//       <div
+//         className="absolute inset-0 opacity-[0.055] pointer-events-none"
+//         style={{
+//           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+//           backgroundRepeat: "repeat",
+//           backgroundSize: "128px 128px",
+//         }}
+//       />
 
-      {/* ── BACKGROUND LAYERS ── */}
+//       {/* Right-side portrait light bloom */}
+//       <div
+//         className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
+//         style={{
+//           background:
+//             "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(210, 238, 252, 0.28) 0%, transparent 60%)",
+//         }}
+//       />
 
-      {/* Base sky-blue gradient */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `
-            radial-gradient(ellipse 80% 80% at 72% 45%, rgba(160, 215, 245, 0.50) 0%, transparent 60%),
-            radial-gradient(ellipse 55% 70% at 100% 85%, rgba(45, 130, 185, 0.40) 0%, transparent 55%),
-            radial-gradient(ellipse 50% 55% at 0% 15%, rgba(180, 225, 250, 0.30) 0%, transparent 50%),
-            linear-gradient(155deg, #7ecef0 0%, #4BA8D8 38%, #3490c0 68%, #2878aa 100%)
-          `,
-        }}
-      />
+//       {/* Floor reflection */}
+//       <div
+//         className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
+//         style={{
+//           background:
+//             "linear-gradient(to top, rgba(150, 210, 240, 0.22) 0%, transparent 100%)",
+//         }}
+//       />
 
-      {/* Grain overlay for depth */}
-      <div
-        className="absolute inset-0 opacity-[0.055] pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "128px 128px",
-        }}
-      />
+//       {/* ── WHITE CURVED SHAPE (bottom-right) ── */}
+//       {/* This replicates the large white arc that peeks up from the bottom-right
+//           corner in the reference, acting as a transition into the next section */}
+//       <div
+//         className="absolute bottom-0 right-0 pointer-events-none"
+//         style={{
+//           width: "clamp(340px, 48vw, 720px)",
+//           height: "clamp(120px, 22vw, 280px)",
+//         }}
+//       >
+//         <svg
+//           viewBox="0 0 720 280"
+//           fill="none"
+//           xmlns="http://www.w3.org/2000/svg"
+//           className="w-full h-full"
+//           preserveAspectRatio="none"
+//         >
+//           // Large white arc sweeping up from the bottom-right //
+//           <path
+//             d="M720 280 H0 Q180 280 360 120 Q500 10 720 80 Z"
+//             fill="white"
+//           />
+//         </svg>
+//       </div>
 
-      {/* Right-side portrait light bloom */}
-      <div
-        className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(210, 238, 252, 0.28) 0%, transparent 60%)",
-        }}
-      />
+//       {/* HERO CONTENT */}
+//       <div className="relative z-10 mx-auto grid lg:min-h-[100vh] max-w-7xl md:px-8 lg:px-10  grid-cols-1 items-center gap-10 px-5 lg:grid-cols-2">
+//         {/* Left Side:Content */}
+//         <div className="lg:mt-2 mt-20">
+//           <h1 className="text-[38px] font-bold -mt-2 leading-[1.15] tracking-[-1px] text-white sm:text-[44px] md:text-[52px] lg:text-[68px]">
+//             Modern banking
+//             <br />
+//             built around
+//             <br />
+//             your lifestyle.
+//           </h1>
 
-      {/* Floor reflection */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to top, rgba(150, 210, 240, 0.22) 0%, transparent 100%)",
-        }}
-      />
+//           <p className="mt-10 max-w-xl sm:text-[18px] lg:text-[18px] font-medium leading-relaxedtracking-[-1px] text-white">
+//             Make transfers, pay bills, fund wallets, use virtual <br />
+//             cards, and earn cashback effortlessly from your <br />
+//             phone for free
+//           </p>
+//           <div className="">
+//             <button className="flex items-center gap-3 mt-8 rounded-2xl bg-[#1154da] px-5 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac]">
+//               <Download className="w-5 h-5" /> Get started for free
+//             </button>
+//           </div>
+//         </div>
 
-      {/* ── WHITE CURVED SHAPE (bottom-right) ── */}
-      {/* This replicates the large white arc that peeks up from the bottom-right
-          corner in the reference, acting as a transition into the next section */}
-      <div
-        className="absolute bottom-0 right-0 pointer-events-none"
-        style={{
-          width: "clamp(340px, 48vw, 720px)",
-          height: "clamp(120px, 22vw, 280px)",
-        }}
-      >
-        <svg
-          viewBox="0 0 720 280"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-full"
-          preserveAspectRatio="none"
-        >
-          // Large white arc sweeping up from the bottom-right //
-          <path
-            d="M720 280 H0 Q180 280 360 120 Q500 10 720 80 Z"
-            fill="white"
-          />
-        </svg>
-      </div>
+//         {/* Right Side */}
 
-      {/* HERO CONTENT */}
-      <div className="relative z-10 mx-auto grid lg:min-h-[100vh] max-w-7xl md:px-8 lg:px-10  grid-cols-1 items-center gap-10 px-5 lg:grid-cols-2">
-        {/* Left Side:Content */}
-        <div className="lg:mt-2 mt-20">
-          <h1 className="text-[38px] font-bold -mt-2 leading-[1.15] tracking-[-1px] text-white sm:text-[44px] md:text-[52px] lg:text-[68px]">
-            Modern banking
-            <br />
-            built around
-            <br />
-            your lifestyle.
-          </h1>
+//         <div className="flex justify-center lg:justify-end w-full">
+//           <img
+//             src="/bluehero.png"
+//             alt="DuraPay App"
+//             loading="lazy"
+//             className=" lg:mt-20 -mt-20
+//       w-full
+//       max-w-[350px]
+//       sm:max-w-[500px]
+//       md:max-w-[600px]
+//       lg:max-w-[800px]
+//       h-auto
+//       object-cover object-center
+//       lg:translate-x-16
+//       xl:translate-x-24
+//     "
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 
-          <p className="mt-10 max-w-xl sm:text-[18px] lg:text-[18px] font-medium leading-relaxedtracking-[-1px] text-white">
-            Make transfers, pay bills, fund wallets, use virtual <br />
-            cards, and earn cashback effortlessly from your <br />
-            phone for free
-          </p>
-          <div className="">
-            <button className="flex items-center gap-3 mt-8 rounded-2xl bg-[#1154da] px-5 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac]">
-              <Download className="w-5 h-5" /> Get started for free
-            </button>
-          </div>
-        </div>
-
-        {/* Right Side */}
-
-        <div className="flex justify-center lg:justify-end w-full">
-          <img
-            src="/bluehero.png"
-            alt="DuraPay App"
-            loading="lazy"
-            className=" lg:mt-20 -mt-20
-      w-full
-      max-w-[350px]
-      sm:max-w-[500px]
-      md:max-w-[600px]
-      lg:max-w-[800px]
-      h-auto
-      object-cover object-center
-      lg:translate-x-16
-      xl:translate-x-24
-    "
-          />
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default HeroSection;
+// export default HeroSection;
 
 // "use client";
 
@@ -256,3 +205,467 @@ export default HeroSection;
 // };
 
 // export default HeroSection;
+
+// "use client";
+
+// import { Download } from "lucide-react";
+
+// const HeroSection = () => {
+//   return (
+//     <section className="relative overflow-hidden w-full bg-[#4BA8D8] min-h-screen">
+//       {/* ── BACKGROUND LAYERS ── */}
+
+//       {/* Base sky-blue gradient */}
+//       <div
+//         className="absolute inset-0"
+//         style={{
+//           background: `
+//             radial-gradient(ellipse 80% 80% at 72% 45%, rgba(160, 215, 245, 0.50) 0%, transparent 60%),
+//             radial-gradient(ellipse 55% 70% at 100% 85%, rgba(45, 130, 185, 0.40) 0%, transparent 55%),
+//             radial-gradient(ellipse 50% 55% at 0% 15%, rgba(180, 225, 250, 0.30) 0%, transparent 50%),
+//             linear-gradient(155deg, #7ecef0 0%, #4BA8D8 38%, #3490c0 68%, #2878aa 100%)
+//           `,
+//         }}
+//       />
+
+//       {/* Grain overlay */}
+//       <div
+//         className="absolute inset-0 opacity-[0.055] pointer-events-none"
+//         style={{
+//           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+//           backgroundRepeat: "repeat",
+//           backgroundSize: "128px 128px",
+//         }}
+//       />
+
+//       {/* Right-side portrait light bloom */}
+//       <div
+//         className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
+//         style={{
+//           background:
+//             "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(210, 238, 252, 0.28) 0%, transparent 60%)",
+//         }}
+//       />
+
+//       {/* Floor reflection */}
+//       <div
+//         className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
+//         style={{
+//           background:
+//             "linear-gradient(to top, rgba(150, 210, 240, 0.22) 0%, transparent 100%)",
+//         }}
+//       />
+
+//       {/* ── WHITE CURVED SHAPE (bottom-right) ── */}
+//       <div
+//         className="absolute bottom-0 right-0 pointer-events-none"
+//         style={{
+//           width: "clamp(260px, 48vw, 720px)",
+//           height: "clamp(90px, 22vw, 280px)",
+//         }}
+//       >
+//         <svg
+//           viewBox="0 0 720 280"
+//           fill="none"
+//           xmlns="http://www.w3.org/2000/svg"
+//           className="w-full h-full"
+//           preserveAspectRatio="none"
+//         >
+//           <path
+//             d="M720 280 H0 Q180 280 360 120 Q500 10 720 80 Z"
+//             fill="white"
+//           />
+//         </svg>
+//       </div>
+
+//       {/* ── HERO CONTENT ── */}
+//       <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 lg:px-10 pt-28 pb-16 grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-10 lg:min-h-screen">
+//         {/* Left: Text */}
+//         <div>
+//           <h1 className="text-[36px] font-bold leading-[1.15] tracking-[-1px] text-white sm:text-[44px] md:text-[52px] lg:text-[62px] xl:text-[68px]">
+//             Modern banking
+//             <br />
+//             built around
+//             <br />
+//             your lifestyle.
+//           </h1>
+
+//           <p className="mt-6 max-w-md text-[16px] sm:text-[17px] lg:text-[18px] font-medium leading-relaxed tracking-[-0.3px] text-white">
+//             Make transfers, pay bills, fund wallets, use virtual cards, and earn
+//             cashback effortlessly from your phone for free.
+//           </p>
+
+//           <button className="flex items-center gap-3 mt-8 rounded-2xl bg-[#1154da] px-5 py-3 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac]">
+//             <Download className="w-5 h-5" /> Get started for free
+//           </button>
+//         </div>
+
+//         {/* Right: Image */}
+//         <div className="flex justify-center lg:justify-end w-full">
+//           <img
+//             src="/bluehero.png"
+//             alt="DuraPay App"
+//             loading="lazy"
+//             className="w-full max-w-[280px] sm:max-w-[380px] md:max-w-[460px] lg:max-w-[560px] xl:max-w-[660px] h-auto object-contain lg:mt-16"
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+// "use client";
+
+// import { Download } from "lucide-react";
+
+// const HeroSection = () => {
+//   return (
+//     <section className="relative overflow-hidden w-full bg-[#4BA8D8] min-h-screen flex flex-col">
+//       {/* ── BACKGROUND LAYERS ── */}
+
+//       {/* Base sky-blue gradient */}
+//       <div
+//         className="absolute inset-0"
+//         style={{
+//           background: `
+//             radial-gradient(ellipse 80% 80% at 72% 45%, rgba(160, 215, 245, 0.50) 0%, transparent 60%),
+//             radial-gradient(ellipse 55% 70% at 100% 85%, rgba(45, 130, 185, 0.40) 0%, transparent 55%),
+//             radial-gradient(ellipse 50% 55% at 0% 15%, rgba(180, 225, 250, 0.30) 0%, transparent 50%),
+//             linear-gradient(155deg, #7ecef0 0%, #4BA8D8 38%, #3490c0 68%, #2878aa 100%)
+//           `,
+//         }}
+//       />
+
+//       {/* Grain overlay */}
+//       <div
+//         className="absolute inset-0 opacity-[0.055] pointer-events-none"
+//         style={{
+//           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+//           backgroundRepeat: "repeat",
+//           backgroundSize: "128px 128px",
+//         }}
+//       />
+
+//       {/* Right-side light bloom */}
+//       <div
+//         className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
+//         style={{
+//           background:
+//             "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(210, 238, 252, 0.28) 0%, transparent 60%)",
+//         }}
+//       />
+
+//       {/* Floor reflection */}
+//       <div
+//         className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
+//         style={{
+//           background:
+//             "linear-gradient(to top, rgba(150, 210, 240, 0.22) 0%, transparent 100%)",
+//         }}
+//       />
+
+//       {/* ── WHITE CURVED SHAPE (bottom-right) ── */}
+//       <div
+//         className="absolute bottom-0 right-0 pointer-events-none"
+//         style={{
+//           width: "clamp(260px, 48vw, 720px)",
+//           height: "clamp(90px, 22vw, 280px)",
+//         }}
+//       >
+//         <svg
+//           viewBox="0 0 720 280"
+//           fill="none"
+//           xmlns="http://www.w3.org/2000/svg"
+//           className="w-full h-full"
+//           preserveAspectRatio="none"
+//         >
+//           <path
+//             d="M720 280 H0 Q180 280 360 120 Q500 10 720 80 Z"
+//             fill="white"
+//           />
+//         </svg>
+//       </div>
+
+//       {/* ── HERO CONTENT ── */}
+//       {/*
+//         Key fix: use a two-column grid on desktop.
+//         Left col = text (vertically centered).
+//         Right col = image pinned to the bottom so the figure
+//         "stands" on the section floor, fully visible.
+//       */}
+//       <div className="relative z-10 flex-1 mx-auto w-full max-w-7xl px-5 md:px-8 lg:px-10 grid grid-cols-1 lg:grid-cols-2">
+//         {/* LEFT: Text — centered vertically */}
+//         <div className="flex flex-col justify-center pt-32 pb-16 lg:pt-0 lg:pb-0">
+//           <h1 className="text-[38px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[68px]">
+//             Modern banking
+//             <br />
+//             built around
+//             <br />
+//             your lifestyle.
+//           </h1>
+
+//           <p className="mt-6 max-w-[480px] text-[16px] sm:text-[17px] lg:text-[18px] font-medium leading-relaxed text-white/90">
+//             Make transfers, pay bills, fund wallets, use virtual cards, and earn
+//             cashback effortlessly from your phone for free.
+//           </p>
+
+//           <div className="mt-8">
+//             <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+//               <Download className="w-5 h-5" />
+//               Get started for free
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* RIGHT: Image — pinned to bottom so figure stands naturally */}
+//         <div className="hidden lg:flex items-end justify-center lg:justify-end">
+//           <img
+//             src="/bluehero.png"
+//             alt="DuraPay App"
+//             loading="lazy"
+//             className="
+//               w-auto
+//               h-[75vh]
+//               max-h-[700px]
+//               object-contain
+//               object-bottom
+//               drop-shadow-2xl
+//             "
+//           />
+//         </div>
+
+//         {/* Mobile/Tablet image — shown below text, centered */}
+//         <div className="flex lg:hidden justify-center pb-10">
+//           <img
+//             src="/bluehero.png"
+//             alt="DuraPay App"
+//             loading="lazy"
+//             className="w-full max-w-[320px] sm:max-w-[420px] h-auto object-contain"
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+"use client";
+
+import { Download } from "lucide-react";
+
+const HeroSection = () => {
+  return (
+    <section className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-screen flex flex-col">
+      {/* ── BACKGROUND LAYERS ── */}
+
+      {/* Base sky-blue gradient */}
+      {/* <div
+        className="absolute inset-0"
+        style={{
+          background: `
+            radial-gradient(ellipse 80% 80% at 72% 45%, rgba(160, 215, 245, 0.50) 0%, transparent 60%),
+            radial-gradient(ellipse 55% 70% at 100% 85%, rgba(45, 130, 185, 0.40) 0%, transparent 55%),
+            radial-gradient(ellipse 50% 55% at 0% 15%, rgba(180, 225, 250, 0.30) 0%, transparent 50%),
+            linear-gradient(155deg, #7ecef0 0%, #4BA8D8 38%, #3490c0 68%, #2878aa 100%)
+          `,
+        }}
+      /> */}
+
+      {/* Grain overlay */}
+      {/* <div
+        className="absolute inset-0 opacity-[0.055] pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "128px 128px",
+        }}
+      /> */}
+
+      {/* Right-side light bloom */}
+      {/* <div
+        className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(210, 238, 252, 0.28) 0%, transparent 60%)",
+        }}
+      /> */}
+
+      {/* Floor reflection */}
+      {/* <div
+        className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(150, 210, 240, 0.22) 0%, transparent 100%)",
+        }}
+      /> */}
+
+      {/* ── WHITE CURVED SHAPE — desktop only ── */}
+      {/* <div
+        className="absolute bottom-0 right-0 pointer-events-none hidden lg:block"
+        style={{
+          width: "clamp(260px, 48vw, 720px)",
+          height: "clamp(90px, 22vw, 280px)",
+        }}
+      >
+        <svg
+          viewBox="0 0 720 280"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M720 280 H0 Q180 280 360 120 Q500 10 720 80 Z"
+            fill="white"
+          />
+        </svg>
+      </div> */}
+
+      {/* ── MOBILE/TABLET: full white bottom curve spanning full width ── */}
+      {/* <div className="absolute bottom-0 left-0 right-0 pointer-events-none lg:hidden">
+        <svg
+          viewBox="0 0 375 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
+        </svg>
+      </div> */}
+
+      {/* ── BACKGROUND LAYERS ── */}
+
+      {/* Base periwinkle-blue gradient */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `
+      radial-gradient(ellipse 80% 80% at 72% 45%, rgba(180, 200, 245, 0.50) 0%, transparent 60%),
+      radial-gradient(ellipse 55% 70% at 100% 85%, rgba(90, 120, 200, 0.40) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 55% at 0% 15%, rgba(210, 220, 250, 0.30) 0%, transparent 50%),
+      linear-gradient(155deg,  #A4B0D0 0%, #8D9CC2 38%, #7E8CB5 68%, #6B7AA8 100%)
+    `,
+        }}
+      />
+
+      {/* Grain overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.055] pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "128px 128px",
+        }}
+      />
+
+      {/* Right-side light bloom */}
+      <div
+        className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(220, 232, 253, 0.28) 0%, transparent 60%)",
+        }}
+      />
+
+      {/* Floor reflection */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(160, 185, 240, 0.22) 0%, transparent 100%)",
+        }}
+      />
+
+      {/* ── WHITE CURVED SHAPE — desktop only ── */}
+      <div
+        className="absolute bottom-0 right-0 pointer-events-none hidden lg:block"
+        style={{
+          width: "clamp(260px, 48vw, 720px)",
+          height: "clamp(90px, 22vw, 280px)",
+        }}
+      >
+        <svg
+          viewBox="0 0 375 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
+        </svg>
+      </div>
+
+      {/* ── MOBILE/TABLET: full white bottom curve spanning full width ── */}
+      <div className="absolute bottom-0 left-0 right-0 pointer-events-none lg:hidden">
+        <svg
+          viewBox="0 0 375 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
+        </svg>
+      </div>
+
+      {/* ── HERO CONTENT ── */}
+      <div className="relative z-10 flex-1 flex flex-col lg:grid lg:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
+        {/* TEXT — top section on mobile */}
+        <div className="flex flex-col justify-center pt-28 pb-8 lg:pt-0 lg:pb-0">
+          <h1 className="text-[40px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[68px]">
+            Modern banking
+            <br />
+            built around
+            <br />
+            your lifestyle.
+          </h1>
+
+          <p className="mt-10 max-w-[480px] text-[18px] md:text-[17px] lg:text-[18px] font-medium leading-[1.18] text-white/90">
+            Make transfers, pay bills, fund wallets, use virtual cards, and earn
+            cashback effortlessly from your phone for free.
+          </p>
+
+          <div className="mt-10">
+            <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+              <Download className="w-5 h-5" />
+              Get started for free
+            </button>
+          </div>
+        </div>
+
+        {/* IMAGE — desktop: pinned to bottom-right */}
+        <div className="hidden lg:flex items-end justify-center lg:justify-end">
+          <img
+            src="/somos.png"
+            alt="DuraPay App"
+            loading="lazy"
+            className="w-full ml-20 h-[80vh] max-h-[700px] object-contain object-bottom drop-shadow-2xl"
+          />
+        </div>
+
+        {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
+        <div className="flex lg:hidden justify-center items-end mt-6 ">
+          <img
+            src="/somos.png"
+            alt="DuraPay App"
+            loading="lazy"
+            className="
+              w-[85%]
+              max-w-[360px]
+              sm:max-w-[460px]
+              h-auto
+              object-contain
+              object-bottom
+            "
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

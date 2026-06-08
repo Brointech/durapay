@@ -86,35 +86,19 @@ const GlobalAccountSection = () => {
       >
         {/************************* LEFT CONTENT **************************/}
         <div className="max-w-xl">
-          <p className="mb-4 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-[#1154da]">
-            INTERNATIONAL BANK ACCOUNTS
+          <p className="mb-4 text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-[#1154da]">
+            INTERNATIONAL ACCOUNTS
           </p>
-          <h2 className="cursor-pointer text-[32px] sm:text-[42px] md:text-[48px] lg:text-[56px] font-bold text-[#0a1a3a] leading-[1.1] mb-5">
-            Create a global <br />
-            <span className="hidden lg:block" />
-            multi-currency
-            <span className="hidden lg:block" />
-            account.
+          <h2 className="cursor-pointer text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] font-bold text-[#0a1a3a] leading-[1.1] mb-5">
+            <span> Create a global</span> <br />
+            <span> multi-currency</span> <br />
+            <span> account.</span>
           </h2>
-          <p className="text-[16px] md:text-[17px] lg:text-[18px] font-semibold text-black leading-relaxed mb-7 max-w-md">
-            Get a verified bank account instantly. You can access and receive{" "}
-            your international payments <br className="hidden lg:block" />
+          <p className="text-[19px] md:text-[17px] lg:text-[18px] font-semibold text-black leading-relaxed mb-7 max-w-md">
+            Get a bank account instantly. You can access and receive your global
+            payments <br className="hidden lg:block" />
             at any time.
           </p>
-
-          {/* <div className="flex flex-col gap-3 mb-8">
-            {perks.map((perk, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-3 text-sm font-semibold text-[#1a2e4a]"
-              >
-                <div className="w-5 h-5 rounded-full bg-[#1154da] flex font-semibold items-center justify-center flex-shrink-0">
-                  <FiCheck className="text-white w-3 h-3" strokeWidth={3} />
-                </div>
-                {perk}
-              </div>
-            ))}
-          </div> */}
 
           <button className="inline-flex items-center gap-3 text-[#1154da] font-semibold text-[15px] group w-fit">
             Get it right away
@@ -124,17 +108,17 @@ const GlobalAccountSection = () => {
           </button>
         </div>
         {/* RIGHT — UI mockup  */}
-        <div className="w-full lg:w-[100%] relative flex justify-center items-end min-h-[380px]">
+        <div className="w-full lg:w-[100%] relative flex justify-center items-end min-h-[350px] -mt-20">
           <img
             src="/greyy.avif"
             alt=""
-            className="absolute top-44 -right-10 md:top-0 md:right-0 lg:top-14 lg:right-0
+            className="absolute top-44 -right-1 md:top-0 md:right-0 lg:top-14 lg:right-0
       w-full
-      max-w-[350px]
-      sm:max-w-[500px]
+      max-w-[550px]
+      sm:max-w-[600px]
       md:max-w-[450px]
       lg:max-w-[650px]
-      h-auto
+      h-auto 
       object-cover object-center
       lg:translate-x-6
       xl:translate-x-10"

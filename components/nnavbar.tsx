@@ -306,6 +306,79 @@ export const Nnavbar = () => {
     };
   }, [isOpen]);
 
+  const NavDropdown = ({
+    link,
+    pathname,
+  }: {
+    link: NavLink;
+    pathname: string;
+  }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const ref = useRef<HTMLDivElement>(null);
+
+    // Close on route change
+    useEffect(() => {
+      setIsOpen(false);
+    }, [pathname]);
+
+    return (
+      <div
+        ref={ref}
+        className="relative"
+        onMouseEnter={() => setIsOpen(true)} // ← open on hover
+        onMouseLeave={() => setIsOpen(false)} // ← close when cursor leaves
+      >
+        <button className="flex items-center gap-1 transition-colors">
+          {link.name}
+          <svg
+            className={`w-4 h-4 transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+
+        {isOpen && (
+          <div className="absolute left-1/2 top-full -translate-x-1/2 pt-4 z-50">
+            <div className="mt-4 bg-white rounded-2xl shadow-2xl border border-gray-100 p-5">
+              <div
+                className={`grid gap-2 ${
+                  link.name === "Pricing"
+                    ? "grid-cols-1 w-[320px]"
+                    : "grid-cols-2 w-[520px]"
+                }`}
+              >
+                {link.children.map((child) => (
+                  <Link
+                    key={child.name}
+                    href={child.href}
+                    className="rounded-xl p-3 hover:bg-[#f5f8ff] transition"
+                  >
+                    <p className="font-semibold text-[#00246C]">{child.name}</p>
+                    {child.description && (
+                      <p className="text-sm text-gray-500 mt-1">
+                        {child.description}
+                      </p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const navLinks = [
     { name: "Home", href: "/" },
     {
@@ -330,22 +403,22 @@ export const Nnavbar = () => {
       children: [
         {
           name: "Personal",
-          href: "/pricing/personal",
+          href: "/personal",
           description: "For individuals and freelancers",
         },
         {
           name: "Business",
-          href: "/pricing/business",
+          href: "/business",
           description: "For startups and companies",
         },
         {
           name: "Enterprise",
-          href: "/pricing/enterprise",
+          href: "/enterprise",
           description: "Custom pricing for large organizations",
         },
         {
           name: "Transaction Fees",
-          href: "/pricing/fees",
+          href: "/transaction",
           description: "Transfer and conversion charges",
         },
       ],
@@ -357,7 +430,7 @@ export const Nnavbar = () => {
 
   const MobileMenu = () => (
     <div
-      className="fixed inset-0 bg-white z-99999 flex flex-col pt-24 px-6 pb-10 overflow-y-auto"
+      className="fixed inset-0 bg-white z-99999 flex flex-col pt-24 px-6 pb-10"
       style={{ top: 0, left: 0, right: 0, bottom: 0 }}
     >
       <button
@@ -369,11 +442,6 @@ export const Nnavbar = () => {
       </button>
 
       <a href="/" className="flex items-center gap-1 mb-8 -mt-40">
-        {/* <img
-          src="/duralogo.png"
-          alt="Durapay logo"
-          className="w-10 object-contain"
-        /> */}
         <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center">
           <Wallet className="w-4 h-4 text-white" />
         </div>
@@ -386,7 +454,7 @@ export const Nnavbar = () => {
             key={link.name}
             href={link.href}
             onClick={() => setIsOpen(false)}
-            className="font-semibold text-[#00246C] text-[16px] py-4 hover:text-[#1154da] transition-colors"
+            className="font-semibold text-[#00246C] text-[16px] py-4 transition-colors"
           >
             {link.name}
           </Link>
@@ -407,29 +475,21 @@ export const Nnavbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-99999 transition-all duration-300 ${
-          scrolled ? "bg-gray-200 shadow-md" : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 w-screen z-99999 transition-all duration-300 ${
+          scrolled ? "bg-[#1154da] shadow-md" : "bg-transparent"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10 lg:px-10 py-2">
           {/* Logo */}
           <a href="/" className="flex items-center gap-1">
-            {/* <img
-              src="/duralogo.png"
-              alt="Durapay logo"
-              className="w-10 object-contain hover:scale-105 transition duration-300"
-            /> */}
-
             <div className="w-8 h-8 rounded-lg bg-[#1154da] flex items-center justify-center">
               <Wallet className="w-4 h-4 text-white" />
             </div>
-            <span className="font-bold text-[#1154da] text-[22px]">
-              Durapay
-            </span>
+            <span className="font-bold text-white text-[22px]">Durapay</span>
           </a>
 
           {/* Desktop nav links */}
-          <div className="hidden lg:flex items-center gap-8 text-[14px] mt-3 font-semibold text-[#00246C]">
+          <div className="hidden lg:flex items-center gap-8 text-[14px] mt-3 font-semibold text-white">
             {navLinks.map((link) =>
               link.children ? (
                 // ✅ Links WITH dropdowns use state-controlled NavDropdown
@@ -439,7 +499,7 @@ export const Nnavbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="hover:text-[#1154da] transition-colors"
+                  className=" transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -449,12 +509,12 @@ export const Nnavbar = () => {
 
           {/* Desktop buttons */}
           <div className="hidden lg:flex items-center gap-6">
-            <button className="font-semibold text-[#00246C] hover:text-[#1154da] cursor-pointer transition-colors text-[14px] -mb-2">
+            <button className="font-semibold text-white cursor-pointer transition-colors text-[14px] -mb-3">
               Sign in
             </button>
 
             <div className="">
-              <button className=" flex item-center gap-3 rounded-2xl bg-[#1154da] px-8 py-4  font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
+              <button className=" flex item-center gap-3 rounded-2xl bg-[#1154da] px-8 py-4 font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
                 <Download className="w-5 h-5" />
                 Download Durapay
               </button>

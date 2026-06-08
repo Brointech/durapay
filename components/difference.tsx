@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const Differrence = () => {
   return (
-    <section className="w-full px-6 py-20 bg-white">
+    <section className="w-full px-6 lg:px-10 py-20 bg-white">
       {/* Keyframes for float animation */}
       <style>{`
                 @keyframes floatUp {
@@ -14,13 +14,18 @@ const Differrence = () => {
               `}</style>
 
       <div
-        className="mx-auto max-w-6xl  rounded-2xl bg-[#FFF5FB] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-stretch transition-transform
-            duration-400
-            ease-in-out
-            hover:-translate-y-2"
+        className="mx-auto
+    max-w-7xl
+    bg-[#FFF5FB]
+    rounded-[32px]
+    overflow-hidden
+    grid
+    grid-cols-1
+    lg:grid-cols-[1.1fr_0.9fr]
+    items-stretch"
       >
         {/* LEFT — content */}
-        <div className="px-10 pt-20 pb-14 mb-20 flex flex-col justify-center">
+        <div className="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-14 lg:py-24">
           <h2 className="text-[42px] sm:text-[52px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
             Collaborating <br /> to make a change
           </h2>
@@ -37,12 +42,15 @@ const Differrence = () => {
         </div>
 
         {/* RIGHT — floating brands behind image */}
-        <div className="relative min-h-100 lg:min-h-0 overflow-hidden">
+        <div className="relative min-h-[420px] lg:min-h-full">
           {/* Image — z-[2] so it sits ON TOP of the bubbles */}
           <img
             src="/diff.webp"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-220 h-200 object-cover"
+            className="w-full
+      h-full
+      object-cover
+      object-center"
           />
         </div>
       </div>

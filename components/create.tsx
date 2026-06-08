@@ -25,7 +25,7 @@ export default function CurvedBlackSection() {
           </div>
         </div>
 
-        <div className="flex-wrap justify-start -mt-50">
+        <div className="flex-wrap justify-start lg:-mt-50">
           <img
             src="
             /purplehand.avif"
