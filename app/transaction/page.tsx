@@ -2,7 +2,7 @@
 
 import { ArrowRight, Globe, Repeat, ShieldCheck } from "lucide-react";
 
-const transferFees = [
+const transaction = [
   {
     service: "Local Transfers",
     fee: "Free",
@@ -44,7 +44,7 @@ const conversionFees = [
   },
 ];
 
-export default function TransactionFeesSection() {
+export default function Transaction() {
   return (
     <section className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -86,7 +86,7 @@ export default function TransactionFeesSection() {
                 </thead>
 
                 <tbody>
-                  {transferFees.map((item) => (
+                  {transaction.map((item) => (
                     <tr key={item.service} className="border-t border-gray-200">
                       <td className="px-6 py-5 font-medium">{item.service}</td>
 

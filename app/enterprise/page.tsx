@@ -20,7 +20,7 @@ const enterpriseFeatures = [
   "Custom transaction limits",
 ];
 
-export default function EnterprisePricing() {
+export default function Enterprise() {
   return (
     <section className="relative overflow-hidden bg-[#1154DA] py-24 lg:py-32">
       {/* Background */}
