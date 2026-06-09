@@ -1,7 +1,9 @@
 "use client";
 
+import { Download } from "lucide-react";
 import { useState } from "react";
 
+import { Shield, Bell, BadgeCheck } from "lucide-react";
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
 const ArrowRightIcon = ({ className = "" }: { className?: string }) => (
@@ -141,113 +143,6 @@ const PlayStoreIcon = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-// ─── Mock Phone Mockup ────────────────────────────────────────────────────────
-
-const PhoneMockup = () => (
-  <div className="relative mx-auto w-[220px] sm:w-[260px]">
-    {/* Glow */}
-    <div className="absolute inset-0 rounded-[2.5rem]  blur-3xl scale-110" />
-    {/* Phone shell */}
-    <div className="relative bg-[#023bac] rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden">
-      {/* Notch */}
-      <div className="absolute top-3 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#023bac] rounded-full z-10" />
-      {/* Screen */}
-      <div className="bg-white min-h-[460px] sm:min-h-[520px] p-6 pt-10 flex flex-col gap-3">
-        {/* Header */}
-        <div className="flex items-center justify-between mt-4 mb-2">
-          <div>
-            <p className="text-[#023bac] font-semibold text-[10px] tracking-wide uppercase">
-              Send Money
-            </p>
-            <p className="text-zinc-800 text-sm font-semibold">
-              Quick Transfer
-            </p>
-          </div>
-          <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-            <ZapIcon className="w-4 h-4 text-blue-400" />
-          </div>
-        </div>
-
-        {/* Amount */}
-        <div className="bg-white/5 rounded-2xl p-4 border border-white/[0.06]">
-          <p className="text-black font-semibold text-[10px] uppercase tracking-widest mb-1">
-            Amount
-          </p>
-          <div className="flex items-baseline gap-1">
-            <span className="text-[#1154da] text-lg font-medium">₦</span>
-            <span className="text-[#1154da] text-3xl font-bold tracking-tight">
-              50,000
-            </span>
-          </div>
-          <div className="mt-3 grid grid-cols-3 gap-1.5">
-            {["₦5k", "₦10k", "₦20k"].map((a) => (
-              <button
-                key={a}
-                className="bg-white/[0.06] rounded-lg py-1 text-[10px] text-[#1154da] font-medium hover:bg-[#a0ccf0] transition-colors"
-              >
-                {a}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Recipient */}
-        <div className="bg-white/5 rounded-2xl p-3 border border-white/[0.06] flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white text-sm font-bold shrink-0">
-            AK
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-black text-xs font-medium truncate">
-              Amaka Kelechi
-            </p>
-            <p className="text-black text-[10px]">Durapay · 0123456789</p>
-          </div>
-          <CheckIcon className="w-4 h-4 text-[#1154da] shrink-0" />
-        </div>
-
-        {/* Status bar */}
-        <div className="bg-gray-300 border  rounded-xl px-3 py-2 flex items-center gap-2">
-          <ZapIcon className="w-3.5 h-3.5 text-[#407af0] shrink-0" />
-          <p className="text-[#023bac] text-[10px] font-medium">
-            Instant · Arrives in ~5 seconds
-          </p>
-        </div>
-
-        {/* Send button */}
-        <button className="mt-auto bg-blue-600 hover:bg-blue-800 transition-colors text-white font-bold rounded-2xl py-3 text-sm tracking-wide">
-          Send Money →
-        </button>
-
-        {/* Recent */}
-        <p className="text-black font-semibold text-[9px] text-center uppercase tracking-widest">
-          Recent · Today
-        </p>
-        {[
-          { name: "Femi O.", amount: "₦12,000", bank: "Access" },
-          { name: "Ngozi A.", amount: "₦5,500", bank: "UBA" },
-        ].map((tx) => (
-          <div key={tx.name} className="flex items-center justify-between py-1">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-full bg-zinc-900" />
-              <div>
-                <p className="text-white text-[10px] font-medium -mt-3">
-                  {tx.name}
-                </p>
-                <p className="text-zinc-600 text-[9px]">{tx.bank}</p>
-              </div>
-            </div>
-            <p className="text-[#023bac] text-[10px] font-semibold">
-              {tx.amount}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-    {/* Home indicator */}
-    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-16 h-1 bg-white/20 rounded-full" />
-  </div>
-);
-
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const features = [
@@ -320,12 +215,86 @@ const stats = [
   { value: "5 sec", label: "Avg. Transfer Time" },
 ];
 
+type Feature = {
+  title: string;
+};
+
+const Feature: Feature[] = [
+  { title: "100% digital transfers" },
+  { title: "The best exchange rates" },
+  { title: "Speedy bank transfers" },
+  { title: "Fair and transparent transfer fees" },
+  { title: "Free p2p transfers" },
+  { title: "Multiple payment schemes" },
+  { title: "No virtual accounts required for transfers" },
+  { title: "Enjoy multiple daily transfers" },
+  { title: "Instant transaction notifications" },
+  { title: "Anti-fraud protection" },
+];
+
+const SparkleIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-5 h-5 text-violet-500 shrink-0"
+  >
+    <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z" />
+  </svg>
+);
+
+const FeatureCard = ({ title }: Feature) => {
+  return (
+    <div
+      className="
+        flex items-center gap-4
+        rounded-full
+        border border-slate-700/80
+        bg-slate-950/60
+        backdrop-blur-sm
+        px-6 py-5
+        min-h-[88px]
+        shadow-[0_0_0_1px_rgba(255,255,255,0.03)]
+        transition-all duration-300
+        hover:border-violet-500/40
+        hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]
+      "
+    >
+      <SparkleIcon />
+
+      <span className="text-white text-base md:text-lg font-medium">
+        {title}
+      </span>
+    </div>
+  );
+};
+
+const featur = [
+  {
+    title: "Protected and Regulated",
+    description:
+      "We are regulated by FinCen and FinTrac, giving you the confidence to transact globally with peace of mind.",
+    icon: Shield,
+  },
+  {
+    title: "Two-Factor Authentication",
+    description:
+      "Protect your account with additional security verification during every transaction.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Instant Notification",
+    description:
+      "Receive real-time alerts whenever money is sent, received or converted.",
+    icon: Bell,
+  },
+];
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function TransferPage() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const [active, setActive] = useState(0);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) setSubmitted(true);
@@ -333,79 +302,203 @@ export default function TransferPage() {
 
   return (
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-x-hidden">
+      {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
+      <svg
+        className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
+        viewBox="0 0 700 520"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M700 520 H0 C80 520 160 480 200 400 C260 290 180 160 260 80 C330 10 450 0 540 20 C630 40 700 110 700 200 Z"
+          fill="#dce6ff"
+          opacity="0.55"
+        />
+        <path
+          d="M700 520 H120 C200 520 300 490 360 420 C430 340 370 210 450 130 C510 60 610 40 670 70 C690 80 700 100 700 120 Z"
+          fill="white"
+          opacity="0.85"
+        />
+      </svg>
+      {/* ── Top-right soft accent circle ── */}
+      <div
+        className="absolute -top-24 -right-24 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-30"
+        style={{ background: "#c7d7ff" }}
+        aria-hidden="true"
+      />
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden grid-bg -mt-16">
-        {/* Radial glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px]" />
-        </div>
-
         {/* Same container as navbar */}
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-9 py-20 lg:py-28">
+          <div className="flex gap-2 lg:gap-2 items-center justify-between">
             {/* Copy */}
-            <div className="slide-up">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-[#1154da] rounded-full px-4 py-2 mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#1154da] animate-pulse" />
-                <span className="text-[#1154da] text-sm font-medium">
-                  Nigeria's fastest money app
-                </span>
-              </div>
-
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
-                <span className="text-[#1154da]">Send Money</span>
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400">
-                  Instantly.
-                </span>
-                <br />
-                <span className="text-[#1154da]">Anywhere.</span>
+            <div className="slide-up lg:mt-10">
+              <h1 className="xs:text-center lg:text-base text-[70px] md:text-6xl lg:text-[80px] font-bold leading-[1.05] tracking-tight mb-6">
+                <span className="text-black">Local and</span> <br />
+                <span className="text-black">international money</span> <br />
+                <span className="text-black">transfers</span>
               </h1>
-
-              <p className="text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
-                Transfer funds to any Nigerian bank in seconds. <br />
-                No stress, no hidden charges — just fast, secure <br />
-                money movement from your pocket.
+              <p className="xs:text-center text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
+                Redefine the way you send money across the globe. <br />
+                Make instant, secure deposits into any bank account <br />
+                at unrivaled rates.
               </p>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#download"
-                  className="group flex items-center justify-center gap-2 bg-[#1154da] hover:bg-[#023bac] transition-colors text-white font-semibold px-8 py-4 rounded-2xl"
-                >
-                  <AppleIcon className="w-5 h-5" />
-                  App Store
-                  <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-
-                <a
-                  href="#download"
-                  className="group flex items-center justify-center gap-2 bg-[#1154da] hover:bg-[#023bac] transition-colors text-white font-semibold px-8 py-4 rounded-2xl"
-                >
-                  <PlayStoreIcon className="w-5 h-5" />
-                  Google Play
-                </a>
-              </div>
-
-              {/* Trust badges */}
-              <div className="mt-8 flex flex-wrap items-center gap-5 text-sm text-gray-700">
-                <span className="flex items-center gap-2">
-                  <ShieldCheckIcon className="w-4 h-4 text-blue-500" />
-                  CBN Licensed
-                </span>
-
-                <span className="flex items-center gap-2">
-                  <CheckIcon className="w-4 h-4 text-blue-500" />
-                  NDIC Insured
-                </span>
-              </div>
+              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+                Make a transfer
+              </button>
             </div>
 
-            {/* Phone Mockup */}
-            <div className="flex justify-center lg:justify-end">
-              <PhoneMockup />
+            {/* Right Side */}
+            <div>
+              <img
+                src="/mapp.webp"
+                alt=""
+                className="lg:w-60 hidden lg:block"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Next */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
+        <div className=" xs:text-center">
+          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-tight tracking-tight">
+            Send money abroad <br />
+            the easy way
+          </h1>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-5">
+          <img src="/screenshot1.png" alt="" className="w-110 lg:w-95" />
+          <img src="/screenshot2.png" alt="" className="w-110 lg:w-95" />
+          <img src="/screenshot3.png" alt="" className="w-110 lg:w-95" />
+        </div>
+      </section>
+      <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
+        <div>
+          <h1 className="text-center lg:text-center text-white text-[42px] lg:text-[65px] font-bold leading-tight tracking-tight">
+            <span> Why you should make </span> <br />
+            <span> money transfers with </span> <br />
+            <span> Durapay</span>
+          </h1>
+        </div>
+      </section>
+      <section className="relative overflow-hidden bg-[#040B18] py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+        {/* Background Glow */}
+        <div className="absolute left-0 top-0 h-full w-full">
+          <div className="absolute -left-32 top-20 h-[500px] w-[500px] rounded-full bg-violet-900/10 blur-[120px]" />
+          <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-blue-900/10 blur-[100px]" />
+        </div>
+
+        {/* Decorative Shapes */}
+        <div className="absolute left-0 top-20 hidden lg:block">
+          <div className="h-[420px] w-[220px] border border-slate-800 rounded-r-[120px]" />
+        </div>
+
+        <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Connector Lines */}
+          <div className="absolute left-[18%] top-[15%] hidden xl:block h-[350px] w-[2px] bg-slate-800" />
+          <div className="absolute left-[18%] top-[42%] hidden xl:block h-[2px] w-[120px] bg-slate-800" />
+
+          <div
+            className="
+            grid
+            gap-6
+            sm:grid-cols-2
+            lg:grid-cols-3
+          "
+          >
+            {features.map((feature) => (
+              <FeatureCard key={feature.title} title={feature.title} />
+            ))}
+          </div>
+        </div>
+        {/* Image Below */}
+        <div className=" mt-16 flex justify-center">
+          <img
+            src="/blackhand.webp"
+            alt=""
+            className="lg:w-92 w-50 md:w-70      
+          object-cover"
+          />
+        </div>
+
+        <div>
+          <h1 className="font-bold text-white xs:text-center text-center text-[40px] lg:text-[70px]">
+            Make your first money <br />
+            transfer with Durapay
+          </h1>
+          {/* FINAL CTA */}
+          <div className="flex items-center justify-center mt-10">
+            <button className=" gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+              Start now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* LEFT */}
+            <div className="space-y-6">
+              {featur.map((feature, index) => {
+                const Icon = feature.icon;
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setActive(index)}
+                    className={`w-full text-left rounded-3xl transition-all duration-300 ${
+                      active === index
+                        ? "bg-gray-100 p-8 border-b-4 border-blue-600"
+                        : "p-6"
+                    }`}
+                  >
+                    <div className="flex gap-4">
+                      <Icon size={28} className="text-gray-900 shrink-0 mt-1" />
+
+                      <div>
+                        <h3 className="text-2xl text-black font-bold mb-3">
+                          {feature.title}
+                        </h3>
+
+                        {active === index && (
+                          <p className="text-gray-600 leading-relaxed text-lg">
+                            {feature.description}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* RIGHT VISUAL */}
+            <div className="sticky top-24">
+              <div
+                className="
+                  rounded-3xl
+                  overflow-hidden
+                  bg-black
+                  aspect-[4/5]
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/security-video.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
