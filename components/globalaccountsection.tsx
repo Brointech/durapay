@@ -62,7 +62,7 @@ const GlobalAccountSection = () => {
   const router = useRouter();
 
   return (
-    <section className="w-full px-6 py-16 bg-white">
+    <section className="w-full px-6 lg:px-10  py-16 bg-white">
       {/* <motion.div
         drag
         dragElastic={0.2}
