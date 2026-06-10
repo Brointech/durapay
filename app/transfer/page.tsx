@@ -368,7 +368,7 @@ export default function TransferPage() {
       {/* Next */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex items-baseline justify-between xs:text-center">
-          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-tight tracking-tight">
+          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
             Send money abroad <br />
             the easy way
           </h1>
@@ -447,6 +447,10 @@ export default function TransferPage() {
       {/* Next Phase */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          {/* Section heading */}
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-12 max-w-xl">
+            Receive payments safely with our account security measures
+          </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* LEFT */}
             <div className="space-y-6">
@@ -484,13 +488,13 @@ export default function TransferPage() {
             </div>
 
             {/* RIGHT VISUAL */}
-            <div className="sticky top-24">
-              <div className="rounded-3xl overflow-hidden bg-black aspect-[4/5] flex items-center justify-center">
+            <div className="hidden lg:block sticky top-24 -mt-55 lg:-mt-47">
+              <div className="rounded-3xl overflow-hidden bg-black h-[500px] xl:h-[590px] flex items-center justify-center">
                 <img
                   key={active}
                   src={featur[active].image}
                   alt={featur[active].title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain transition-opacity duration-300"
                 />
               </div>
             </div>

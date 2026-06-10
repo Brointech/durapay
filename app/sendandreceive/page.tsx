@@ -143,7 +143,7 @@ export default function Sendandreceive() {
       {/* Next */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex items-baseline justify-between xs:text-center">
-          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.15] tracking-tight">
+          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
             Earn as much <br />
             as a local
           </h1>
@@ -223,63 +223,6 @@ export default function Sendandreceive() {
         </div>
       </section>
       {/* Next Phase */}
-      {/* <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        
-          <h2 className="text-4xl lg:text-[40px] font-bold text-black mb-12 max-w-lg leading-[1.1]">
-            Use our account security <br /> procedures to safely <br /> receive
-            payments.
-          </h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-          
-            <div className="space-y-6">
-              {featur.map((feature, index) => {
-                const Icon = feature.icon;
-
-                return (
-                  <button
-                    key={index}
-                    onClick={() => setActive(index)}
-                    className={`w-full text-left rounded-3xl transition-all duration-300 ${
-                      active === index
-                        ? "bg-gray-100 p-8 border-b-4 border-blue-600"
-                        : "p-6"
-                    }`}
-                  >
-                    <div className="flex gap-4">
-                      <Icon size={28} className="text-gray-900 shrink-0 mt-1" />
-
-                      <div>
-                        <h3 className="text-2xl text-black font-bold mb-3">
-                          {feature.title}
-                        </h3>
-
-                        {active === index && (
-                          <p className="text-gray-600 leading-relaxed text-lg">
-                            {feature.description}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-
-          
-            <div className="sticky top-24 lg:-mt-55">
-              <div className="rounded-3xl overflow-hidden bg-black aspect-[4/5] flex items-center justify-center">
-                <img
-                  key={active}
-                  src={featur[active].image}
-                  alt={featur[active].title}
-                  className="w-full h-100 object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Section heading */}
@@ -333,8 +276,8 @@ export default function Sendandreceive() {
             </div>
 
             {/* RIGHT VISUAL — desktop only */}
-            <div className="hidden lg:block sticky top-24 -mt-55 lg:-mt-44">
-              <div className="rounded-3xl overflow-hidden bg-black h-[580px] xl:h-[700px]flex items-center justify-center">
+            <div className="hidden lg:block sticky top-24 -mt-55 lg:-mt-47">
+              <div className="rounded-3xl overflow-hidden bg-black h-[500px] xl:h-[590px] flex items-center justify-center">
                 {active >= 0 && (
                   <img
                     key={active}
