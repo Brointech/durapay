@@ -377,9 +377,9 @@ export default function TransferPage() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-5">
-          <img src="/screenshot1.png" alt="" className="w-110 lg:w-95" />
-          <img src="/screenshot2.png" alt="" className="w-110 lg:w-95" />
-          <img src="/screenshot3.png" alt="" className="w-110 lg:w-95" />
+          <img src="/Screenshot1.png" alt="" className="w-110 lg:w-95" />
+          <img src="/Screenshot2.png" alt="" className="w-110 lg:w-95" />
+          <img src="/Screenshot3.png" alt="" className="w-110 lg:w-95" />
         </div>
       </section>
       <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
