@@ -1,9 +1,10 @@
 "use client";
 
-import { Download } from "lucide-react";
+import { Download, Wallet } from "lucide-react";
 import { useState } from "react";
 
 import { Shield, Bell, BadgeCheck } from "lucide-react";
+import { image, img } from "framer-motion/client";
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
 const ArrowRightIcon = ({ className = "" }: { className?: string }) => (
@@ -272,20 +273,23 @@ const featur = [
   {
     title: "Protected and Regulated",
     description:
-      "We are regulated by FinCen and FinTrac, giving you the confidence to transact globally with peace of mind.",
+      "We are regulated by CBN and NDIC, giving you the confidence to transact globally with peace of mind.",
     icon: Shield,
+    image: "/protected-regulated.webp",
   },
   {
     title: "Two-Factor Authentication",
     description:
       "Protect your account with additional security verification during every transaction.",
     icon: BadgeCheck,
+    image: "/two-factor.webp",
   },
   {
     title: "Instant Notification",
     description:
       "Receive real-time alerts whenever money is sent, received or converted.",
     icon: Bell,
+    image: "/instant-notification.avif",
   },
 ];
 // ─── Main Page ────────────────────────────────────────────────────────────────
@@ -350,7 +354,6 @@ export default function TransferPage() {
                 Make a transfer
               </button>
             </div>
-
             {/* Right Side */}
             <div>
               <img
@@ -364,11 +367,14 @@ export default function TransferPage() {
       </section>
       {/* Next */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
-        <div className=" xs:text-center">
+        <div className="flex items-baseline justify-between xs:text-center">
           <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-tight tracking-tight">
             Send money abroad <br />
             the easy way
           </h1>
+          <div className="w-18 h-18 rounded-lg bg-black flex items-center justify-center mb-6">
+            <Wallet className="w-10 h-10 text-white" />
+          </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-5">
           <img src="/screenshot1.png" alt="" className="w-110 lg:w-95" />
@@ -438,6 +444,7 @@ export default function TransferPage() {
           </div>
         </div>
       </section>
+      {/* Next Phase */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -478,26 +485,13 @@ export default function TransferPage() {
 
             {/* RIGHT VISUAL */}
             <div className="sticky top-24">
-              <div
-                className="
-                  rounded-3xl
-                  overflow-hidden
-                  bg-black
-                  aspect-[4/5]
-                  flex
-                  items-center
-                  justify-center
-                "
-              >
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+              <div className="rounded-3xl overflow-hidden bg-black aspect-[4/5] flex items-center justify-center">
+                <img
+                  key={active}
+                  src={featur[active].image}
+                  alt={featur[active].title}
                   className="w-full h-full object-cover"
-                >
-                  <source src="/security-video.mp4" type="video/mp4" />
-                </video>
+                />
               </div>
             </div>
           </div>
