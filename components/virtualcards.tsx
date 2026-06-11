@@ -70,35 +70,69 @@ const brands = [
 
 const VirtualCardsSection = () => {
   return (
-    <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 lg:px-10 py-16">
-      <div className=" mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid lg:grid-cols-2 items-center gap-10 ">
+    // <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 lg:px-10 py-16">
+    //   <div className=" mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid lg:grid-cols-2 items-center gap-10 ">
+    //     {/* LEFT — content */}
+    //     <div className="px-6 pt-20 pb-14 mb-20 flex flex-col justify-center">
+    //       <p className="text-xs lg:text-lg font-semibold tracking-widest text-[#1154da] uppercase mb-4">
+    //         Virtual Cards
+    //       </p>
+    //       <h2 className="text-[38px] sm:text-[52px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
+    //         Shop and spend
+    //         <br />
+    //         anywhere
+    //       </h2>
+    //       <p className="text-[18px] text-black font-semibold leading-relaxed mb-10 max-w-sm">
+    //         Use a virtual debit card that simply <br />
+    //         works to make payments globaly.
+    //       </p>
+    //       <button className=" inline-flex items-center gap-3 text-[#1154da] font-bold text-[15px] group w-fit">
+    //         Get your card
+    //         <span className="w-8 h-8 rounded-full border-2 border-[#1154da] flex items-center justify-center group-hover:bg-[#1154da] transition-colors">
+    //           <FiArrowRight className="w-4 h-4 group-hover:text-white transition-colors" />
+    //         </span>
+    //       </button>
+    //     </div>
+    //     {/* RIGHT — floating brands behind image */}
+    //     <div className="relative min-h-90 lg:min-h-100">
+    //       <img
+    //         src="/virtual.avif"
+    //         alt="Virtual card on phone"
+    //         className="absolute inset-0 w-75 lg:w-200 ml-5 h-auto object-contain object-center z-2"
+    //       />
+    //     </div>
+    //   </div>
+    // </section>
+    <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 py-16">
+      <div className="mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid md:grid-cols-2 items-center gap-10">
         {/* LEFT — content */}
-        <div className="px-6 pt-20 pb-14 mb-20 flex flex-col justify-center">
-          <p className="text-xs lg:text-lg font-semibold tracking-widest text-[#1154da] uppercase mb-4">
+        <div className="px-6 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-12 lg:pb-14 flex flex-col justify-center">
+          <p className="text- md:text-sm lg:text-lg font-semibold tracking-widest text-[#1154da] uppercase mb-4">
             Virtual Cards
           </p>
-          <h2 className="text-[38px] sm:text-[52px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
+          <h2 className="text-[44px] md:text-[42px] lg:text-[58px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
             Shop and spend
             <br />
             anywhere
           </h2>
-          <p className="text-[18px] text-black font-semibold leading-relaxed mb-10 max-w-sm">
+          <p className="text-[20px] md:text-[17px] lg:text-[18px] text-black font-semibold leading-relaxed mb-10 max-w-sm">
             Use a virtual debit card that simply <br />
-            works to make payments globaly.
+            works to make payments globally.
           </p>
-          <button className=" inline-flex items-center gap-3 text-[#1154da] font-bold text-[15px] group w-fit">
+          <button className="inline-flex items-center gap-3 text-[#1154da] font-semibold text-[20px] group w-fit">
             Get your card
             <span className="w-8 h-8 rounded-full border-2 border-[#1154da] flex items-center justify-center group-hover:bg-[#1154da] transition-colors">
               <FiArrowRight className="w-4 h-4 group-hover:text-white transition-colors" />
             </span>
           </button>
         </div>
-        {/* RIGHT — floating brands behind image */}
-        <div className="relative min-h-90 lg:min-h-100">
+
+        {/* RIGHT — floating image */}
+        <div className="relative min-h-90 md:min-h-100 lg:min-h-[400px]">
           <img
             src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-75 lg:w-200 ml-5 h-auto object-contain object-center z-2"
+            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-full ml-12 h-auto object-cover object-center z-10"
           />
         </div>
       </div>

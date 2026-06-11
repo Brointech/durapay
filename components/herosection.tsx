@@ -535,7 +535,7 @@ const HeroSection = () => {
       </div>
 
       {/* ── HERO CONTENT ── */}
-      <div className="relative z-10 flex-1 flex flex-col lg:grid lg:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
+      <div className="relative z-10 flex-1 flex flex-col md:grid md:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
         {/* TEXT — top section on mobile */}
         <div className="flex flex-col justify-center pt-28 pb-8 lg:pt-0 lg:pb-0">
           <h1 className="text-[40px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[68px]">
@@ -565,12 +565,12 @@ const HeroSection = () => {
             src="/somos.png"
             alt="DuraPay App"
             loading="lazy"
-            className="w-full ml-20 h-[80vh] max-h-[700px] object-contain object-bottom drop-shadow-2xl"
+            className="w-full lg:ml-20 h-[60vh] lg:h-[80vh] max-h-[700px] object-contain object-bottom drop-shadow-2xl"
           />
         </div>
 
         {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
-        <div className="flex lg:hidden justify-center items-end mt-6 ">
+        <div className="flex md:hidden justify-center items-end mt-6 ">
           <img
             src="/somos.png"
             alt="DuraPay App"
@@ -578,7 +578,6 @@ const HeroSection = () => {
             className="
               w-[85%]
               max-w-[360px]
-              sm:max-w-[460px]
               h-auto
               object-contain
               object-bottom

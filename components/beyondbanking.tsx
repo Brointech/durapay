@@ -85,10 +85,10 @@ export default function BeyondBanking() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative w-full h-[calc(100vh-100px)] flex items-center">
+        <div className="relative w-full  h-[calc(100vh-100px)] flex items-center">
           {/* Cards Track */}
           <div
-            className="flex gap-4 sm:gap-6 px-6 sm:px-10 lg:px-16 transition-transform duration-700 ease-out will-change-transform"
+            className=" flex gap-4 sm:gap-6 px-6 sm:px-10 lg:px-16 transition-transform duration-700 ease-out will-change-transform"
             style={{
               transform: `translateX(-${currentIndex * (100 / 3)}%)`,
             }}

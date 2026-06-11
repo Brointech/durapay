@@ -87,13 +87,13 @@ export const Nnavbar = () => {
         { name: "Virtual Cards", href: "/virtualcard", icon: CreditCard },
         {
           name: "Physical Cards",
-          href: "/features/physical-cards",
+          href: "/physicalcards",
           icon: Banknote,
         },
-        { name: "Rewards", href: "/features/rewards", icon: Award },
+        { name: "Rewards", href: "/rewards", icon: Award },
         {
           name: "Cashback",
-          href: "/features/cashback",
+          href: "/cashback",
           icon: CircleDollarSign,
         },
       ],
@@ -129,12 +129,12 @@ export const Nnavbar = () => {
       ],
     },
     { name: "Help Centre", href: "/helpcentre" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/vlog" },
     { name: "Contact", href: "/contact" },
   ];
 
   const MobileMenu = () => (
-    <div className="fixed top-0 left-0 right-0 bg-white z-[99999] flex flex-col overflow-y-auto shadow-lg">
+    <div className="fixed inset-0 bg-white z-[99999] flex flex-col overflow-y-auto shadow-lg">
       {/* Header row with logo + close */}
       <div className="flex items-center justify-between px-5 py-2 border-b border-[#edf0f5]">
         <a href="/" className="flex items-center gap-2">
@@ -156,13 +156,18 @@ export const Nnavbar = () => {
       <div className="flex flex-col justify-between divide-y divide-[#edf0f5] px-5">
         {navLinks.map((link) =>
           link.children ? (
-            <NavDropdown key={link.name} link={link} pathname={pathname} />
+            <NavDropdown
+              key={link.name}
+              link={link}
+              pathname={pathname}
+              triggerClassName="flex items-center justify-between w-full font-semibold text-black text-[17px] py-2 transition-colors"
+            />
           ) : (
             <Link
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="flex items-center font-semibold text-[#00246C] text-[17px] py-3 transition-colors"
+              className="flex items-center font-semibold text-[#00246C] text-[17px] py-2 transition-colors cursor-pointer"
             >
               {link.name}
             </Link>
@@ -173,16 +178,16 @@ export const Nnavbar = () => {
         <Link
           href="/signin"
           onClick={() => setIsOpen(false)}
-          className="flex items-center font-semibold text-[#00246C] text-[17px] py-5"
+          className="w-full flex items-center justify-center font-medium text-[#1154da] border-2 border-[#1154da] rounded-xl px-6 py-3 text-[15px] mb-3 "
         >
-          Sign In
+          Sign in
         </Link>
       </div>
 
       {/* CTA button */}
       <div className="px-5 mt-0 pb-4">
-        <button className="rounded-xl bg-[#1154da] px-6 py-4 font-semibold text-white text-[16px] cursor-pointer transition hover:bg-[#023bac]">
-          Download Durapay
+        <button className="w-full rounded-xl bg-[#1154da] px-6 py-4 font-semibold text-white text-[15px] cursor-pointer transition hover:bg-[#023bac]">
+          Download Durapay - it's free
         </button>
       </div>
     </div>
@@ -191,11 +196,11 @@ export const Nnavbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 w-screen z-99999 transition-all duration-300  ${
+        className={`w-full fixed top-0 left-0 right-0 w-screen z-99999 transition-all duration-300 ${
           scrolled ? "bg-[#8C9CC5] shadow-md" : "bg-[#8C9CC5]"
         }`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10 lg:px-10 lg:py-0 py-2">
+        <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-6 sm:px-10 lg:px-10 lg:py-3 py-2">
           {/* Logo */}
           <a href="/" className="flex items-center gap-1">
             <div className="w-8 h-8 rounded-lg bg-[#1154da] flex items-center justify-center">
@@ -227,7 +232,7 @@ export const Nnavbar = () => {
               Sign in
             </button>
             <button className="flex items-center gap-1 rounded-[10px] bg-[#1154da] px-4 py-2.5 lg:text-[14px] font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
-              Download Durapay
+              Download Now
             </button>
           </div>
 
@@ -254,6 +259,7 @@ const NavDropdown = ({
 }: {
   link: NavLink;
   pathname: string;
+  triggerClassName?: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -285,7 +291,7 @@ const NavDropdown = ({
     >
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center justify-between w-full font-semibold text-[15px] py-5 transition-colors"
+        className="flex items-center justify-between gap-2 w-full font-semibold text-[15px] py-3 transition-colors"
       >
         <span>{link.name}</span>
         <svg
