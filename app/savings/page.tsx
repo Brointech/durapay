@@ -358,7 +358,7 @@ export default function SavingsPage() {
                 on Flex Save.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-slate-900/10">
+                <button className="px-8 py-4 rounded-2xl bg-[#1154da] hover:bg-slate-800 text-white font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-slate-900/10">
                   <Download className="w-5 h-5" />
                   Start Saving Now
                 </button>

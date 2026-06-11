@@ -225,13 +225,13 @@ export default function GiftPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-[#1154da] text-blue-700 text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4" />
                 Now available nationwide
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black tracking-tight leading-[1.1] mb-6">
                 Send money & gifts{" "}
-                <span className="text-emerald-600">in seconds</span>
+                <span className="text-black">in seconds</span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 max-w-lg">
                 Transfer cash, buy airtime, or send data bundles to anyone in
@@ -239,7 +239,7 @@ export default function GiftPage() {
                 instant access.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-slate-900/10">
+                <button className="px-8 py-4 rounded-2xl bg-[#1154da] hover:bg-[#00246C] text-white font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-slate-900/10">
                   <Download className="w-5 h-5" />
                   Download the App
                 </button>
@@ -301,8 +301,8 @@ export default function GiftPage() {
                           </p>
                           <p className="font-bold text-slate-900">Chioma</p>
                         </div>
-                        <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center">
-                          <Bell className="w-4 h-4 text-emerald-600" />
+                        <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                          <Bell className="w-4 h-4 text-blue-600" />
                         </div>
                       </div>
 
@@ -315,7 +315,7 @@ export default function GiftPage() {
                           <button className="flex-1 py-2 bg-white/10 rounded-lg text-xs font-medium">
                             Add Money
                           </button>
-                          <button className="flex-1 py-2 bg-emerald-500 rounded-lg text-xs font-medium">
+                          <button className="flex-1 py-2 bg-blue-500 rounded-lg text-xs font-medium">
                             Send
                           </button>
                         </div>
@@ -365,7 +365,7 @@ export default function GiftPage() {
                           <p className="text-xs font-semibold text-slate-700">
                             Recent
                           </p>
-                          <p className="text-xs text-emerald-600 font-medium">
+                          <p className="text-xs text-blue-600 font-medium">
                             See all
                           </p>
                         </div>
@@ -588,7 +588,7 @@ export default function GiftPage() {
                       <button
                         key={amt}
                         onClick={() => setAmount(amt.toString())}
-                        className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-sm font-semibold text-slate-700 transition-colors"
+                        className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-sm font-semibold text-slate-900 transition-colors"
                       >
                         ₦{amt.toLocaleString()}
                       </button>
@@ -610,7 +610,7 @@ export default function GiftPage() {
                       value={phoneNumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
                       placeholder="803 123 4567"
-                      className="w-full pl-16 pr-4 py-4 text-lg font-semibold bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent placeholder:text-slate-300"
+                      className="w-full pl-16 pr-4 py-4 text-lg font-semibold bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder:text-slate-300"
                     />
                   </div>
                 </div>
@@ -628,14 +628,14 @@ export default function GiftPage() {
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Happy birthday! 🎉"
                     rows={3}
-                    className="w-full px-4 py-3 text-sm bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none placeholder:text-slate-400"
+                    className="w-full px-4 py-3 text-sm bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none placeholder:text-slate-400"
                   />
                 </div>
 
                 <button
                   onClick={handleSendGift}
                   disabled={!amount || !phoneNumber}
-                  className="w-full py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 disabled:bg-slate-200 disabled:text-slate-400 text-white font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-200"
+                  className="w-full py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 disabled:bg-slate-200 disabled:text-slate-400 text-white font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-200"
                 >
                   <Gift className="w-5 h-5" />
                   Send Gift
@@ -657,7 +657,7 @@ export default function GiftPage() {
                 <div className="relative">
                   <div className="flex items-center gap-3 mb-8">
                     <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
-                      <Heart className="w-6 h-6 text-emerald-400" />
+                      <Heart className="w-6 h-6 text-[#1154da]" />
                     </div>
                     <div>
                       <p className="text-sm text-slate-400">Gift Preview</p>
@@ -668,7 +668,7 @@ export default function GiftPage() {
                   {/* SMS Preview */}
                   <div className="bg-white rounded-2xl p-5 text-slate-900 mb-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <MessageCircle className="w-5 h-5 text-emerald-600" />
+                      <MessageCircle className="w-5 h-5 text-[#1154da]" />
                       <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
                         SMS Notification
                       </span>
@@ -678,14 +678,14 @@ export default function GiftPage() {
                         {amount
                           ? `₦${parseInt(amount).toLocaleString()}`
                           : "₦0.00"}{" "}
-                        from GreyWallet
+                        from Durapay
                       </p>
                       <p className="text-sm text-slate-600">
                         {message ||
                           "Someone sent you a gift! Tap to claim instantly."}
                       </p>
-                      <p className="text-xs text-emerald-600 font-semibold">
-                        https://greywallet.ng/claim/x7k9m2
+                      <p className="text-xs text-[#1154da] font-semibold">
+                        https://durapay.com/claim/x7k9m2
                       </p>
                     </div>
                   </div>
@@ -699,8 +699,8 @@ export default function GiftPage() {
                       </span>
                     </div>
                     <div className="bg-slate-50 rounded-xl p-6 text-center">
-                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-                        <Gift className="w-8 h-8 text-emerald-600" />
+                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Gift className="w-8 h-8 text-[#1154da]" />
                       </div>
                       <p className="text-2xl font-bold text-slate-900 mb-1">
                         {amount
@@ -710,7 +710,7 @@ export default function GiftPage() {
                       <p className="text-sm text-slate-500 mb-6">
                         Gift received
                       </p>
-                      <button className="w-full py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm">
+                      <button className="w-full py-3 rounded-xl bg-[#1154da] text-white font-semibold text-sm">
                         Claim to Bank Account
                       </button>
                       <button className="w-full py-3 mt-2 rounded-xl bg-slate-200 text-slate-700 font-semibold text-sm">
@@ -720,7 +720,7 @@ export default function GiftPage() {
                   </div>
 
                   <div className="mt-6 flex items-start gap-3">
-                    <Shield className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <Shield className="w-5 h-5 text-[#1154da] flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-slate-400">
                       Recipients without the app receive an SMS with a secure
                       link. They can claim to any Nigerian bank or collect cash
@@ -772,7 +772,7 @@ export default function GiftPage() {
             ].map((item, i) => (
               <div key={i} className="relative">
                 <div className="mb-6">
-                  <span className="text-6xl font-bold text-slate-100">
+                  <span className="text-6xl font-bold text-slate-900">
                     {item.step}
                   </span>
                 </div>
