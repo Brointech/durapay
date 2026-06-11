@@ -593,20 +593,20 @@ export default function SavingsPage() {
             <div className="space-y-6">
               {[
                 {
-                  name: "GreyWallet Vault",
+                  name: "Durapay Vault",
                   rate: 22,
                   amount: 22000,
                   color: "bg-emerald-500",
                   highlight: true,
                 },
                 {
-                  name: "GreyWallet Lock Save",
+                  name: "Durapay Lock Save",
                   rate: 18,
                   amount: 18000,
                   color: "bg-emerald-400",
                 },
                 {
-                  name: "GreyWallet Target Save",
+                  name: "Durapay Target Save",
                   rate: 12,
                   amount: 12000,
                   color: "bg-emerald-300",

@@ -182,7 +182,7 @@ export const Nnavbar = () => {
       {/* CTA button */}
       <div className="px-5 mt-0 pb-4">
         <button className="rounded-xl bg-[#1154da] px-6 py-4 font-semibold text-white text-[16px] cursor-pointer transition hover:bg-[#023bac]">
-          Get Durapay
+          Download Durapay
         </button>
       </div>
     </div>
@@ -205,7 +205,7 @@ export const Nnavbar = () => {
           </a>
 
           {/* Desktop nav links */}
-          <div className="hidden lg:flex items-center gap-8 text-[14px] mt-3 font-semibold text-white">
+          <div className="hidden lg:flex items-center gap-8 text-[14px] font-semibold text-white">
             {navLinks.map((link) =>
               link.children ? (
                 <NavDropdown key={link.name} link={link} pathname={pathname} />
@@ -222,16 +222,13 @@ export const Nnavbar = () => {
           </div>
 
           {/* Desktop buttons */}
-          <div className="hidden lg:flex items-center gap-6">
-            <button className="font-semibold text-white cursor-pointer transition-colors text-[14px] -mb-3">
+          <div className="hidden lg:flex items-center gap-3">
+            <button className="font-semibold text-white cursor-pointer transition-colors text-[14px]">
               Sign in
             </button>
-            <div>
-              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-4 font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
-                <Download className="w-5 h-5" />
-                Download Durapay
-              </button>
-            </div>
+            <button className="flex items-center gap-1 rounded-[10px] bg-[#1154da] px-4 py-2.5 lg:text-[14px] font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
+              Download Durapay
+            </button>
           </div>
 
           {/* Mobile + Tablet hamburger */}

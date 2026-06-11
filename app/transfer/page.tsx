@@ -376,10 +376,10 @@ export default function TransferPage() {
             <Wallet className="w-10 h-10 text-white" />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-5">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-10">
           <img src="/Screenshot1.png" alt="" className="w-110 lg:w-95" />
           <img src="/Screenshot2.png" alt="" className="w-110 lg:w-95" />
-          <img src="/Screenshot3.png" alt="" className="w-110 lg:w-95" />
+          <img src="/screenshot3.png" alt="" className="w-110 lg:w-95" />
         </div>
       </section>
       <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
