@@ -232,7 +232,7 @@ export const Nnavbar = () => {
               Sign in
             </button>
             <button className="flex items-center gap-1 rounded-[10px] bg-[#1154da] px-4 py-2.5 lg:text-[14px] font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
-              Download Now
+              Download Durapay
             </button>
           </div>
 

@@ -538,16 +538,17 @@ const HeroSection = () => {
       <div className="relative z-10 flex-1 flex flex-col md:grid md:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
         {/* TEXT — top section on mobile */}
         <div className="flex flex-col justify-center pt-28 pb-8 lg:pt-0 lg:pb-0">
-          <h1 className="text-[40px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[68px]">
+          <h1 className="text-[40px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
             Strategic Modern
             <br />
             banking designed <br />
             and fit for you.
           </h1>
 
-          <p className="mt-10 max-w-[480px] text-[18px] md:text-[17px] lg:text-[18px] font-medium leading-[1.18] text-white/90">
-            Make transfers, pay bills, fund wallets, use virtual cards, and earn
-            cashback effortlessly from your phone for free.
+          <p className="mt-10 max-w-[480px] text-[18px] md:text-[17px] lg:text-[18px] font-medium leading-[1.48] text-white/90">
+            Make transfers, pay bills, use virtual cards, and earn cashback
+            effortlessly from your phone. Create a free global bank account
+            using your phone.
           </p>
 
           <div className="mt-10">
