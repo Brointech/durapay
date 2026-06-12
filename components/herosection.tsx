@@ -539,11 +539,10 @@ const HeroSection = () => {
         {/* TEXT — top section on mobile */}
         <div className="flex flex-col justify-center pt-28 pb-8 lg:pt-0 lg:pb-0">
           <h1 className="text-[40px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[46px] md:text-[52px] lg:text-[60px] xl:text-[68px]">
-            Modern banking
+            Strategic Modern
             <br />
-            built around
-            <br />
-            your lifestyle.
+            banking designed <br />
+            and fit for you.
           </h1>
 
           <p className="mt-10 max-w-[480px] text-[18px] md:text-[17px] lg:text-[18px] font-medium leading-[1.18] text-white/90">
