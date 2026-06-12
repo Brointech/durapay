@@ -305,7 +305,7 @@ export default function TransferPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-x-hidden">
+    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
       <svg
         className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
@@ -325,12 +325,6 @@ export default function TransferPage() {
           opacity="0.85"
         />
       </svg>
-      {/* ── Top-right soft accent circle ── */}
-      <div
-        className="absolute -top-24 -right-24 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-30"
-        style={{ background: "#c7d7ff" }}
-        aria-hidden="true"
-      />
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden grid-bg -mt-16">
         {/* Same container as navbar */}
@@ -365,7 +359,7 @@ export default function TransferPage() {
           </div>
         </div>
       </section>
-      {/* Next */}
+      {/* Next Phase*/}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex items-baseline justify-between xs:text-center">
           <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
@@ -382,6 +376,7 @@ export default function TransferPage() {
           <img src="/screenshot3.png" alt="" className="w-110 lg:w-95" />
         </div>
       </section>
+      {/* Next phase */}
       <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div>
           <h1 className="text-center lg:text-center text-white text-[42px] lg:text-[65px] font-bold leading-tight tracking-tight">
@@ -391,6 +386,7 @@ export default function TransferPage() {
           </h1>
         </div>
       </section>
+      {/* Next Phase */}
       <section className="relative overflow-hidden bg-[#040B18] py-20 md:py-28 px-4 sm:px-6 lg:px-8">
         {/* Background Glow */}
         <div className="absolute left-0 top-0 h-full w-full">

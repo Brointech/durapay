@@ -81,7 +81,7 @@ export default function Sendandreceive() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-x-hidden">
+    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
       <svg
         className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
@@ -102,24 +102,24 @@ export default function Sendandreceive() {
         />
       </svg>
       {/* ── Top-right soft accent circle ── */}
-      <div
+      {/* <div
         className="absolute -top-24 -right-24 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-30"
         style={{ background: "#c7d7ff" }}
         aria-hidden="true"
-      />
+      /> */}
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden grid-bg -mt-16">
+      <section className="relative grid-bg -mt-16">
         {/* Same container as navbar */}
         <div className="relative max-w-7xl mx-auto px-4 lg:px-9 py-20 lg:py-28">
           <div className="flex gap-2 lg:gap-2 items-center justify-between">
             {/* Copy */}
-            <div className="slide-up lg:mt-10">
-              <h1 className="xs:text-center lg:text-base text-[70px] md:text-6xl lg:text-[80px] font-bold leading-[1.05] tracking-tight mb-6">
+            <div className="slide-up  lg:pt-10">
+              <h1 className="xs:text-center lg:text-base text-[28px] md:text-6xl lg:text-[80px] font-bold leading-[1.05] tracking-tight mb-6">
                 <span className="text-black">The bank account</span> <br />
                 <span className="text-black">for contemporary</span> <br />
                 <span className="text-black"> professionals</span>
               </h1>
-              <p className="xs:text-center text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
+              <p className="xs:text-center text-gray-700 text-[14px] lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
                 Start accepting payments from all over the <br />
                 world with a free international bank account.
               </p>
@@ -134,14 +134,14 @@ export default function Sendandreceive() {
               <img
                 src="/Handnew.avif"
                 alt=""
-                className="w-80 lg:w-70 lg:mt-14 "
+                className="w-40 lg:w-70 lg:mt-14 "
               />
             </div>
           </div>
         </div>
       </section>
       {/* Next */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
+      <section className=" mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex items-baseline justify-between xs:text-center">
           <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
             Earn as much <br />
@@ -223,8 +223,8 @@ export default function Sendandreceive() {
         </div>
       </section>
       {/* Next Phase */}
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="max-w-7xl mx-auto py-20 lg:py-32 bg-white">
+        <div className="px-6 lg:px-12">
           {/* Section heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-12 max-w-xl">
             Receive payments safely with our account security measures

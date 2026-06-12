@@ -250,19 +250,19 @@ export default function WalletSection() {
   return (
     <section className="relative py-20 lg:py-32 bg-white overflow-hidden">
       {/* Background Blur */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#00B86B]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#00B86B]/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#1154da]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#1154da]/10 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-flex items-center px-4 py-2 rounded-full bg-green-50 text-[#00B86B] text-sm font-semibold mb-6">
+          <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-[#1154da] text-sm font-semibold mb-6">
             Your Money, Your Control
           </span>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-6">
             A wallet built for
-            <span className="text-[#00B86B]"> everyday life</span>
+            <span className="text-[#1154da]"> everyday life</span>
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -293,7 +293,7 @@ export default function WalletSection() {
                   all from one powerful financial app.
                 </p>
 
-                <button className="bg-[#00B86B] hover:bg-[#009e5a] text-white px-8 py-4 rounded-xl font-semibold transition">
+                <button className="bg-[#1154da] hover:bg-[#009e5a] text-white px-8 py-4 rounded-xl font-semibold transition">
                   Open a Wallet
                 </button>
               </div>
@@ -303,42 +303,42 @@ export default function WalletSection() {
                 <div className="bg-white rounded-3xl p-6 w-full max-w-md shadow-2xl">
                   <div className="flex justify-between items-center mb-8">
                     <div>
-                      <p className="text-sm text-gray-500">Total Balance</p>
+                      <p className="text-sm text-gray-700">Total Balance</p>
                       <h4 className="text-3xl font-bold text-black">
                         ₦2,450,000
                       </h4>
                     </div>
 
-                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                      <Wallet className="text-[#00B86B]" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                      <Wallet className="text-[#1154da]" />
                     </div>
                   </div>
 
                   <div className="space-y-4">
-                    <div className="bg-gray-50 rounded-2xl p-4 flex justify-between items-center">
+                    <div className="bg-blue-50 rounded-2xl p-4 flex justify-between items-center">
                       <div>
-                        <p className="text-sm text-gray-500">NGN Wallet</p>
+                        <p className="text-sm text-gray-700">NGN Wallet</p>
                         <p className="font-semibold text-black">₦1,850,000</p>
                       </div>
 
-                      <span className="text-green-600 font-medium">Active</span>
+                      <span className="text-blue-600 font-medium">Active</span>
                     </div>
 
-                    <div className="bg-gray-50 rounded-2xl p-4 flex justify-between items-center">
+                    <div className="bg-blue-50 rounded-2xl p-4 flex justify-between items-center">
                       <div>
-                        <p className="text-sm text-gray-500">USD Wallet</p>
+                        <p className="text-sm text-gray-700">USD Wallet</p>
                         <p className="font-semibold text-black">$385.50</p>
                       </div>
 
-                      <span className="text-green-600 font-medium">Active</span>
+                      <span className="text-blue-600 font-medium">Active</span>
                     </div>
 
-                    <div className="bg-green-50 rounded-2xl p-4">
+                    <div className="bg-blue-50 rounded-2xl p-4">
                       <div className="flex justify-between">
-                        <span className="text-sm text-gray-600">
+                        <span className="text-sm text-gray-700">
                           Cashback Earned
                         </span>
-                        <span className="font-bold text-[#00B86B]">
+                        <span className="font-bold text-[#1154da]">
                           ₦12,500
                         </span>
                       </div>
@@ -360,8 +360,8 @@ export default function WalletSection() {
                 key={index}
                 className="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mb-6">
-                  <Icon size={28} className="text-[#00B86B]" />
+                <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6">
+                  <Icon size={28} className="text-[#1154da]" />
                 </div>
 
                 <h3 className="text-xl font-bold text-black mb-3">
