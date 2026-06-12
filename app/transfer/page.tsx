@@ -307,7 +307,7 @@ export default function TransferPage() {
   return (
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
-      <svg
+      {/* <svg
         className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
         viewBox="0 0 700 520"
         fill="none"
@@ -324,56 +324,59 @@ export default function TransferPage() {
           fill="white"
           opacity="0.85"
         />
-      </svg>
+      </svg> */}
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden grid-bg -mt-16">
-        {/* Same container as navbar */}
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-9 py-20 lg:py-28">
+      <section className="relative grid-bg -mt-8 lg:-mt-10 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-9 py-20 lg:py-28">
           <div className="flex gap-2 lg:gap-2 items-center justify-between">
-            {/* Copy */}
-            <div className="slide-up lg:mt-10">
-              <h1 className="xs:text-center lg:text-base text-[70px] md:text-6xl lg:text-[80px] font-bold leading-[1.05] tracking-tight mb-6">
-                <span className="text-black">Local and</span> <br />
-                <span className="text-black">international money</span> <br />
-                <span className="text-black">transfers</span>
+            {/* Heading */}
+            <div className="relative z-10 max-w-[65%] sm:max-w-[60%]">
+              <h1 className="text-[40px] sm:text-[48px] lg:text-[78px] font-bold leading-[1.05] tracking-tight mb-5 text-black">
+                Local and international money transfers
               </h1>
-              <p className="xs:text-center text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
-                Redefine the way you send money across the globe. <br />
-                Make instant, secure deposits into any bank account <br />
-                at unrivaled rates.
+              <p className="text-left text-[16px] text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
+                Redefine the way you send money across the globe. Make instant,
+                secure deposits into any bank account at unrivaled rates.
               </p>
-
-              {/* CTA */}
               <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
                 Make a transfer
               </button>
             </div>
-            {/* Right Side */}
-            <div>
-              <img
-                src="/mapp.webp"
-                alt=""
-                className="lg:w-60 hidden lg:block"
-              />
+
+            {/* Right Side: Image - absolute, right side */}
+            <div className="absolute right-[-34px] top-20 bottom-10 w-[55%] sm:w-[48%] flex items-end">
+              <img src="/mapp.webp" alt="" className="lg:w-70  lg:-mt-14" />
             </div>
           </div>
         </div>
       </section>
       {/* Next Phase*/}
-      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
-        <div className="flex items-baseline justify-between xs:text-center">
-          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+        <div className="flex items-end justify-between xs:text-center">
+          <h1 className="text-black/90 text-[26px] md:text-[50px] lg:text-[70px] font-bold leading-[1.10] tracking-tight">
             Send money abroad <br />
             the easy way
           </h1>
-          <div className="w-18 h-18 rounded-lg bg-black flex items-center justify-center mb-6">
+          <div className="w-14 h-14 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center mb-6">
             <Wallet className="w-10 h-10 text-white" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-10">
-          <img src="/Screenshot1.png" alt="" className="w-110 lg:w-95" />
-          <img src="/Screenshot2.png" alt="" className="w-110 lg:w-95" />
-          <img src="/screenshot3.png" alt="" className="w-110 lg:w-95" />
+          <img
+            src="/Screenshot1.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
+          <img
+            src="/Screenshot2.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
+          <img
+            src="/Screenshot3.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
         </div>
       </section>
       {/* Next phase */}

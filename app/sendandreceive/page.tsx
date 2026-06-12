@@ -83,8 +83,8 @@ export default function Sendandreceive() {
   return (
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
-      <svg
-        className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
+      {/* <svg
+        className="absolute bottom-20 right-10 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
         viewBox="0 0 700 520"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -100,61 +100,90 @@ export default function Sendandreceive() {
           fill="white"
           opacity="0.85"
         />
-      </svg>
-      {/* ── Top-right soft accent circle ── */}
-      {/* <div
-        className="absolute -top-24 -right-24 w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-30"
-        style={{ background: "#c7d7ff" }}
-        aria-hidden="true"
-      /> */}
-      // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative grid-bg -mt-16">
-        {/* Same container as navbar */}
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-9 py-20 lg:py-28">
-          <div className="flex gap-2 lg:gap-2 items-center justify-between">
-            {/* Copy */}
-            <div className="slide-up  lg:pt-10">
-              <h1 className="xs:text-center lg:text-base text-[28px] md:text-6xl lg:text-[80px] font-bold leading-[1.05] tracking-tight mb-6">
-                <span className="text-black">The bank account</span> <br />
-                <span className="text-black">for contemporary</span> <br />
-                <span className="text-black"> professionals</span>
+      </svg> */}
+      {/* ── HERO ───────────────────────────────────────────────────────── */}
+      <section className="relative grid-bg -mt-0 lg:-mt-10 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-9">
+          {/* Mobile/Tablet: stacked layout with image overlapping */}
+          <div className="relative lg:hidden pt-28 pb-0 min-h-[90vh] flex flex-col">
+            {/* Heading: Text — full width on mobile */}
+            <div className="relative z-10 max-w-[65%] sm:max-w-[60%]">
+              <h1 className="text-[46px] sm:text-[48px] font-bold leading-[1.05] tracking-tight mb-5 text-black">
+                The bank account for contemporary professionals
               </h1>
-              <p className="xs:text-center text-gray-700 text-[14px] lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
-                Start accepting payments from all over the <br />
-                world with a free international bank account.
+              <p className="text-gray-600 text-[18px] sm:text-[16px] font-medium leading-relaxed mb-8">
+                Start accepting payments from all over the world with a free
+                international bank account.
               </p>
-
-              {/* CTA */}
-              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
                 Obtain yours now
               </button>
             </div>
-            {/* Right side */}
-            <div className="">
+
+            {/* Image — absolute, right side, bleeds to bottom */}
+            <div className="absolute right-[-24px] top-20 bottom-0 w-[55%] sm:w-[48%] flex items-end">
               <img
                 src="/Handnew.avif"
-                alt=""
-                className="w-40 lg:w-70 lg:mt-14 "
+                alt="DuraPay App"
+                className="w-full h-auto object-contain object-bottom"
+              />
+            </div>
+          </div>
+
+          {/* Desktop: original side-by-side */}
+          <div className="hidden lg:flex gap-2 items-center justify-between py-28">
+            <div className="slide-up lg:pt-10">
+              <h1 className="text-[80px] font-bold leading-[1.05] tracking-tight mb-6 text-black">
+                The bank account <br />
+                for contemporary <br />
+                professionals
+              </h1>
+              <p className="text-gray-700 text-[18px] font-medium leading-relaxed max-w-xl mb-8">
+                Start accepting payments from all over the world with a free
+                international bank account.
+              </p>
+              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+                Obtain yours now
+              </button>
+            </div>
+
+            <div>
+              <img
+                src="/Handnew.avif"
+                alt="DuraPay App"
+                className="w-70 lg:mt-14"
               />
             </div>
           </div>
         </div>
       </section>
       {/* Next */}
-      <section className=" mx-auto px-6 lg:px-10 py-20 lg:py-18">
-        <div className="flex items-baseline justify-between xs:text-center">
-          <h1 className="text-black text-[42px] lg:text-[80px] font-bold leading-[1.00] tracking-tight">
-            Earn as much <br />
-            as a local
+      <section className=" mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+        <div className="flex items-end justify-between xs:text-center">
+          <h1 className="text-black/90 text-[26px] md:text-[50px] lg:text-[70px] font-bold leading-[1.10] tracking-tight">
+            Get paid <br />
+            like a local
           </h1>
-          <div className="w-18 h-18 rounded-lg bg-black flex items-center justify-center xs:mb-10 lg:mb-10">
+          <div className="w-14 h-14 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center xs:mb-10">
             <Wallet className="w-10 h-10 text-white" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-5">
-          <img src="/Screenshot1.png" alt="" className="w-110 lg:w-95" />
-          <img src="/Screenshot2.png" alt="" className="w-110 lg:w-95" />
-          <img src="/Screenshot3.png" alt="" className="w-110 lg:w-95" />
+          <img
+            src="/Screenshot1.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
+          <img
+            src="/Screenshot2.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
+          <img
+            src="/Screenshot3.png"
+            alt=""
+            className="w-110 md:w-180 lg:w-95"
+          />
         </div>
       </section>
       <section className="relative overflow-hidden bg-[#040B18] py-20 md:py-28 px-4 sm:px-6 lg:px-8">
@@ -162,7 +191,6 @@ export default function Sendandreceive() {
           <div className="w-18 h-18 rounded-lg bg-white flex items-center justify-center mb-6">
             <Wallet className="w-10 h-10 text-black" />
           </div>
-
           <h1 className="text-white text-[42px] lg:text-[70px] text-center font-bold leading-tight tracking-tight">
             Everything that comes <br />
             with Durapay's overseas <br /> bank accounts
