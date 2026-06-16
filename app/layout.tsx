@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nnavbar } from "@/components/nnavbar";
+import Subnavbar from "@/components/subnavbar";
 import Footer from "@/components/footer";
 
 const geistSans = Geist({
@@ -34,7 +35,10 @@ export default function RootLayout({
       className="min-h-full"
     >
       <body className=" w-full min-h-screen overflow-x-hidden">
-        <Nnavbar />
+        <div className="sticky top-0 z-50">
+          <Subnavbar />
+          <Nnavbar />
+        </div>
         <main>{children}</main>
         <Footer />
       </body>

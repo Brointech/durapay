@@ -224,7 +224,7 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-6 sm:mt-8 lg:mt-10">
-            <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+            <button className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
               <Download className="w-4 h-4 sm:w-5 sm:h-5" />
               Get started for free
             </button>

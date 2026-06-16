@@ -40,19 +40,19 @@ const CurrencyExchange = () => {
     //   </div>
     // </section>
 
-    <section className="w-full  px-6 md:px-8 lg:px-10 py-16 bg-white">
+    <section className="w-full px-6 md:px-8 lg:px-12 py-16 bg-white">
       <div className="flex flex-col md:flex-row gap-6">
         {/* LEFT — Image */}
         <div className="md:w-2/5 lg:w-2/5 rounded-2xl overflow-hidden bg-white shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <img
             src="/sent.jpg"
             alt="Currency exchange"
-            className="w-full h-full min-h-[420px] md:min-h-[520px] lg:min-h-[620px] object-cover"
+            className="w-full max-w-[480px] h-full min-h-[420px] md:min-h-[520px] lg:min-h-[620px] object-cover"
           />
         </div>
 
         {/* RIGHT — Content */}
-        <div className="w-full md:w-3/5 lg:w-3/5 p-2 rounded-2xl overflow-hidden min-h-[520px] md:min-h-[520px] lg:min-h-[720px] bg-[url('/world.avif')] bg-cover lg:bg-right-bottom bg-no-repeat bg-[#dce8fd] px-6 sm:px-10 lg:px-12 py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
+        <div className="md:w-3/5 lg:w-3/5 p-2  rounded-2xl overflow-hidden min-h-[520px] md:min-h-[520px] lg:min-h-[720px] bg-[url('/world.avif')] bg-cover bg-no-repeat bg-[#dce8fd] px-6 sm:px-10 lg:px-12 py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase pt-0 lg:pt-0 lg:-mt-50">
             Currency Exchange
           </p>

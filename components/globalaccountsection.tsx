@@ -65,7 +65,7 @@ const GlobalAccountSection = () => {
     <section className="w-full px-6 md:px-10 lg:px-10  lg:py-16 bg-white">
       <div
         onClick={() => router.push("/sendandreceive")}
-        className="cursor-pointer mx-auto max-w-7xl rounded-2xl bg-[#dce8fd] px-10 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 items-center transition-transform
+        className="cursor-pointer mx-auto max-w-7xl rounded-2xl bg-[#dce8fd] px-10 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 justify-end transition-transform
     duration-400
     ease-in-out
     hover:-translate-y-2"
@@ -95,20 +95,20 @@ const GlobalAccountSection = () => {
           </button>
         </div>
         {/* RIGHT — UI mockup  */}
-        <div className="w-full lg:w-[100%] md:w-[60%] w-[40%] relative flex justify-center items-end  min-h-[400px] md:min-h-[380px] lg:min-h-[400px] overflow-hidden">
+        <div className="relative w-full w-[40%] md:w-[60%] lg:w-full items-baseline min-h-[280px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[450px]">
           <img
             src="/greyy.avif"
             alt=""
-            className="absolute bottom-0 w-[100%]
+            className="absolute bottom-0 left-0
           md:w-[110%]
           lg:w-full
-          max-w-[420px]
+          max-w-[450px]
           md:max-w-[480px]
           lg:max-w-[650px]
-          h-auto
-          object-cover
+          object-cover         
           lg:translate-x-6
-          xl:translate-x-10"
+          xl:translate-x-10
+          "
           />
         </div>
       </div>
