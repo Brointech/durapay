@@ -39,7 +39,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-slate-300 transition-colors">
+                <a
+                  href="/currencyexchange"
+                  className="hover:text-slate-300 transition-colors"
+                >
                   Currency Exchange
                 </a>
               </li>
