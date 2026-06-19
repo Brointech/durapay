@@ -4,6 +4,7 @@ import "./globals.css";
 import { Nnavbar } from "@/components/nnavbar";
 import Subnavbar from "@/components/subnavbar";
 import Footer from "@/components/footer";
+import { FooterRegulatoryTrust } from "@/components/footerregulatorytrust";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
         </div>
         <main>{children}</main>
         <Footer />
+        <FooterRegulatoryTrust />
       </body>
     </html>
   );

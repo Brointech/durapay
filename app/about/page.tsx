@@ -111,7 +111,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Hero */}
         <div className="text-center max-w-4xl mx-auto">
-          <span className="inline-flex items-center rounded-full bg-blue-50 text-blue-600 px-4 py-2 text-sm font-semibold mb-6">
+          <span className="inline-flex items-center rounded-full bg-blue-50 text-[#1154da]  px-4 py-2 text-sm font-semibold mb-6">
             ABOUT DURAPAY
           </span>
 
@@ -120,7 +120,7 @@ export default function AboutSection() {
             <span className="text-blue-600"> everyday life</span>
           </h2>
 
-          <p className="mt-8 text-lg lg:text-xl text-gray-600 leading-relaxed">
+          <p className="mt-8 text-lg lg:text-xl text-gray-800 leading-relaxed">
             Durapay is a modern personal banking platform designed to make
             managing money simple, rewarding, and accessible. From transfers and
             savings to virtual cards, gift cards, rewards, and cashback, we help
@@ -139,7 +139,7 @@ export default function AboutSection() {
               More than just a banking app
             </h3>
 
-            <div className="mt-8 space-y-6 text-gray-600 text-lg leading-relaxed">
+            <div className="mt-8 space-y-6 text-gray-700 text-lg leading-relaxed">
               <p>
                 We started Durapay with a simple vision: give people complete
                 control over their money through one seamless platform.
@@ -274,7 +274,7 @@ export default function AboutSection() {
             Creating a future where banking feels effortless
           </h3>
 
-          <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-8 text-lg text-gray-800 leading-relaxed">
             We envision a world where managing money is simple, transparent, and
             rewarding for everyone. Durapay is building the financial ecosystem
             that helps people spend smarter, save better, and unlock greater

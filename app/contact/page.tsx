@@ -9,7 +9,7 @@ export default function ContactSection() {
           <h1 className="text-3xl md:text-4xl lg:text-7xl font-semibold text-gray-900">
             Get in touch with Durapay
           </h1>
-          <p className="mt-4 text-gray-600 text-base md:text-lg">
+          <p className="mt-4 text-gray-800 text-base md:text-lg">
             Need help with transfers, wallet issues, virtual cards, savings or
             rewards? Our support team is available to assist you anytime.
           </p>
@@ -107,7 +107,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-gray-50 rounded-2xl">
             <h4 className="font-semibold text-gray-900">Response Time</h4>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-700 mt-2">
               Usually within a few hours, depending on request volume.
             </p>
           </div>
@@ -116,14 +116,14 @@ export default function ContactSection() {
             <h4 className="font-semibold text-gray-900">
               Support Availability
             </h4>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-700 mt-2">
               24/7 support for wallet, cards, transfers & savings issues.
             </p>
           </div>
 
           <div className="p-6 bg-gray-50 rounded-2xl">
             <h4 className="font-semibold text-gray-900">Help Categories</h4>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-700 mt-2">
               Wallet, VTU, Gift Cards, Virtual Cards, Savings, Rewards.
             </p>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Children } from "react";
 
 import { RiMenu5Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
@@ -73,7 +73,7 @@ export const Nnavbar = () => {
 
   // navLinks with icons added to every child
   const navLinks: NavLink[] = [
-    { name: "Home", href: "/" },
+    // { name: "Home", href: "/" },
     {
       name: "Features",
       href: "#",
@@ -130,7 +130,15 @@ export const Nnavbar = () => {
     },
     { name: "Help Centre", href: "/helpcentre" },
     { name: "Blog", href: "/vlog" },
-    { name: "Contact", href: "/contact" },
+    {
+      name: "Company",
+      href: "#",
+      children: [
+        { name: "About", href: "/about", icon: User },
+        { name: "Careers", href: "/careers", icon: User },
+        { name: "Contact", href: "/contact", icon: User },
+      ],
+    },
   ];
 
   const MobileMenu = () => (
@@ -175,18 +183,23 @@ export const Nnavbar = () => {
         )}
 
         {/* Sign In as a nav-style row */}
-        <Link
+        {/* <Link
           href="/signin"
           onClick={() => setIsOpen(false)}
           className="w-full flex items-center justify-center font-medium text-[#1154da] border-2 border-[#1154da] rounded-xl px-6 py-3 text-[15px] mb-3 "
         >
           Sign in
-        </Link>
+        </Link> */}
       </div>
 
       {/* CTA button */}
       <div className="px-5 mt-0 pb-4">
-        <button className="w-full rounded-xl bg-[#1154da] px-6 py-4 font-semibold text-white text-[15px] cursor-pointer transition hover:bg-[#023bac]">
+        <button
+          onClick={() =>
+            window.open("https://play.google.com/store/apps?hl=en", "_blank")
+          }
+          className="w-full rounded-xl bg-[#1154da] px-6 py-4 font-semibold text-white text-[15px] cursor-pointer transition hover:bg-[#023bac]"
+        >
           Download Durapay - it's free
         </button>
       </div>
@@ -228,10 +241,18 @@ export const Nnavbar = () => {
 
           {/* Desktop buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <button className="font-semibold text-white cursor-pointer transition-colors text-[14px]">
+            {/* <button className="font-semibold text-white cursor-pointer transition-colors text-[14px]">
               Sign in
-            </button>
-            <button className="flex items-center gap-1 rounded-[10px] bg-[#1154da] px-4 py-2.5 lg:text-[14px] font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer">
+            </button> */}
+            <button
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps?hl=en",
+                  "_blank",
+                )
+              }
+              className="flex items-center gap-1 rounded-[10px] bg-[#1154da] px-4 py-2.5 lg:text-[14px] font-semibold text-white transition hover:bg-[#023bac] hover:cursor-pointer"
+            >
               Download Durapay
             </button>
           </div>

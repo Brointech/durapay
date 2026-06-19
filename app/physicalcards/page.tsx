@@ -2,12 +2,12 @@
 
 const Physicalcards = () => {
   return (
-    <section className="relative overflow-hidden bg-[#04131F] text-white py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-white  py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left Content */}
           <div>
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
+            <span className="inline-flex items-center px-4 py-2 rounded-full text-blue-600 bg-blue-500/10 border border-blue-400/30 text-sm font-medium mb-6">
               Physical NGN Debit Card
             </span>
 
@@ -16,7 +16,7 @@ const Physicalcards = () => {
               <span className="text-[#3574f3]"> Durapay Card</span>
             </h1>
 
-            <p className="mt-6 text-lg text-slate-300 max-w-xl">
+            <p className="mt-6 text-lg text-slate-900 max-w-xl">
               Shop online, withdraw cash, pay bills, and make purchases anywhere
               cards are accepted. Earn rewards, cashback, and enjoy complete
               control directly from your Durapay app.
@@ -38,25 +38,25 @@ const Physicalcards = () => {
             <div className="w-full max-w-md aspect-[1.6/1] rounded-3xl bg-gradient-to-br from-[#1154da] via-[#3e71d8] to-[#3574f3] p-8 shadow-2xl">
               <div className="h-full flex flex-col justify-between">
                 <div className="flex justify-between items-center">
-                  <h3 className="font-bold text-2xl">Durapay</h3>
-                  <span className="text-sm font-medium">Debit</span>
+                  <h3 className="font-bold text-white text-2xl">Durapay</h3>
+                  <span className="text-sm text-white font-medium">Debit</span>
                 </div>
 
                 <div>
-                  <p className="tracking-[4px] text-xl font-medium">
+                  <p className="tracking-[4px] text-white text-xl font-medium">
                     •••• •••• •••• 4587
                   </p>
                 </div>
 
                 <div className="flex justify-between">
                   <div>
-                    <p className="text-xs opacity-70">CARD HOLDER</p>
-                    <p className="font-medium">FELIX IDEH</p>
+                    <p className="text-xs opacity-90 text-white">CARD HOLDER</p>
+                    <p className="font-medium text-white">FELIX IDEH</p>
                   </div>
 
                   <div>
-                    <p className="text-xs opacity-70">VALID THRU</p>
-                    <p className="font-medium">08/31</p>
+                    <p className="text-xs opacity-90 text-white">VALID THRU</p>
+                    <p className="font-medium text-white">08/31</p>
                   </div>
                 </div>
               </div>

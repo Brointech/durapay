@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from "react-router-dom";
+import { link } from "fs";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 const CurrencyExchange = () => {
@@ -40,7 +42,10 @@ const CurrencyExchange = () => {
     //   </div>
     // </section>
 
-    <section className="w-full px-6 md:px-8 lg:px-12 py-16 bg-white">
+    <section
+      className="w-full px-6 md:px-8 lg:px-12 py-16 bg-white bg-"
+      style={{ backgroundImage: "url('/')" }}
+    >
       <div className="flex flex-col md:flex-row gap-6">
         {/* LEFT — Image */}
         <div className="md:w-2/5 lg:w-2/5 rounded-2xl overflow-hidden bg-white shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">

@@ -95,20 +95,17 @@ const GlobalAccountSection = () => {
           </button>
         </div>
         {/* RIGHT — UI mockup  */}
-        <div className="relative w-full w-[40%] md:w-[60%] lg:w-full items-baseline min-h-[280px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[450px]">
+        <div className="relative w-full flex items-end justify-center overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[450px]">
           <img
             src="/greyy.avif"
             alt=""
-            className="absolute bottom-0 left-0
-          md:w-[110%]
-          lg:w-full
-          max-w-[450px]
-          md:max-w-[480px]
-          lg:max-w-[650px]
-          object-cover         
-          lg:translate-x-6
-          xl:translate-x-10
-          "
+            className="
+      w-full
+      max-w-[420px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[650px]
+      h-auto
+      object-contain
+      mx-auto
+    "
           />
         </div>
       </div>
