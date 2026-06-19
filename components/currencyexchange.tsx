@@ -50,15 +50,15 @@ const CurrencyExchange = () => {
         {/* LEFT — Image */}
         <div className="md:w-2/5 lg:w-2/5 rounded-2xl overflow-hidden bg-white shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <img
-            src="/sent.jpg"
+            src="/Sent.jpg"
             alt="Currency exchange"
             className="w-full max-w-[480px] h-full min-h-[420px] md:min-h-[520px] lg:min-h-[620px] object-cover"
           />
         </div>
 
         {/* RIGHT — Content */}
-        <div className="md:w-3/5 lg:w-3/5 p-2  rounded-2xl overflow-hidden min-h-[520px] md:min-h-[520px] lg:min-h-[720px] bg-[url('/world.avif')] bg-cover bg-no-repeat bg-[#dce8fd] px-6 sm:px-10 lg:px-12 py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase pt-0 lg:pt-0 lg:-mt-50">
+        <div className="w-full md:w-3/5 rounded-2xl overflow-hidden min-h-[420px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[720px] bg-[url('/world.avif')] bg-cover bg-no-repeat bg-[#dce8fd] px-6 sm:px-10 lg:px-12 py-8 md:py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
+          <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase pt-0 lg:pt-0">
             Currency Exchange
           </p>
 
