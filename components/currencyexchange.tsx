@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "react-router-dom";
-import { link } from "fs";
+
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 const CurrencyExchange = () => {
@@ -58,7 +58,7 @@ const CurrencyExchange = () => {
 
         {/* RIGHT — Content */}
         <div className="w-full md:w-3/5 rounded-2xl overflow-hidden min-h-[420px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[720px] bg-[url('/world.avif')] bg-cover bg-no-repeat bg-[#dce8fd] px-6 sm:px-10 lg:px-12 py-8 md:py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase pt-0 lg:pt-0">
+          <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase">
             Currency Exchange
           </p>
 

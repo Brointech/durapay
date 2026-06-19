@@ -18,8 +18,8 @@ import Link from "next/link";
 
 const LEGAL_DOCS = [
   { label: "Terms of Use", href: "/terms-of-use", active: true },
-  { label: "Privacy Policy", href: "/privacypolicy", active: true },
-  { label: "Cookie Policy", href: "/cookiepolicy", active: true },
+  { label: "Privacy Policy", href: "/privacypolicy" },
+  { label: "Cookie Policy", href: "/cookiepolicy" },
 ];
 
 const SECTIONS = [

@@ -48,7 +48,7 @@ export default function Rewards() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-blue-50 text-[#1154da] px-4 py-2 rounded-full mb-6">
                 <Sparkles size={18} />
                 <span className="font-medium">
                   Rewards that grow with every transaction
@@ -66,30 +66,30 @@ export default function Rewards() {
                 every transaction.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="bg-black text-white px-7 py-4 rounded-full font-medium hover:opacity-90 transition">
+              <div className="flex flex-col sm:flex-row gap-4 mt-8 ">
+                <button className="bg-[#1154da] text-white px-7 py-4 rounded-full font-medium hover:bg-blue-800 transition cursor-pointer">
                   Start Earning Rewards
                 </button>
 
-                <button className="border border-gray-300 px-7 py-4 rounded-full font-medium hover:bg-gray-50 transition">
+                <button className="border border-[#1154da] text-[#1154da] px-7 py-4 rounded-full font-medium hover:bg-gray-50 transition cursor-pointer">
                   Learn More
                 </button>
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-green-100 via-emerald-50 to-lime-100 rounded-[40px] p-8 lg:p-10">
+              <div className="bg-gradient-to-br from-blue-300 via-blue-200 to-blue-300 rounded-[40px] p-8 lg:p-4">
                 <div className="bg-white rounded-3xl shadow-xl p-8">
                   <div className="flex justify-between items-center mb-8">
                     <h3 className="font-semibold text-lg">Durapay Rewards</h3>
 
-                    <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                    <div className="bg-blue-100 text-[#1154da] px-3 py-1 rounded-full text-sm">
                       Gold Tier
                     </div>
                   </div>
 
                   <div className="text-center py-6">
-                    <Trophy className="mx-auto text-green-600" size={60} />
+                    <Trophy className="mx-auto text-[#1154da]" size={60} />
 
                     <h2 className="text-5xl font-bold mt-5">12,450</h2>
 
@@ -128,7 +128,7 @@ export default function Rewards() {
               Earn rewards from everyday activities
             </h2>
 
-            <p className="mt-5 text-lg text-gray-600">
+            <p className="mt-5 text-lg text-gray-800">
               The more you use Durapay, the more rewards you unlock.
             </p>
           </div>
@@ -139,8 +139,8 @@ export default function Rewards() {
                 key={index}
                 className="bg-white rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center mb-5">
-                  <item.icon className="text-green-600" size={26} />
+                <div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-5">
+                  <item.icon className="text-blue-600" size={26} />
                 </div>
 
                 <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
@@ -159,7 +159,7 @@ export default function Rewards() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
-              <span className="text-green-600 font-semibold">
+              <span className="text-blue-500 font-bold">
                 Redeem rewards your way
               </span>
 
@@ -182,8 +182,8 @@ export default function Rewards() {
                 "Savings Bonuses",
                 "Card Spending Rewards",
               ].map((reward, index) => (
-                <div key={index} className="bg-gray-50 rounded-3xl p-6">
-                  <Gift className="text-green-600 mb-4" size={26} />
+                <div key={index} className="bg-blue-50 rounded-3xl p-6">
+                  <Gift className="text-blue-600 mb-4" size={26} />
 
                   <h3 className="font-semibold text-lg">{reward}</h3>
                 </div>
@@ -228,9 +228,9 @@ export default function Rewards() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border border-white/10 rounded-3xl p-8"
+                className="border border-white/60 rounded-3xl p-8"
               >
-                <span className="text-green-500 text-sm font-bold">
+                <span className="text-blue-500 text-sm lg:text-lg font-bold">
                   {item.step}
                 </span>
 
