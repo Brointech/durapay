@@ -256,13 +256,13 @@ export default function WalletSection() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-[#1154da] text-sm font-semibold mb-6">
+          <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-[#1154da] text-sm lg:text-[16px] font-bold mb-6">
             Your Money, Your Control
           </span>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-6">
             A wallet built for
-            <span className="text-[#1154da]"> everyday life</span>
+            <span className="text-blue-800"> everyday life</span>
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -287,13 +287,13 @@ export default function WalletSection() {
                   Everything you need to manage your money.
                 </h3>
 
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                <p className="text-gray-100 text-lg leading-relaxed mb-8">
                   Fund your wallet, transfer money, save for goals, create
                   virtual cards, pay bills, buy gift cards, and earn rewards —
                   all from one powerful financial app.
                 </p>
 
-                <button className="bg-[#1154da] hover:bg-[#009e5a] text-white px-8 py-4 rounded-xl font-semibold transition">
+                <button className="bg-[#1154da] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition">
                   Open a Wallet
                 </button>
               </div>
@@ -368,7 +368,7 @@ export default function WalletSection() {
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -385,7 +385,7 @@ export default function WalletSection() {
               Hold Multiple Currencies
             </h2>
 
-            <p className="mt-6 text-gray-600 text-lg">
+            <p className="mt-6 text-gray-700 text-lg">
               Keep and manage USD, GBP, EUR, NGN and more in one wallet. Convert
               between currencies instantly whenever you need.
             </p>

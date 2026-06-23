@@ -82,10 +82,10 @@ export default function CareersSection() {
 
           <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Build the future of
-            <span className="text-blue-600"> personal banking</span>
+            <span className="text-blue-900"> personal banking</span>
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-6 text-lg text-gray-800 leading-relaxed">
             Join a team creating the next generation financial platform that
             helps people save, spend, transfer, receive money, buy gift cards,
             access virtual cards, earn rewards, and manage everyday finances
@@ -248,6 +248,66 @@ export default function CareersSection() {
             ))}
           </div>
         </div>
+
+        {/* ── Hiring Process ── */}
+        <section className="bg-white border-t border-gray-100 px-4  py-14 md:py-20">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-10">
+              <h2
+                className="text-[22px] sm:text-[26px] md:text-[30px] font-bold text-[#1A202E]"
+                style={{ fontFamily: "'Syne', sans-serif" }}
+              >
+                Our Hiring Process
+              </h2>
+              <p className="text-[14px] sm:text-[15px] text-[#64748B] mt-2 max-w-lg">
+                We keep things accessible, respectful of your time, and focused
+                on real skills.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                {
+                  step: "01",
+                  title: "Application",
+                  desc: "Submit your CV and a short note on why we should consider you for this position.",
+                },
+                {
+                  step: "02",
+                  title: "Screening Call",
+                  desc: "A 30-minute video call with our talent team to learn more about each other.",
+                },
+                {
+                  step: "03",
+                  title: "Skills Assessment",
+                  desc: "A practical take-home or live exercise relevant to the role — usually 1-2 hours.",
+                },
+                {
+                  step: "04",
+                  title: "Final Interview",
+                  desc: "Meet the team and hiring manager. We'll cover values, experience, and answer your questions.",
+                },
+              ].map(({ step, title, desc }) => (
+                <div key={step} className="relative flex flex-col gap-4">
+                  {/* Connector line (hidden on mobile) */}
+                  <div className="hidden lg:block absolute top-5 left-[52px] right-0 h-px bg-gray-200 -z-0" />
+                  <div className="flex items-center gap-3 z-10">
+                    <div className="w-10 h-10 rounded-full bg-[#034EA2] flex items-center justify-center text-white text-[12px] font-bold flex-shrink-0">
+                      {step}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-[14px] font-bold text-gray-900 mb-1">
+                      {title}
+                    </h3>
+                    <p className="text-[13px] text-[#64748B] leading-relaxed">
+                      {desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* CTA */}
         <div className="mt-24">

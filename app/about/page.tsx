@@ -110,36 +110,47 @@ export default function AboutSection() {
     <section className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Hero */}
-        <div className="text-center max-w-4xl mx-auto">
-          <span className="inline-flex items-center rounded-full bg-blue-50 text-[#1154da]  px-4 py-2 text-sm font-semibold mb-6">
-            ABOUT DURAPAY
+        <div className="text-center max-w-5xl mx-auto">
+          <span className="inline-flex items-center rounded-full bg-blue-50 text-[#1154da] lg:text-[16px] px-4 py-2 text-sm font-bold mb-6">
+            ABOUT US
           </span>
 
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
+          {/* <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
             Banking built for
-            <span className="text-blue-600"> everyday life</span>
+            <span className="text-blue-800"> everyday life</span>
+          </h2> */}
+
+          <h2 className="text-4xl md:text-5xl lg:text-[68px] font-bold text-black leading-tight">
+            Building financial inclusion for
+            <span className="text-blue-800"> modern workers</span>
           </h2>
 
-          <p className="mt-8 text-lg lg:text-xl text-gray-800 leading-relaxed">
+          {/* <p className="mt-8 text-lg lg:text-xl text-black leading-relaxed">
             Durapay is a modern personal banking platform designed to make
             managing money simple, rewarding, and accessible. From transfers and
             savings to virtual cards, gift cards, rewards, and cashback, we help
             people do more with their money every day.
+          </p> */}
+          <p className="mt-8 text-lg lg:text-[19px] text-gray-700 leading-tight">
+            We empower global professionals (remote workers, digital{" "}
+            <br className="hidden lg:block" /> nomads, freelancers) and
+            individuals to live a location- <br className="hidden lg:block" />
+            independent lifestyle.
           </p>
         </div>
 
         {/* Story Section */}
         <div className="mt-24 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-blue-600 font-semibold uppercase tracking-wider">
+            <span className="text-blue-800 font-bold uppercase tracking-wider">
               Our Story
             </span>
 
-            <h3 className="mt-4 text-3xl lg:text-5xl font-bold text-black leading-tight">
+            <h3 className="mt-4 text-3xl lg:text-[40px] font-bold text-black leading-tight">
               More than just a banking app
             </h3>
 
-            <div className="mt-8 space-y-6 text-gray-700 text-lg leading-relaxed">
+            <div className="mt-8 space-y-6 text-gray-800 text-[15px] leading-relaxed">
               <p>
                 We started Durapay with a simple vision: give people complete
                 control over their money through one seamless platform.
@@ -163,7 +174,7 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-blue-800 p-10 text-white overflow-hidden">
+            <div className="rounded-3xl bg-gradient-to-br from-blue-800 to-blue-600 p-10 text-white overflow-hidden">
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6">
                   <Wallet className="w-10 h-10 mb-4" />
@@ -190,17 +201,17 @@ export default function AboutSection() {
         </div>
 
         {/* Mission */}
-        <div className="mt-28 bg-gray-50 rounded-3xl p-8 md:p-12 lg:p-16">
+        <div className="mt-28 bg-gray-100 rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="max-w-4xl">
-            <span className="text-blue-600 font-semibold uppercase tracking-wider">
+            <span className="text-blue-800 font-bold uppercase tracking-wider">
               Our Mission
             </span>
 
-            <h3 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+            <h3 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
               Helping people move, save, and grow money effortlessly
             </h3>
 
-            <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-8 text-lg text-gray-800 leading-relaxed">
               Our mission is to make modern banking simple, accessible, and
               rewarding. We build products that remove financial barriers and
               empower users to manage their money confidently—from daily
@@ -212,7 +223,7 @@ export default function AboutSection() {
         {/* Core Values */}
         <div className="mt-28">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-blue-600 font-semibold uppercase tracking-wider">
+            <span className="text-blue-800 font-bold uppercase tracking-wider">
               Core Values
             </span>
 
@@ -265,24 +276,27 @@ export default function AboutSection() {
         </div>
 
         {/* Vision */}
-        <div className="mt-28 text-center max-w-4xl mx-auto">
-          <span className="text-blue-600 font-semibold uppercase tracking-wider">
+        <div className="mt-28 text-center max-w-4xl mx-auto mb-10">
+          <span className="text-blue-800 font-bold uppercase tracking-wider">
             Our Vision
           </span>
 
-          <h3 className="mt-4 text-3xl md:text-5xl font-bold text-black leading-tight">
-            Creating a future where banking feels effortless
+          <h3 className="text-4xl md:text-5xl lg:text-[58px] font-bold text-black leading-tight">
+            Creating a future where banking
+            <span className="text-blue-800"> feels effortless</span>
           </h3>
 
           <p className="mt-8 text-lg text-gray-800 leading-relaxed">
-            We envision a world where managing money is simple, transparent, and
-            rewarding for everyone. Durapay is building the financial ecosystem
-            that helps people spend smarter, save better, and unlock greater
-            opportunities every day.
+            We envision a world where managing money is simple,{" "}
+            <br className="hidden lg:block" /> transparent, and rewarding for
+            everyone. Durapay <br className="hidden lg:block" /> is building the
+            financial ecosystem that helps <br className="hidden lg:block" />{" "}
+            people spend smarter, save better, and unlock{" "}
+            <br className="hidden lg:block" /> greater opportunities every day.
           </p>
         </div>
 
-        {/* Nest Phase */}
+        {/* Next Phase */}
         <div
           className="mx-auto
     max-w-7xl
@@ -296,8 +310,8 @@ export default function AboutSection() {
         >
           {/* LEFT — content */}
           <div className="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-14 lg:py-24">
-            <h2 className="text-[42px] sm:text-[52px] font-bold text-white leading-[1.1] mb-5">
-              Collaborating <br /> to make a change
+            <h2 className="text-[32px] xs:text-center sm:text-[32px] md:text-[40px] font-bold text-white leading-[1.1] mb-5">
+              Collaborating <br className="hidden md:block" /> to make a change
             </h2>
 
             <p className="text-[16px] text-zinc-100 font-semibold leading-relaxed mb-5 max-w-sm">

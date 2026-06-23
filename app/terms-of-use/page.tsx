@@ -91,13 +91,13 @@ export default function TermsOfUsePage() {
           <h1 className="mt-2 text-3xl font-bold text-[#00246C] sm:text-4xl lg:text-5xl">
             Terms of Use
           </h1>
-          <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+          <p className="mt-4 max-w-2xl text-sm lg:text-[18px] text-slate-600 sm:text-base">
             These Terms govern your access to and use of DuraPay — our website,
             mobile app, and any related services. Please read them carefully
             before creating an account.
           </p>
           <p className="mt-4 text-xs text-slate-400 sm:text-sm">
-            Last updated: June 18, 2026
+            Last updated: June 22, 2026
           </p>
         </div>
       </header>
@@ -193,7 +193,7 @@ export default function TermsOfUsePage() {
           </aside>
 
           {/* Center: terms content */}
-          <article className="min-w-0 space-y-10 text-sm leading-7 text-slate-700 sm:text-base">
+          <article className="min-w-0 space-y-10 text-sm lg:text-[18px] leading-7 text-slate-700 sm:text-base">
             <section id="welcome" className="space-y-3">
               <SectionHeading id="welcome" title="Welcome to DuraPay" />
               <p>

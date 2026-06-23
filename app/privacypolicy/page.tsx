@@ -79,19 +79,19 @@ export default function PrivacyPolicyPage() {
       {/* Page header */}
       <header className="border-b border-slate-100 bg-gradient-to-b from-[#F4F7FE] to-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
-          <p className="text-sm font-medium uppercase tracking-wide text-[#1154DA]">
+          <p className="text-sm lg:text-[20px] font-medium uppercase tracking-wide text-[#1154DA]">
             Legal
           </p>
           <h1 className="mt-2 text-3xl font-bold text-[#00246C] sm:text-4xl lg:text-5xl">
             Privacy Policy
           </h1>
-          <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+          <p className="mt-4 max-w-2xl text-sm lg:text-[18px] text-slate-700 sm:text-base">
             This policy explains what personal information DuraPay collects, why
             we collect it, how we use and protect it, and the choices and rights
             available to you.
           </p>
           <p className="mt-4 text-xs text-slate-400 sm:text-sm">
-            Last updated: June 18, 2026
+            Last updated: June 22, 2026
           </p>
         </div>
       </header>
@@ -187,7 +187,7 @@ export default function PrivacyPolicyPage() {
           </aside>
 
           {/* Center: policy content */}
-          <article className="min-w-0 space-y-10 text-sm leading-7 text-slate-700 sm:text-base">
+          <article className="min-w-0 space-y-10 text-sm lg:text-[18px] leading-7 text-slate-700 sm:text-base">
             <section id="introduction" className="space-y-3">
               <SectionHeading id="introduction" title="Introduction" />
               <p>

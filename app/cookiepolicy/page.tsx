@@ -118,12 +118,12 @@ export default function CookiePolicyPage() {
           <h1 className="mt-2 text-3xl font-bold text-[#00246C] sm:text-4xl lg:text-5xl">
             Cookie Policy
           </h1>
-          <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+          <p className="mt-4 max-w-2xl text-sm lg:text-[18px] text-slate-600 sm:text-base">
             This policy explains what cookies and similar technologies DuraPay
             uses, why we use them, and how you can manage your preferences.
           </p>
           <p className="mt-4 text-xs text-slate-400 sm:text-sm">
-            Last updated: June 18, 2026
+            Last updated: June 22, 2026
           </p>
         </div>
       </header>
@@ -219,7 +219,7 @@ export default function CookiePolicyPage() {
           </aside>
 
           {/* Center: policy content */}
-          <article className="min-w-0 space-y-10 text-sm leading-7 text-slate-700 sm:text-base">
+          <article className="min-w-0 space-y-10 text-sm lg:text-[18px] leading-7 text-slate-700 sm:text-base">
             <section id="introduction" className="space-y-3">
               <SectionHeading id="introduction" title="Introduction" />
               <p>
@@ -228,7 +228,7 @@ export default function CookiePolicyPage() {
                 and similar tracking technologies on our website and within our
                 mobile app. It should be read alongside our{" "}
                 <Link
-                  href="/privacy-policy"
+                  href="/privacypolicy"
                   className="font-medium text-[#1154DA] underline-offset-2 hover:underline"
                 >
                   Privacy Policy

@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="bg-black border-t border-slate-200 py-16 px-8 sm:px-8 lg:px-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="border-b border-slate-600 -mt-8 lg:-mt-16">
-          <h1 className="text-white text-[40px] lg:text-[70px] font-bold text-center leading-tight">
-            Get digital banking <br />
+          <h1 className="text-white text-[30px] md:text-[40px] lg:text-[70px] font-bold text-center leading-tight">
+            Get digital banking <br className="hidden lg:block" />
             at your fingertips
           </h1>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-10">
@@ -91,7 +91,7 @@ const Footer = () => {
                   href="/transfer"
                   className="hover:text-slate-300 transition-colors"
                 >
-                  Transfers
+                  Money transfer
                 </a>
               </li>
               <li>
@@ -107,7 +107,7 @@ const Footer = () => {
                   href="/virtualcard"
                   className="hover:text-slate-300 transition-colors"
                 >
-                  Virtual Card
+                  Virtual Cards
                 </a>
               </li>
               <li>

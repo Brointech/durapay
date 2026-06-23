@@ -1,7 +1,7 @@
 "use client";
 
 import { section } from "framer-motion/client";
-import { Download } from "lucide-react";
+import { Download, Wallet } from "lucide-react";
 
 const Personal = () => {
   return (
@@ -122,7 +122,7 @@ const Personal = () => {
           </div> */}
 
           {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
-          <div className="flex lg:hidden justify-center items-end mt-auto">
+          {/* <div className="flex lg:hidden justify-center items-end mt-auto">
             <img
               src="/bluehero.png"
               alt="DuraPay App"
@@ -137,21 +137,25 @@ const Personal = () => {
               mb-10
             "
             />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="w-full max-w-7xl px-6 sm:px-10 lg:px-10 ">
-        <div className="mt-30 mb-7">
-          <h1 className="font-bold text-black lg:text-[58px] leading-tight tracking-tight ">
-            Free USD, GBP and EUR <br />
-            accounts to receive <br /> instant payments from <br />
+      <div className="w-full max-w-7xl px-6 sm:px-10 lg:px-10">
+        <div className="flex items-end justify-between mt-30 mb-7">
+          <h1 className="font-bold text-black text-[18px] md:text-[26px] lg:text-[54px] leading-tight tracking-tight ">
+            Free USD, GBP and EUR <br className="hidden lg:block" />
+            accounts to receive <br className="hidden lg:block" />
+            instant payments from <br className="hidden lg:block" />
             your clients
           </h1>
+          <div className="hidden md:flex md:w-14 md:h-10 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center mb-6">
+            <Wallet className="w-9 h-5 lg:w-10 lg:h-10 text-white" />
+          </div>
         </div>
-        <div className="flex items-center gap-10">
-          <img src="/screenshot1.png" alt="" className="w-90" />
-          <img src="/screenshot2.png" alt="" className="w-90" />
-          <img src="/screenshot3.png" alt="" className="w-90" />
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
+          <img src="/screenshot1.png" alt="" className="md:w-150 lg:w-100" />
+          <img src="/screenshot2.png" alt="" className="md:w-80 lg:w-100" />
+          <img src="/screenshot3.png" alt="" className="md:w-80 lg:w-100" />
         </div>
         <div className="">
           <h1 className="font-bold text-center text-black lg:text-[50px] leading-tight tracking-tight mb-7 mt-10">

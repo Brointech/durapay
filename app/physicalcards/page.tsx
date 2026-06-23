@@ -2,7 +2,7 @@
 
 const Physicalcards = () => {
   return (
-    <section className="relative overflow-hidden bg-white  py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left Content */}
