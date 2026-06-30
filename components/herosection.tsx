@@ -175,7 +175,7 @@ const HeroSection = () => {
       />
 
       {/* ── WHITE CURVED SHAPE — desktop only ── */}
-      <div
+      {/* <div
         className="absolute bottom-0 right-0 pointer-events-none hidden lg:block"
         style={{
           width: "clamp(260px, 48vw, 720px)",
@@ -191,7 +191,7 @@ const HeroSection = () => {
         >
           <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
         </svg>
-      </div>
+      </div> */}
 
       {/* ── MOBILE/TABLET: full white bottom curve spanning full width ── */}
       <div className="absolute bottom-0 left-0 right-0 pointer-events-none lg:hidden">
@@ -231,6 +231,8 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* Bottom curved shape */}
+        <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
         {/* IMAGE — desktop: pinned to bottom-right */}
         <div className="hidden sm:flex items-end justify-center lg:justify-end">
           <img
@@ -242,7 +244,7 @@ const HeroSection = () => {
         </div>
 
         {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
-        <div className="flex sm:hidden justify-center items-end mt-6 ">
+        {/* <div className="flex sm:hidden justify-center items-end mt-6 ">
           <img
             src="/somos.png"
             alt="DuraPay App"
@@ -255,7 +257,7 @@ const HeroSection = () => {
               object-bottom
             "
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
