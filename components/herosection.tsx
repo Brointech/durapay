@@ -212,21 +212,20 @@ const HeroSection = () => {
 
         <div className="flex flex-col justify-center pt-16 pb-8 sm:pt-18 lg:pt-10 lg:pb-0">
           <h1 className="text-[36px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
-            Strategic modern <br />
+            Inclusive global <br />
             banking designed <br />
-            and fit for you.
+            just for you.
           </h1>
 
           <p className="mt-6 sm:mt-8 lg:mt-10 max-w-[440px] sm:max-w-[480px] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-medium leading-[1.55] text-white/90">
-            Make transfers, pay bills, use virtual cards, and earn cashback
-            effortlessly from your phone. Create a free global bank account
-            using your phone.
+            Receive, send, exchange, and manage multiple currencies in one app.
+            Open a foreign bank account from your phone for free
           </p>
 
           <div className="mt-6 sm:mt-8 lg:mt-10">
             <button className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
-              <Download className="w-4 h-4 sm:w-5 sm:h-5" />
-              Get started for free
+              {/* <Download className="w-4 h-4 sm:w-5 sm:h-5" /> */}
+              Get started - it's free
             </button>
           </div>
         </div>
