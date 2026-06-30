@@ -102,11 +102,57 @@ export default function Sendandreceive() {
         />
       </svg> */}
       {/* ── HERO ───────────────────────────────────────────────────────── */}
-      <section className="relative grid-bg -mt-0 lg:-mt-10 overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-9">
-          {/* Mobile/Tablet: stacked layout with image overlapping */}
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-2">
+        {/* Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-20 lg:py-18">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            {/* LEFT CONTENT */}
+            <div className="max-w-2xl ">
+              <h1
+                className="text-[52px] leading-[0.95] font-bold tracking-tight text-[#111827]
+        sm:text-[65px]
+        lg:text-[78px] w-[130%]"
+              >
+                The bank account
+                <br />
+                for modern
+                <br />
+                professionals
+              </h1>
+
+              <p className="mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
+                Open a free foreign bank account to receive
+                <br className="hidden lg:block" />
+                payments globally. No minimum deposits required.
+              </p>
+
+              <button className="mt-12 rounded-xl bg-[#1154DA] px-8 py-5 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
+                Get yours now
+              </button>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src="/Handnew.avif"
+                alt="Handnew"
+                className="w-[280px] sm:w-[260px] lg:w-[250px] lg:-mt-8"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom curved shape */}
+        <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
+      </section>
+
+      {/* <section className="relative grid-bg -mt-14 lg:-mt-18 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-9 ">
+         
           <div className="relative lg:hidden pt-28 pb-0 min-h-[90vh] flex flex-col">
-            {/* Heading: Text — full width on mobile */}
+            
             <div className="relative z-10 max-w-[65%] sm:max-w-[60%]">
               <h1 className="text-[46px] sm:text-[48px] font-bold leading-[1.05] tracking-tight mb-5 text-black">
                 The bank account for contemporary professionals
@@ -120,7 +166,7 @@ export default function Sendandreceive() {
               </button>
             </div>
 
-            {/* Image — absolute, right side, bleeds to bottom */}
+          
             <div className="absolute right-[-24px] top-20 bottom-0 w-[55%] sm:w-[48%] flex items-end">
               <img
                 src="/Handnew.avif"
@@ -130,7 +176,7 @@ export default function Sendandreceive() {
             </div>
           </div>
 
-          {/* Desktop: original side-by-side */}
+         
           <div className="hidden lg:flex gap-2 items-center justify-between py-28">
             <div className="slide-up lg:pt-10">
               <h1 className="text-[80px] font-bold leading-[1.05] tracking-tight mb-6 text-black">
@@ -156,7 +202,7 @@ export default function Sendandreceive() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Next */}
       <section className=" mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex items-end justify-between xs:text-center">

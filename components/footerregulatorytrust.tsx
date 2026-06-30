@@ -121,15 +121,3 @@ export function FooterRegulatoryTrust() {
     </div>
   );
 }
-
-// /* ---------- Demo wrapper — preview only, do not copy this part ---------- */
-
-// export default function Preview() {
-//   return (
-//     <div className="flex min-h-screen items-end bg-[#00246C]">
-//       <div className="mx-auto w-full max-w-6xl px-6">
-//         <FooterRegulatoryTrust />
-//       </div>
-//     </div>
-//   );
-// }

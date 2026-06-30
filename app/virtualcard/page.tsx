@@ -64,27 +64,24 @@ export default function VirtualCardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white">
+    <div className="min-h-screen bg-white text-white antialiased">
       {/* HERO SECTION */}
       <section className="relative overflow-hidden px-6 sm:px-10 lg:px-10 py-30">
         <div className="absolute inset-0 bg-white" />
-        <div className="relative z-10 flex flex-col items-center ">
-          <h1 className="text-[40px] text-sm sm:text-5xl lg:text-[73px] text-black font-bold leading-tight">
-            <span>One international </span> <br />
-            <span className="ml-6"> card for all your </span> <br />
-            <span className="ml-4"> foreign spending </span>
+
+        <div className="relative flex flex-col items-center mx-auto max-w-4xl text-center">
+          <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-[#0B0E14] sm:text-6xl md:text-7xl lg:text-[5.0rem]">
+            One international <br className="hidden sm:block" />
+            card for all your <br className="hidden sm:block" />
+            global spending
           </h1>
-          <p className="mt-5 text-gray-600 font-semibold max-w-lg text-center text-[13px] sm:text-base lg:text-[16px]">
-            <span>
-              Your Durapay card now works with Apple Pay and Google Pay.
-              Create{" "}
-            </span>
-            <span className="ml-4">
-              multiple cards, spend straight from your balance, and pay at 150
-            </span>
-            <span className="ml-6"> million merchants worldwide. </span>
+
+          <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
+            Your Durapay card now works with Apple Pay and Google Pay. Create{" "}
+            multiple cards, spend straight from your balance, and pay at 150
+            million merchants worldwide
           </p>
-          {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text- center">
+          {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text-center">
             Your Durapay card now works with Apple Pay and Google Pay. Create
             multiple cards, spend straight from your balance, and pay at 150
             million merchants worldwide.

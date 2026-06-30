@@ -76,11 +76,11 @@ export default function BeyondBanking() {
     <section className="relative w-full min-h-screen bg-white overflow-hidden">
       <div>
         <div className=" w-full px-6 lg:px-10 py-14 bg-white">
-          <div className="w-18 h-18 rounded-lg bg-black flex items-center justify-center mb-6">
+          <div className="w-16 h-16 rounded-lg bg-black flex items-center justify-center mb-6">
             <Wallet className="w-10 h-10 text-white" />
           </div>
           <h1 className="font-bold text-black text-[48px] lg:text-[65px] leading-tight">
-            More Than Just <br /> banking
+            More than Just <br className="md:hidden block" /> banking
           </h1>
         </div>
 

@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { Shield, Bell, BadgeCheck } from "lucide-react";
 import { image, img } from "framer-motion/client";
+import { FiArrowRight, FiGlobe } from "react-icons/fi";
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
 const ArrowRightIcon = ({ className = "" }: { className?: string }) => (
@@ -306,58 +307,62 @@ export default function TransferPage() {
 
   return (
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
-      {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
-      {/* <svg
-        className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] h-auto"
-        viewBox="0 0 700 520"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M700 520 H0 C80 520 160 480 200 400 C260 290 180 160 260 80 C330 10 450 0 540 20 C630 40 700 110 700 200 Z"
-          fill="#dce6ff"
-          opacity="0.55"
-        />
-        <path
-          d="M700 520 H120 C200 520 300 490 360 420 C430 340 370 210 450 130 C510 60 610 40 670 70 C690 80 700 100 700 120 Z"
-          fill="white"
-          opacity="0.85"
-        />
-      </svg> */}
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative grid-bg -mt-8 lg:-mt-10 overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-9 py-20 lg:py-28">
-          <div className="flex gap-2 lg:gap-2 items-center justify-between">
-            {/* Heading */}
-            <div className="relative z-10 max-w-[65%] sm:max-w-[60%]">
-              <h1 className="text-[40px] sm:text-[48px] lg:text-[78px] font-bold leading-[1.05] tracking-tight mb-5 text-black">
-                Local and international money transfers
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-8">
+        {/* Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-20 lg:py-18">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            {/* LEFT CONTENT */}
+            <div className="max-w-2xl ">
+              <h1
+                className="text-[52px] leading-[0.95] font-bold tracking-tight text-[#111827]
+        sm:text-[65px]
+        lg:text-[78px] w-[130%]"
+              >
+                Local and
+                <br />
+                international money
+                <br />
+                transfers
               </h1>
-              <p className="text-left text-[16px] text-gray-700 lg:text-[18px] font-medium md:text-xl leading-relaxed max-w-xl mb-8">
-                Redefine the way you send money across the globe. Make instant,
-                secure deposits into any bank account at unrivaled rates.
+
+              <p className="mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
+                Redefine the way you send money across the globe.
+                <br className="hidden lg:block" />
+                Make instant, secure deposits into any bank account
+                <br className="hidden lg:block" />
+                at unrivaled rates.
               </p>
-              <button className="flex items-center gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+
+              <button className="mt-12 rounded-xl bg-[#1154DA] px-8 py-5 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
                 Make a transfer
               </button>
             </div>
 
-            {/* Right Side: Image - absolute, right side */}
-            <div className="absolute right-[-34px] top-20 bottom-10 w-[55%] sm:w-[48%] flex items-end">
-              <img src="/mapp.webp" alt="" className="lg:w-70  lg:-mt-14" />
+            {/* RIGHT IMAGE */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src="/mapp.webp"
+                alt="World Map"
+                className="w-[280px] sm:w-[260px] lg:w-[250px] lg:-mt-8"
+              />
             </div>
           </div>
         </div>
+
+        {/* Bottom curved shape */}
+        <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="max-w-7xl mx-auto px-6 md:px-10  lg:px-10 py-20 lg:py-18">
         <div className="flex items-end justify-between xs:text-center">
-          <h1 className="text-black/90 text-[26px] md:text-[50px] lg:text-[70px] font-bold leading-[1.10] tracking-tight">
-            Send money abroad <br />
-            the easy way
+          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[70px] font-bold leading-[1.10] tracking-tight">
+            Send money abroad <br className="hidden lg:block" />
+            the easy <br className="hidden sm:block lg:block" /> way
           </h1>
-          <div className="w-14 h-14 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center mb-6">
+          <div className="w-14 h-12 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center lg:mb-6 -mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
         </div>

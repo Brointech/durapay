@@ -166,7 +166,6 @@ const Personal = () => {
         </div>
         <div className="text-center mb-5">
           <button className=" gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
-            {/* <Download className="w-5 h-5" /> */}
             Open a free Durapay account{" "}
           </button>
         </div>
