@@ -209,7 +209,7 @@ export const Nnavbar = () => {
   return (
     <>
       <header
-        className={`w-full fixed top-0 left-0 right-0 w-screen z-99999 transition-all duration-300 ${
+        className={`w-full fixed top-0 left-0 right-0 z-99999 transition-all duration-300 ${
           scrolled ? "bg-[#8C9CC5] shadow-md" : "bg-[#8C9CC5]"
         }`}
       >

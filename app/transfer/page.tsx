@@ -317,13 +317,13 @@ export default function TransferPage() {
             {/* LEFT CONTENT */}
             <div className="max-w-2xl ">
               <h1
-                className="text-[52px] leading-[0.95] font-bold tracking-tight text-[#111827]
+                className="text-[52px] leading-[1.09] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
         lg:text-[78px] w-[130%]"
               >
                 Local and
                 <br />
-                international money
+                international <br className="sm:hidden block" /> money
                 <br />
                 transfers
               </h1>
@@ -357,14 +357,23 @@ export default function TransferPage() {
       </section>
       {/* Next Phase*/}
       <section className="max-w-7xl mx-auto px-6 md:px-10  lg:px-10 py-20 lg:py-18">
-        <div className="flex items-end justify-between xs:text-center">
-          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[70px] font-bold leading-[1.10] tracking-tight">
-            Send money abroad <br className="hidden lg:block" />
-            the easy <br className="hidden sm:block lg:block" /> way
+        {/* <div className="flex items-end justify-between xs:text-center">
+          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[60px] font-bold leading-[1.10] tracking-tight">
+            Send money abroad <br />
+            the easy way
           </h1>
           <div className="w-14 h-12 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center lg:mb-6 -mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
+        </div> */}
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
+          <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
+            <Wallet className="w-10 h-10 text-white" />
+          </div>
+          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-[1.10] tracking-tight order-2 md:order-1">
+            Send money <br className="sm:hidden block" /> abroad the easy{" "}
+            <br className="hidden:lg block" /> way
+          </h1>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-10">
           <img

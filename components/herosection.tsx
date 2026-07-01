@@ -243,7 +243,7 @@ const HeroSection = () => {
         </div>
 
         {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
-        {/* <div className="flex sm:hidden justify-center items-end mt-6 ">
+        <div className="flex sm:hidden justify-center items-end mt-6 ">
           <img
             src="/somos.png"
             alt="DuraPay App"
@@ -256,7 +256,7 @@ const HeroSection = () => {
               object-bottom
             "
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );

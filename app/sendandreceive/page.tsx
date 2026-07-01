@@ -102,29 +102,30 @@ export default function Sendandreceive() {
         />
       </svg> */}
       {/* ── HERO ───────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-2">
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-6 md:-mt-0 lg:-mt-2 min-h-[90vh]">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-20 lg:py-18">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-20 md:py-24 lg:py-18 ">
+          <div className="grid items-center gap-0 lg:grid-cols-2 md:grid-cols-2">
             {/* LEFT CONTENT */}
-            <div className="max-w-2xl ">
+            <div className="max-w-2xl md:max-w-sm lg:max-w-2xl">
               <h1
-                className="text-[52px] leading-[0.95] font-bold tracking-tight text-[#111827]
-        sm:text-[65px]
+                className="text-[48px] leading-[0.95] font-bold tracking-tight text-[#111827]
+        sm:text-[65px] md:text-[54px]
         lg:text-[78px] w-[130%]"
               >
-                The bank account
+                The bank <br className="lg:hidden block" />
+                account
                 <br />
                 for modern
                 <br />
                 professionals
               </h1>
 
-              <p className="mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
+              <p className="mt-6 md:mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
                 Open a free foreign bank account to receive
-                <br className="hidden lg:block" />
+                <br className="hidden md:block " />
                 payments globally. No minimum deposits required.
               </p>
 
@@ -134,11 +135,11 @@ export default function Sendandreceive() {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-end mt-8 lg:mt-0 ">
               <img
                 src="/Handnew.avif"
                 alt="Handnew"
-                className="w-[280px] sm:w-[260px] lg:w-[250px] lg:-mt-8"
+                className="w-[240px] sm:w-[280px] md:w-[260px] lg:w-[250px] lg:-mt-8"
               />
             </div>
           </div>

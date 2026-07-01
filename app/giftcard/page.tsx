@@ -202,7 +202,7 @@ export default function GiftPage() {
   const quickAmounts = [500, 1000, 2000, 5000, 10000, 20000];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-900">
+    <div className="min-h-screen bg-white font-sans text-slate-900 ">
       {/* Success Toast */}
       {showSuccess && (
         <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 animate-in fade-in slide-in-from-top-2">
@@ -221,8 +221,8 @@ export default function GiftPage() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 px-6 sm:px-10 lg:px-10 bg-gradient-to-b from-slate-50 to-white">
+        <div className=" mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-[#1154da] text-blue-700 text-sm font-medium mb-6">
@@ -474,8 +474,8 @@ export default function GiftPage() {
       </section>
 
       {/* Gift Options */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-14 ">
+        <div className="max-w-6xl mx-auto ">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
               Four ways to give
@@ -533,11 +533,10 @@ export default function GiftPage() {
         </div>
       </section>
 
-      {/* Interactive Send Form */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      {/* <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            {/* Form Side */}
+         
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
                 Try it now
@@ -548,7 +547,7 @@ export default function GiftPage() {
               </p>
 
               <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-                {/* Gift Type Selector */}
+             
                 <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
                   {giftOptions.map((option) => (
                     <button
@@ -566,7 +565,7 @@ export default function GiftPage() {
                   ))}
                 </div>
 
-                {/* Amount Input */}
+               
                 <div className="mb-6">
                   <label className="block text-sm font-semibold text-slate-700 mb-3">
                     Amount (₦)
@@ -596,7 +595,7 @@ export default function GiftPage() {
                   </div>
                 </div>
 
-                {/* Phone Number */}
+             
                 <div className="mb-6">
                   <label className="block text-sm font-semibold text-slate-700 mb-3">
                     Recipient Phone Number
@@ -615,7 +614,7 @@ export default function GiftPage() {
                   </div>
                 </div>
 
-                {/* Message */}
+               
                 <div className="mb-8">
                   <label className="block text-sm font-semibold text-slate-700 mb-3">
                     Add a Message{" "}
@@ -648,7 +647,7 @@ export default function GiftPage() {
               </div>
             </div>
 
-            {/* Preview Side */}
+            
             <div className="lg:sticky lg:top-24">
               <div className="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
@@ -665,7 +664,7 @@ export default function GiftPage() {
                     </div>
                   </div>
 
-                  {/* SMS Preview */}
+        
                   <div className="bg-white rounded-2xl p-5 text-slate-900 mb-6">
                     <div className="flex items-center gap-2 mb-4">
                       <MessageCircle className="w-5 h-5 text-[#1154da]" />
@@ -690,7 +689,7 @@ export default function GiftPage() {
                     </div>
                   </div>
 
-                  {/* Claim Screen Preview */}
+                
                   <div className="bg-white rounded-2xl p-5 text-slate-900">
                     <div className="flex items-center gap-2 mb-4">
                       <Smartphone className="w-5 h-5 text-blue-600" />
@@ -732,10 +731,10 @@ export default function GiftPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* How It Works */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 ">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -792,7 +791,7 @@ export default function GiftPage() {
       </section>
 
       {/* Trust Features */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10  bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
@@ -931,7 +930,7 @@ export default function GiftPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 ">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -979,7 +978,7 @@ export default function GiftPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10  bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -1033,7 +1032,7 @@ export default function GiftPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 ">
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />

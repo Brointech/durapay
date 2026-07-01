@@ -4,8 +4,8 @@ import { Shield, Wallet, Lock } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-slate-200 py-16 px-8 sm:px-8 lg:px-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-black border-t border-slate-200 py-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-10">
         <div className="border-b border-slate-600 -mt-8 lg:-mt-16">
           <h1 className="text-white text-[30px] md:text-[40px] lg:text-[70px] font-bold text-center leading-tight">
             Get digital banking <br className="hidden lg:block" />
