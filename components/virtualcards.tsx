@@ -110,14 +110,15 @@ const VirtualCardsSection = () => {
           <p className="text- md:text-sm lg:text-lg font-semibold tracking-widest text-[#1154da] uppercase mb-4">
             Virtual Cards
           </p>
-          <h2 className="text-[44px] md:text-[42px] lg:text-[58px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
+          <h2 className="text-[36px] md:text-[42px] lg:text-[58px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
             Shop and spend
             <br />
-            anywhere
+            globally
           </h2>
-          <p className="text-[20px] md:text-[17px] lg:text-[18px] text-black font-semibold leading-relaxed mb-10 max-w-sm">
-            Use a virtual debit card that simply <br />
-            works to make payments globally.
+          <p className="text-[18px] md:text-[17px] lg:text-[18px] text-black font-medium leading-relaxed mb-10 max-w-sm">
+            Make international payments with a{" "}
+            <br className="hidden sm:block" />
+            virtual debit card that just works.
           </p>
           <button className="inline-flex items-center gap-3 text-[#1154da] font-semibold text-[20px] group w-fit">
             Get your card
@@ -128,11 +129,11 @@ const VirtualCardsSection = () => {
         </div>
 
         {/* RIGHT — floating image */}
-        <div className="relative min-h-90 md:min-h-100 lg:min-h-[400px]">
+        <div className="relative flex items-end min-h-80 md:min-h-100 lg:min-h-[400px]">
           <img
             src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-full ml-12 h-auto object-cover object-center z-10"
+            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-full ml-8 sm:max-w-[480px]  h-auto object-cover "
           />
         </div>
       </div>
