@@ -338,7 +338,7 @@ export default function SavingsPage() {
       </nav> */}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-emerald-50/50 to-white">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-emerald-50/50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -577,7 +577,7 @@ export default function SavingsPage() {
       </section>
 
       {/* Interest Rate Comparison */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -661,7 +661,7 @@ export default function SavingsPage() {
       </section>
 
       {/* Savings Plans */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -776,7 +776,10 @@ export default function SavingsPage() {
       </section>
 
       {/* Interest Calculator */}
-      <section id="calculator" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section
+        id="calculator"
+        className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
@@ -1041,7 +1044,7 @@ export default function SavingsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -1098,7 +1101,7 @@ export default function SavingsPage() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -1170,7 +1173,7 @@ export default function SavingsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -1226,7 +1229,7 @@ export default function SavingsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 px-6 sm:px-10 lg:px-10">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -1280,7 +1283,7 @@ export default function SavingsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28px-6 sm:px-10 lg:px-10">
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />

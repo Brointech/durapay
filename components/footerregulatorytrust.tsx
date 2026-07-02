@@ -98,7 +98,7 @@ export function FooterRegulatoryTrust() {
         ))}
       </div> */}
 
-      <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-10 px-4 sm:px-6 lg:px-10 mt-4">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-10 px-6 sm:px-10 lg:px-10 mt-4">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-lg bg-slate-300 flex items-center justify-center shrink-0">
             <Wallet className="w-5 h-5 text-black" />

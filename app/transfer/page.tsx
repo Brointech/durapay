@@ -356,16 +356,7 @@ export default function TransferPage() {
         <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className="max-w-7xl mx-auto px-6 md:px-10  lg:px-10 py-20 lg:py-18">
-        {/* <div className="flex items-end justify-between xs:text-center">
-          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[60px] font-bold leading-[1.10] tracking-tight">
-            Send money abroad <br />
-            the easy way
-          </h1>
-          <div className="w-14 h-12 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center lg:mb-6 -mt-4">
-            <Wallet className="w-10 h-10 text-white" />
-          </div>
-        </div> */}
+      <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
@@ -375,21 +366,21 @@ export default function TransferPage() {
             <br className="hidden:lg block" /> way
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10 lg:mt-10">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 mt-10 lg:mt-10">
           <img
             src="/Screenshot1.png"
             alt=""
-            className="w-110 md:w-180 lg:w-95"
+            className="w-130 md:w-180 lg:w-95"
           />
           <img
             src="/Screenshot2.png"
             alt=""
-            className="w-110 md:w-180 lg:w-95"
+            className="w-130 md:w-180 lg:w-95"
           />
           <img
             src="/Screenshot3.png"
             alt=""
-            className="w-110 md:w-180 lg:w-95"
+            className="w-130 md:w-180 lg:w-95"
           />
         </div>
       </section>
@@ -791,12 +782,12 @@ export default function TransferPage() {
                   placeholder="your@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-white placeholder-zinc-600 outline-none focus:border-[#023bac] transition-colors"
+                  className="flex-1 bg-white/5 border border-blue/10 rounded-xl px-3 py-2.5 text-sm text-white placeholder-zinc-600 outline-none focus:border-[#023bac] transition-colors"
                   required
                 />
                 <button
                   type="submit"
-                  className="bg-[#1154da] hover:bg-[#023bac] transition-colors text-white font-bold px-4 py-2.5 rounded-xl text-sm shrink-0"
+                  className="bg-[#1154da] hover:bg-[#023bac] transition-colors text-white font-bold px-2 py-2.5 rounded-xl text-[12px]shrink-0"
                 >
                   Notify me
                 </button>

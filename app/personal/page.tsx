@@ -153,9 +153,21 @@ const Personal = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
-          <img src="/screenshot1.png" alt="" className="md:w-150 lg:w-100" />
-          <img src="/screenshot2.png" alt="" className="md:w-80 lg:w-100" />
-          <img src="/screenshot3.png" alt="" className="md:w-80 lg:w-100" />
+          <img
+            src="/screenshot1.png"
+            alt=""
+            className="w-130 md:w-180 lg:w-95"
+          />
+          <img
+            src="/screenshot2.png"
+            alt=""
+            className="w-130 md:w-180 lg:w-95"
+          />
+          <img
+            src="/screenshot3.png"
+            alt=""
+            className="w-130 md:w-180 lg:w-95"
+          />
         </div>
         <div className="">
           <h1 className="font-bold text-center text-black lg:text-[50px] leading-tight tracking-tight mb-7 mt-10">
