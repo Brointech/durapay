@@ -2,7 +2,7 @@
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-white py-16 px-6 lg:px-20 lg:mt-10">
+    <section className="w-full bg-white py-16 px-6 sm:px-10 lg:px-10 lg:mt-10">
       <div className="max-w-7xl mx-auto flex flex-col gap-14">
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto">

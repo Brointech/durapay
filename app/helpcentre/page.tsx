@@ -75,7 +75,7 @@ const HelpCentre = () => {
   return (
     <main className="bg-white">
       {/* HERO */}
-      <section className="bg-[#f7f9fc] py-20 lg:py-28">
+      <section className="bg-[#f7f9fc] py-20px-6 sm:px-10 lg:px-10">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             Help Center
@@ -105,7 +105,7 @@ const HelpCentre = () => {
 
       {/* CATEGORIES */}
       <section className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-10">
           <h2 className="text-center text-3xl font-bold text-gray-900">
             Browse Help Topics
           </h2>
@@ -137,7 +137,7 @@ const HelpCentre = () => {
 
       {/* POPULAR ARTICLES */}
       <section className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-10">
           <h2 className="text-center text-3xl font-bold text-gray-900">
             Popular Articles
           </h2>
@@ -161,7 +161,7 @@ const HelpCentre = () => {
 
       {/* FAQ */}
       <section className="py-20">
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-4xl px-6 sm:px-10 lg:px-10">
           <h2 className="text-center text-3xl font-bold text-gray-900">
             Frequently Asked Questions
           </h2>
@@ -201,8 +201,8 @@ const HelpCentre = () => {
 
       {/* CONTACT SUPPORT */}
       <section className="pb-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="rounded-3xl bg-blue-600 px-8 py-14 text-center text-white md:px-16">
+        <div className="mx-auto max-w-5xl px-6 sm:px-10 lg:px-10 ">
+          <div className="rounded-3xl bg-blue-800 px-8 py-14 text-center text-white md:px-16">
             <h2 className="text-3xl font-bold">Still need help?</h2>
 
             <p className="mt-4 text-blue-100">

@@ -27,7 +27,7 @@ export default function Enterprise() {
       <div className="absolute inset-0 bg-[url('/world-map.png')] bg-cover bg-center opacity-10" />
 
       <div className="relative z-10 mx-auto max-w-7xl -mt-10">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center  gap-16 lg:grid-cols-2">
           {/* Left */}
           <div>
             <span className="inline-flex rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2 text-sm font-bold text-blue-600 -mt-20">
