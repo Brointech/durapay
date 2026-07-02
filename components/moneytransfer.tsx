@@ -52,7 +52,7 @@ const MoneyTransfer = () => {
         </div>
 
         {/* RIGHT — Content */}
-        <div className="w-full md:w-3/5 lg:w-3/5 rounded-2xl overflow-hidden min-h-[520px] md:min-h-[520px] lg:min-h-[620px] bg-[#F6DCC7] px-6 sm:px-10 lg:px-12 py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
+        <div className="w-full md:w-3/5 lg:w-3/5 rounded-2xl overflow-hidden min-h-[520px] md:min-h-[520px] lg:min-h-[620px] bg-[#F6DCC7] px-6 sm:px-10 lg:px-14 py-12 flex flex-col gap-5 justify-center shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <p className="text-xs md:text-sm lg:text-lg font-semibold tracking-widest text-[#4F4A82] uppercase pt-0 lg:pt-0">
             Money Transfer
           </p>

@@ -240,7 +240,7 @@ const HeroSection = () => {
             Open a foreign bank account from your phone for free
           </p>
 
-          <div className="mt-6 sm:mt-8 lg:mt-10">
+          <div className="mt-6 sm:mt-8 lg:mt-16">
             <button className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
               Get started - it's free
             </button>
