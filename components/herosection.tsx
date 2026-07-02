@@ -130,7 +130,7 @@ import { Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-screen flex flex-col">
+    <section className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col">
       {/* ── BACKGROUND LAYERS ── */}
 
       {/* Base periwinkle-blue gradient */}
@@ -208,9 +208,27 @@ const HeroSection = () => {
 
       {/* ── HERO CONTENT ── */}
       <div className="relative z-10 flex-1 flex flex-col md:grid md:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
-        {/* TEXT — top section on mobile */}
+        {/* IMAGE — mobile: full-bleed background behind text */}
+        <div className="absolute inset-0 flex sm:hidden pointer-events-none">
+          <img
+            src="/somos.png"
+            alt="DuraPay App"
+            loading="lazy"
+            className="
+      absolute
+      left-20
+      bottom-0
 
-        <div className="flex flex-col justify-center pt-16 pb-8 sm:pt-18 lg:pt-10 lg:pb-0">
+      w-65%
+      max-w-none
+      object-contain
+    object-bottom lg:ml-20 h-[60vh] lg:h-[80vh] max-h-[700px]
+      "
+          />
+        </div>
+
+        {/* TEXT — top section on mobile, overlaid on image */}
+        <div className="relative z-10 flex flex-col justify-start pt-16 pb-8 sm:pt-18 lg:pt-10 lg:pb-0">
           <h1 className="text-[36px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
             Inclusive global <br />
             banking designed <br />
@@ -224,15 +242,12 @@ const HeroSection = () => {
 
           <div className="mt-6 sm:mt-8 lg:mt-10">
             <button className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
-              {/* <Download className="w-4 h-4 sm:w-5 sm:h-5" /> */}
               Get started - it's free
             </button>
           </div>
         </div>
 
-        {/* Bottom curved shape */}
-        <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
-        {/* IMAGE — desktop: pinned to bottom-right */}
+        {/* IMAGE — desktop: pinned to bottom-right (unchanged) */}
         <div className="hidden sm:flex items-end justify-center lg:justify-end">
           <img
             src="/somos.png"
@@ -241,23 +256,9 @@ const HeroSection = () => {
             className="w-full lg:ml-20 h-[60vh] lg:h-[80vh] max-h-[700px] object-contain object-bottom drop-shadow-2xl"
           />
         </div>
-
-        {/* IMAGE — mobile/tablet: flush to bottom, no gap */}
-        <div className="flex sm:hidden justify-center items-end mt-6 ">
-          <img
-            src="/somos.png"
-            alt="DuraPay App"
-            loading="lazy"
-            className="
-              w-[85%]
-              max-w-[360px]
-              h-auto
-              object-contain
-              object-bottom
-            "
-          />
-        </div>
       </div>
+      {/* Bottom curved shape */}
+      <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
     </section>
   );
 };

@@ -43,7 +43,7 @@ const CurrencyExchange = () => {
     // </section>
 
     <section
-      className="w-full px-6 md:px-8 lg:px-12 py-16 bg-white bg-"
+      className="w-full px-6 md:px-10 lg:px-10 py-16 bg-white bg-"
       style={{ backgroundImage: "url('/')" }}
     >
       <div className="flex flex-col md:flex-row gap-6">
