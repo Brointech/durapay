@@ -103,7 +103,7 @@ const VirtualCardsSection = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 py-16">
+    <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid md:grid-cols-2 items-center gap-10">
         {/* LEFT — content */}
         <div className="px-6 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-12 lg:pb-14 flex flex-col justify-center">
@@ -133,7 +133,8 @@ const VirtualCardsSection = () => {
           <img
             src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-full ml-8 sm:max-w-[480px]  h-auto object-cover "
+            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-[70%] ml-8 sm:max-w-[480px]  md:max-w-[520px] 
+    lg:max-w-[600px] h-auto object-cover "
           />
         </div>
       </div>
