@@ -134,7 +134,7 @@ const VirtualCardsSection = () => {
           <img
             src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 bottom-0 w-[85%] md:w-[95%] lg:w-[70%] ml-8 sm:max-w-[480px]  md:max-w-[520px] 
+            className="absolute inset-0 w-[85%] md:w-[95%] lg:w-[70%] ml-8 sm:max-w-[480px] md:max-w-[520px] 
     lg:max-w-[600px] h-auto object-cover "
           />
         </div>

@@ -221,7 +221,7 @@ const HeroSection = () => {
       w-65%
       max-w-none
       object-contain
-    object-bottom lg:ml-20 h-[50vh] lg:h-[80vh] max-h-[700px]
+    object-bottom lg:ml-20 h-[50vh] md:h-[80vh] lg:h-[80vh] max-h-[700px]
       "
           />
         </div>
