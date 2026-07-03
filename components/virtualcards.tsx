@@ -103,6 +103,7 @@ const VirtualCardsSection = () => {
     //     </div>
     //   </div>
     // </section>
+
     <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid md:grid-cols-2 items-center gap-10">
         {/* LEFT — content */}
@@ -129,11 +130,11 @@ const VirtualCardsSection = () => {
         </div>
 
         {/* RIGHT — floating image */}
-        <div className="relative flex items-end min-h-80 md:min-h-100 lg:min-h-[400px]">
+        <div className="relative  w-full flex items-end min-h-[280px] sm:min-h-[320px] md:min-h-[380px]  lg:min-h-[400px]">
           <img
             src="/virtual.avif"
             alt="Virtual card on phone"
-            className="absolute inset-0 w-[75%] md:w-[95%] lg:w-[70%] ml-8 sm:max-w-[480px]  md:max-w-[520px] 
+            className="absolute inset-0 bottom-0 w-[85%] md:w-[95%] lg:w-[70%] ml-8 sm:max-w-[480px]  md:max-w-[520px] 
     lg:max-w-[600px] h-auto object-cover "
           />
         </div>

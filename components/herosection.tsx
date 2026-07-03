@@ -218,11 +218,10 @@ const HeroSection = () => {
       absolute
       left-20
       bottom-0
-
       w-65%
       max-w-none
       object-contain
-    object-bottom lg:ml-20 h-[60vh] lg:h-[80vh] max-h-[700px]
+    object-bottom lg:ml-20 h-[50vh] lg:h-[80vh] max-h-[700px]
       "
           />
         </div>
@@ -235,7 +234,7 @@ const HeroSection = () => {
             just for you.
           </h1>
 
-          <p className="mt-6 sm:mt-8 lg:mt-10 max-w-[440px] sm:max-w-[480px] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-medium leading-[1.55] text-white/90">
+          <p className="mt-6 sm:mt-8 lg:mt-10 max-w-[440px] sm:max-w-[480px] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-medium leading-[1.12] text-white/90">
             Receive, send, exchange, and manage multiple currencies in one app.
             Open a foreign bank account from your phone for free
           </p>
