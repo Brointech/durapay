@@ -5,6 +5,7 @@ import { Nnavbar } from "@/components/nnavbar";
 import Subnavbar from "@/components/subnavbar";
 import Footer from "@/components/footer";
 import { FooterRegulatoryTrust } from "@/components/footerregulatorytrust";
+import { NavShell } from "@/components/navshell";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +37,7 @@ export default function RootLayout({
       className="min-h-full"
     >
       <body className=" w-full min-h-screen overflow-x-hidden">
-        <div className="sticky top-0 z-50">
-          <Subnavbar />
-          <Nnavbar />
-        </div>
+        <NavShell />
         <main>{children}</main>
         <Footer />
         <FooterRegulatoryTrust />

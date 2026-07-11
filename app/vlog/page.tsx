@@ -85,7 +85,7 @@ export default function BlogSection() {
           {categories.map((item) => (
             <button
               key={item}
-              className="px-5 py-2 rounded-full border border-gray-200 hover:border-black hover:bg-black hover:text-white transition-all duration-300"
+              className="px-5 py-2 rounded-full border border-gray-200 hover:border-black hover:bg-black hover:text-white text-black transition-all duration-300"
             >
               {item}
             </button>

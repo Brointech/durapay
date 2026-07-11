@@ -100,11 +100,9 @@ const GlobalAccountSection = () => {
             src="/greyy.avif"
             alt=""
             className="
-     
      sm:max-w-[480px] md:max-w-[520px] 
     lg:max-w-[600px]
       object-cover
-   
     "
           />
         </div>

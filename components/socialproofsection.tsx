@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const logos = [
   "Forbes",
@@ -15,7 +15,24 @@ const logos = [
 ];
 
 const SocialProofSection = () => {
-  const [toggleOn, setToggleOn] = useState(true);
+  const [toggleOn, setToggleOn] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const hasTriggered = useRef(false); // ensures it only auto-fires once, not every time it scrolls in/out
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setToggleOn(entry.isIntersecting);
+      },
+      { threshold: 0.6 },
+    );
+
+    if (toggleRef.current) observer.observe(toggleRef.current);
+
+    return () => {
+      if (toggleRef.current) observer.unobserve(toggleRef.current);
+    };
+  }, []);
 
   const allLogos = [...logos, ...logos, ...logos];
 
@@ -59,7 +76,7 @@ const SocialProofSection = () => {
             {allLogos.map((logo, i) => (
               <span
                 key={i}
-                className="text-[17px] font-bold text-gray-400 hover:text-gray-800 transition-all duration-200 whitespace-nowrap cursor-default select-none"
+                className="text-[17px] font-bold text-gray-400 hover:text-gray-900 transition-all duration-200 whitespace-nowrap cursor-default select-none"
               >
                 {logo}
               </span>
@@ -78,7 +95,7 @@ const SocialProofSection = () => {
         ].map(({ pos, delay }, i) => (
           <span
             key={i}
-            className={`absolute ${pos} text-[#5e93fb] text-sm pointer-events-none`}
+            className={`absolute ${pos} text-[#CEAFF4] text-sm pointer-events-none`}
             style={{ animation: `sparkpulse 2s ease-in-out ${delay} infinite` }}
           >
             ✦
@@ -86,35 +103,33 @@ const SocialProofSection = () => {
         ))}
 
         <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-gray-900 leading-tight">
-          Access Smarter Payment
+          No Limits, No Borders
         </h2>
         <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-tight">
-          <span className="text-[#1154da]">
-            {" "}
-            Seamless Transfers & Secure Banking{" "}
-          </span>
-          {/* <button
+          <span className="text-[#5E19B3]"> Go global</span>
+          <button
+            ref={toggleRef}
             onClick={() => setToggleOn(!toggleOn)}
-            className={`inline-flex items-center rounded-full p-1 transition-colors duration-300 align-middle relative -top-1 ${
-              toggleOn ? "bg-[#1154da]" : "bg-[#87aefc]"
+            className={`inline-flex items-center rounded-full p-1.5 transition-colors duration-700 align-middle relative -top-1 ${
+              toggleOn ? "bg-[#EDE9FE]" : "bg-[#EDE9FE]"
             }`}
-            style={{ width: 60, height: 34 }}
+            style={{ width: 60, height: 36 }}
             aria-label="Toggle global"
           >
             <span
-              className={`w-7 h-7 rounded-full bg-white flex items-center justify-center shadow transition-transform duration-300 ${
+              className={`w-7 h-7 rounded-full bg-gradient-to-br from-[#7C3AED] to-[#5B21B6] flex items-center justify-center shadow-md transition-transform duration-700 ${
                 toggleOn ? "translate-x-[26px]" : "translate-x-0"
               }`}
             >
               <svg
-                className="w-4 h-4 text-[#1154da]"
+                className="w-4 h-4 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H13.5L13 2z" />
               </svg>
             </span>
-          </button> */}
+          </button>
         </h2>
       </div>
 

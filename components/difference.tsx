@@ -27,7 +27,7 @@ const Differrence = () => {
         {/* LEFT — content */}
         <div className="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-14 lg:py-24">
           <h2 className="text-[42px] sm:text-[52px] font-bold text-[#0d1f0a] leading-[1.1] mb-5">
-            Collaborating <br /> to make a changebhgy
+            Collaborating <br /> to make a change
           </h2>
 
           <p className="text-[16px] text-zinc-600 font-semibold leading-relaxed mb-5 max-w-sm">
@@ -36,7 +36,7 @@ const Differrence = () => {
             corporate social responsibility initiatives, we strive to make a
             difference in the communities we serve. By choosing Durapay, you're
             not just simplifying your global transactions but contributing to a
-            better worldhgdutdoyf
+            better world.
           </p>
           <img src="/heart.avif" alt="" className="w-25 " />
         </div>

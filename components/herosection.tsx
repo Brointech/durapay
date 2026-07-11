@@ -126,13 +126,33 @@
 
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+
 import { Download } from "lucide-react";
 
 const HeroSection = () => {
-  return (
-    <section className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col">
-      {/* ── BACKGROUND LAYERS ── */}
+  const [overHero, setOverHero] = useState(true);
 
+  useEffect(() => {
+    const hero = document.getElementById("hero");
+    if (!hero) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setOverHero(entry.isIntersecting);
+      },
+      { threshold: 0, rootMargin: "-80px 0px 0px 0px" }, // offset by navbar height
+    );
+
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
+  return (
+    <section
+      id="hero"
+      className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col"
+    >
+      {/* ── BACKGROUND LAYERS ── */}
       {/* Base periwinkle-blue gradient */}
       <div
         className="absolute inset-0"
@@ -145,7 +165,6 @@ const HeroSection = () => {
     `,
         }}
       />
-
       {/* Grain overlay */}
       <div
         className="absolute inset-0 opacity-[0.055] pointer-events-none"
@@ -155,7 +174,6 @@ const HeroSection = () => {
           backgroundSize: "128px 128px",
         }}
       />
-
       {/* Right-side light bloom */}
       <div
         className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
@@ -164,7 +182,6 @@ const HeroSection = () => {
             "radial-gradient(ellipse 65% 75% at 78% 28%, rgba(220, 232, 253, 0.28) 0%, transparent 60%)",
         }}
       />
-
       {/* Floor reflection */}
       <div
         className="absolute bottom-0 left-0 right-0 h-[30%] pointer-events-none"
@@ -173,7 +190,6 @@ const HeroSection = () => {
             "linear-gradient(to top, rgba(160, 185, 240, 0.22) 0%, transparent 100%)",
         }}
       />
-
       {/* ── WHITE CURVED SHAPE — desktop only ── */}
       {/* <div
         className="absolute bottom-0 right-0 pointer-events-none hidden lg:block"
@@ -192,8 +208,7 @@ const HeroSection = () => {
           <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
         </svg>
       </div> */}
-
-      {/* ── MOBILE/TABLET: full white bottom curve spanning full width ── */}
+      ,{/* ── MOBILE/TABLET: full white bottom curve spanning full width ── */}
       <div className="absolute bottom-0 left-0 right-0 pointer-events-none lg:hidden">
         <svg
           viewBox="0 0 375 80"
@@ -205,7 +220,6 @@ const HeroSection = () => {
           <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
         </svg>
       </div>
-
       {/* ── HERO CONTENT ── */}
       <div className="relative z-10 flex-1 flex flex-col md:grid md:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
         {/* IMAGE — mobile: full-bleed background behind text */}
@@ -227,7 +241,7 @@ const HeroSection = () => {
         </div>
 
         {/* TEXT — top section on mobile, overlaid on image */}
-        <div className="relative z-10 flex flex-col justify-start pt-16 pb-8 sm:pt-18 lg:pt-10 lg:pb-0">
+        <div className="relative z-10 flex flex-col justify-start pt-16 pb-8 sm:pt-18 lg:pt-20 lg:pb-0">
           <h1 className="text-[36px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
             Inclusive global <br />
             banking designed <br />

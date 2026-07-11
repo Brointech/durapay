@@ -24,7 +24,33 @@ import {
   Globe,
   Receipt,
   type LucideIcon,
+  MessageCircle,
+  Newspaper,
 } from "lucide-react";
+
+const HOME_HERO_GRADIENT = `
+  radial-gradient(ellipse 80% 80% at 72% 45%, rgba(180, 200, 245, 0.50) 0%, transparent 60%),
+  radial-gradient(ellipse 55% 70% at 100% 85%, rgba(90, 120, 200, 0.40) 0%, transparent 55%),
+  radial-gradient(ellipse 50% 55% at 0% 15%, rgba(210, 220, 250, 0.30) 0%, transparent 50%),
+  linear-gradient(155deg, #A4B0D0 0%, #8D9CC2 38%, #7E8CB5 68%, #6B7AA8 100%)
+`;
+
+const NAVBAR_THEMES: Record<string, { bg: string; text: string }> = {
+  "/": { bg: "", text: "text-white" },
+  "/wallet": { bg: "bg-[#F8F9FF]", text: "text-black" },
+  "/gift-card": { bg: "bg-white", text: "text-[#00246C]" },
+  "/transfer": { bg: "bg-[#F8F9FF]", text: "text-black" },
+  "/v-tu": { bg: "bg-white", text: "text-[#00246C]" },
+  "/savings": { bg: "bg-white", text: "text-[#00246C]" },
+  "/virtualcard": { bg: "bg-white", text: "text-[#00246C]" },
+  "/physicalcards": { bg: "bg-white", text: "text-[#00246C]" },
+  "/helpcentre": { bg: "bg-white", text: "text-[#00246C]" },
+  "/contact": { bg: "bg-white", text: "text-[#00246C]" },
+  "/about": { bg: "bg-white", text: "text-[#00246C]" },
+  "/vlog": { bg: "bg-white", text: "text-[#00246C]" },
+};
+
+const DEFAULT_THEME = { bg: "bg-[#8C9CC5]", text: "text-white" };
 
 // Child type now includes optional icon
 type Child = {
@@ -34,23 +60,51 @@ type Child = {
   icon?: LucideIcon;
 };
 
+type discover = {
+  name: string;
+  href: string;
+};
+
 type NavLink = { name: string; href: string; children?: Child[] };
 
-export const Nnavbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
+  const [internalScrolled, setInternalScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+  const theme = NAVBAR_THEMES[pathname] ?? DEFAULT_THEME;
+
+  // Use the prop when provided (home page), otherwise track scroll internally (all other pages)
+  const scrolled = scrolledProp !== undefined ? scrolledProp : internalScrolled;
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    // Only run the internal listener when no scrolled prop is being passed in
+    if (scrolledProp !== undefined) return;
+    const handleScroll = () => setInternalScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [scrolledProp]);
+
+  // export const Nnavbar = () => {
+  //   const [scrolled, setScrolled] = useState(false);
+  //   const [isOpen, setIsOpen] = useState(false);
+  //   const [mounted, setMounted] = useState(false);
+  //   const pathname = usePathname();
+  //   const theme = NAVBAR_THEMES[pathname] ?? DEFAULT_THEME;
+
+  //   useEffect(() => {
+  //     setMounted(true);
+  //   }, []);
+
+  //   useEffect(() => {
+  //     const handleScroll = () => setScrolled(window.scrollY > 20);
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  //   }, []);
 
   useEffect(() => {
     setIsOpen(false);
@@ -73,70 +127,93 @@ export const Nnavbar = () => {
 
   // navLinks with icons added to every child
   const navLinks: NavLink[] = [
-    // { name: "Home", href: "/" },
     {
-      name: "Features",
+      name: "Products",
       href: "#",
       children: [
-        { name: "Wallet", href: "/wallet", icon: Wallet },
-        { name: "Receive", href: "/sendandreceive", icon: ArrowDownCircle },
-        { name: "Transfers", href: "/transfer", icon: Send },
-        { name: "VTU", href: "/vtu", icon: Smartphone },
-        { name: "Gift Cards", href: "/giftcard", icon: Gift },
-        { name: "Savings", href: "/savings", icon: PiggyBank },
-        { name: "Virtual Cards", href: "/virtualcard", icon: CreditCard },
+        {
+          name: "Wallet",
+          description: "Store, send and receive money instantly.",
+          href: "/wallet",
+          icon: Wallet,
+        },
+
+        {
+          name: "Transfers",
+          description: "send money locally and internationally",
+          href: "/transfer",
+          icon: Send,
+        },
+        {
+          name: "VTU",
+          description: "Buy Data and Vtu in seconds.",
+          href: "/v-tu",
+          icon: Smartphone,
+        },
+        {
+          name: "Gift Cards",
+          description: "Buy and redeem gift cards globally",
+          href: "/gift-card",
+          icon: Gift,
+        },
+        {
+          name: "Savings",
+          description: "Automate savings and reach your goals.",
+          href: "/savings",
+          icon: PiggyBank,
+        },
+        {
+          name: "Virtual Cards",
+          description: "Create secure cards for online payments.",
+          href: "/virtualcard",
+          icon: CreditCard,
+        },
         {
           name: "Physical Cards",
+          description: "Spend anywhere with your Durapay card.",
           href: "/physicalcards",
           icon: Banknote,
         },
-        { name: "Rewards", href: "/rewards", icon: Award },
-        {
-          name: "Cashback",
-          href: "/cashback",
-          icon: CircleDollarSign,
-        },
       ],
     },
     {
-      name: "Pricing",
+      name: "Learn",
       href: "#",
       children: [
         {
-          name: "Personal",
-          href: "/personal",
-          description: "For individuals and freelancers",
+          name: "Help Centre",
+          description:
+            "Find answers, guides, and support whenever you need it.",
+          href: "/helpcentre",
           icon: User,
-        },
-        {
-          name: "Business",
-          href: "/business",
-          description: "For startups and companies",
-          icon: Building2,
-        },
-        {
-          name: "Enterprise",
-          href: "/enterprise",
-          description: "Custom pricing for large organizations",
-          icon: Globe,
-        },
-        {
-          name: "Transaction Fees",
-          href: "/transaction",
-          description: "Transfer and conversion charges",
-          icon: Receipt,
         },
       ],
     },
-    { name: "Help Centre", href: "/helpcentre" },
-    { name: "Blog", href: "/vlog" },
     {
       name: "Company",
       href: "#",
       children: [
-        { name: "About", href: "/about", icon: User },
-        { name: "Careers", href: "/careers", icon: User },
-        { name: "Contact", href: "/contact", icon: User },
+        {
+          name: "About",
+          description:
+            "Learn about Durapay, our mission, and the team behind it.",
+          href: "/about",
+          icon: Building2,
+        },
+        {
+          name: "Blog",
+          description:
+            "Insights, product updates, and financial tips from our experts.",
+          href: "/vlog",
+          icon: Newspaper,
+        },
+        {
+          name: "Contact",
+          description:
+            "Get in touch with our team for support or business inquiries.",
+          href: "/contact",
+          icon: MessageCircle,
+        },
       ],
     },
   ];
@@ -161,7 +238,7 @@ export const Nnavbar = () => {
       </div>
 
       {/* Nav links */}
-      <div className="flex flex-col justify-between divide-y divide-[#edf0f5] px-5">
+      <div className="flex flex-col justify-between gap-6 divide-y divide-[#dcdee0] text-black px-5">
         {navLinks.map((link) =>
           link.children ? (
             <NavDropdown
@@ -209,21 +286,36 @@ export const Nnavbar = () => {
   return (
     <>
       <header
-        className={`w-full fixed top-0 left-0 right-0 z-99999 transition-all duration-300 ${
-          scrolled ? "bg-[#8C9CC5] shadow-md" : "bg-[#8C9CC5]"
+        className={`w-full transition-all duration-300 ${
+          scrolled ? "bg-white shadow-md" : theme.bg
         }`}
+        style={
+          !scrolled && pathname === "/"
+            ? { background: HOME_HERO_GRADIENT }
+            : undefined
+        }
       >
-        <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-6 sm:px-10 lg:px-10 lg:py-3 py-2">
+        <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-6 sm:px-10 lg:px-10 lg:py-1.5 py-2">
           {/* Logo */}
           <a href="/" className="flex items-center gap-1">
             <div className="w-8 h-8 rounded-lg bg-[#1154da] flex items-center justify-center">
               <Wallet className="w-4 h-4 text-white" />
             </div>
-            <span className="font-bold text-white text-[22px]">Durapay</span>
+            <span
+              className={`font-bold text-[22px] transition-colors ${
+                scrolled ? "text-black" : theme.text
+              }`}
+            >
+              Durapay
+            </span>
           </a>
 
           {/* Desktop nav links */}
-          <div className="hidden lg:flex items-center gap-8 text-[14px] font-semibold text-white">
+          <div
+            className={`hidden lg:flex items-center gap-8 text-[14px] font-semibold transition-colors ${
+              scrolled ? "text-black" : theme.text
+            }`}
+          >
             {navLinks.map((link) =>
               link.children ? (
                 <NavDropdown key={link.name} link={link} pathname={pathname} />
@@ -260,7 +352,9 @@ export const Nnavbar = () => {
           {/* Mobile + Tablet hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-[#00246C]"
+            className={`lg:hidden transition-colors ${
+              scrolled ? "text-black" : theme.text
+            }`}
             aria-label="Toggle Menu"
           >
             {isOpen ? <AiOutlineClose size={28} /> : <RiMenu5Line size={28} />}
@@ -332,34 +426,75 @@ const NavDropdown = ({
 
       {isOpen && (
         <div className="lg:absolute lg:left-1/2 lg:top-full lg:-translate-x-1/2 lg:pt-4 lg:z-50">
-          <div className="lg:mt-4 bg-white lg:rounded-2xl lg:shadow-2xl lg:border lg:border-gray-100 lg:p-5">
-            <div
+          <div className="lg:mt-4 bg-white lg:rounded-2xl lg:shadow-2xl lg:border lg:border-gray-100 lg:p-3">
+            {/* <div
               className={`grid gap-1 ${
                 link.name === "Pricing"
                   ? "grid-cols-1 lg:w-[320px]"
                   : "grid-cols-2 lg:w-[520px]"
               }`}
-            >
+            > */}
+            <div className="grid lg:grid-cols-[1fr_1fr] w-[820px] overflow-hidden rounded-3xl bg-white p-2">
               {link.children?.map((child) => {
                 const IconComponent = child.icon;
                 return (
+                  // <Link
+                  //   key={child.name}
+                  //   href={child.href}
+                  //   onClick={() => setIsOpen(false)}
+                  //   className="flex items-center gap-2 rounded-xl p-2 hover:bg-[#f5f8ff] transition"
+                  // >
+                  //   {IconComponent && (
+                  //     <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                  //       <IconComponent className="h-4 w-4 text-[#1154da]" />
+                  //     </div>
+                  //   )}
+                  //   <p className="font-semibold text-[#1154da] text-[14px]">
+                  //     {child.name}
+                  //   </p>
+                  // </Link>
+
                   <Link
                     key={child.name}
                     href={child.href}
-                    onClick={() => setIsOpen(false)}
-                    className="flex items-center gap-2 rounded-xl p-2 hover:bg-[#f5f8ff] transition"
+                    className="group flex items-start gap-4 rounded-xl p-2 hover:bg-gray-50 transition"
                   >
                     {IconComponent && (
-                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gray-100">
-                        <IconComponent className="h-4 w-4 text-[#1154da]" />
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+                        <IconComponent className="h-5 w-5 text-black group-hover:text-[#1154da]" />
                       </div>
                     )}
-                    <p className="font-semibold text-[#1154da] text-[14px]">
-                      {child.name}
-                    </p>
+
+                    <div>
+                      <h4 className="font-semibold text-black ">
+                        {child.name}
+                      </h4>
+
+                      <p className="text-sm text-[#495C7F]">
+                        {child.description}
+                      </p>
+                    </div>
                   </Link>
                 );
               })}
+
+              {/* <div className="bg-[#F7F9FC] p-8">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500">
+                  Discover
+                </p>
+
+                <div className="mt-6 space-y-5">
+                  {link.discover?.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block text-[16px] hover:text-[#1154da]"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
