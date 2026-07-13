@@ -184,7 +184,7 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
           name: "Help Centre",
           description:
             "Find answers, guides, and support whenever you need it.",
-          href: "/helpcentre",
+          href: "/help-centre",
           icon: User,
         },
       ],

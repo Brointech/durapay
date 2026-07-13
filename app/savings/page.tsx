@@ -470,7 +470,7 @@ export default function VirtualCardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white text-white antialiased">
+    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white antialiased">
       {/* HERO SECTION */}
       <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-18">
         <div className="absolute inset-0 bg-white" />

@@ -102,7 +102,14 @@ const SocialProofSection = () => {
           </span>
         ))}
 
-        <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-gray-900 leading-tight">
+        <div className="flex items-center justify-center lg:mb-8">
+          <img
+            src="/iso.avif"
+            alt=""
+            className="w-[280px] sm:w-[260px] lg:w-[70px]"
+          />
+        </div>
+        <h2 className="text-4xl sm:text-5xl lg:text-[66px] font-bold text-gray-900 leading-tight">
           No Limits, No Borders
         </h2>
         <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-tight">
@@ -132,14 +139,14 @@ const SocialProofSection = () => {
           </button>
         </h2>
       </div>
-
+      {/* 
       <p className="text-gray-500 text-base mt-4 mb-10">
         Trusted by thousands of Nigerians and businesses for seamless global
         banking and everyday lifestyle needs.
-      </p>
+      </p> */}
 
       {/* STATS ROW */}
-      <div className="flex justify-center items-center gap-10 flex-wrap">
+      {/* <div className="flex justify-center items-center gap-10 flex-wrap">
         {[
           { num: "200K+", label: "Active users" },
           { num: "20+", label: "Countries" },
@@ -154,7 +161,7 @@ const SocialProofSection = () => {
             {i < arr.length - 1 && <div className="w-px h-10 bg-gray-200" />}
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

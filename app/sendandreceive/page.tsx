@@ -100,7 +100,7 @@ export default function Sendandreceive() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       {/* ── Bottom-right curved blob (the large off-white sweep) ── */}
       {/* <svg
         className="absolute bottom-20 right-10 w-[65%] md:w-[55%] lg:w-[50%] h-auto"

@@ -252,7 +252,7 @@ export default function Giftcard() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white max-w-7xl mx-auto">
       <section className="bg-white min-h-[40vh] sm:min-h-screen mx-auto px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-28 pb-20">
         {/* <div className="flex flex-col gap-4 max-w-4xl mx-auto">
           <h1 className="text-[#1F1F30] text-center font-bold text-[28px] md:text-[40px] lg:text-[56px] xl:text-[68px] leading-tight">
@@ -687,7 +687,7 @@ export default function Giftcard() {
       {/* ---------------------------------------------------------- */}
       {/* FAQ                                                         */}
       {/* ---------------------------------------------------------- */}
-      <section className="w-full bg-[#F7F9FF] px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+      <section className="w-full bg-[#F7F9FF] max-w-7xl mx-auto px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center text-2xl font-bold text-[#00246C] sm:text-3xl">
             Frequently asked questions

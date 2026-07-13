@@ -2,7 +2,7 @@
 
 export default function () {
   return (
-    <section className=" min-h-[60vh] md:min-h-[90vh] lg:min-h-screen bg-white px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-28 pb-20 ">
+    <section className="max-w-7xl mx-auto min-h-[60vh] md:min-h-[90vh] lg:min-h-screen bg-white px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-28 pb-20 ">
       {/* Fisrt Section */}
       <div className="mx-auto max-w-7xl flex lg:items-center xs:justify-center justify-between ">
         <div className="lg:-mt-20 md:-mt-20">

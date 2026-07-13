@@ -396,19 +396,16 @@ export default function TransferPage() {
       </section>
       {/* Next Phase */}
       <section className="relative overflow-hidden bg-[#040B18] py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-        {/* Background Glow */}
         <div className="absolute left-0 top-0 h-full w-full">
           <div className="absolute -left-32 top-20 h-[500px] w-[500px] rounded-full bg-violet-900/10 blur-[120px]" />
           <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-blue-900/10 blur-[100px]" />
         </div>
 
-        {/* Decorative Shapes */}
         <div className="absolute left-0 top-20 hidden lg:block">
           <div className="h-[420px] w-[220px] border border-slate-800 rounded-r-[120px]" />
         </div>
 
         <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Connector Lines */}
           <div className="absolute left-[18%] top-[15%] hidden xl:block h-[350px] w-[2px] bg-slate-800" />
           <div className="absolute left-[18%] top-[42%] hidden xl:block h-[2px] w-[120px] bg-slate-800" />
 
@@ -425,7 +422,7 @@ export default function TransferPage() {
             ))}
           </div>
         </div>
-        {/* Image Below */}
+
         <div className=" mt-16 flex justify-center">
           <img
             src="/blackhand.webp"
@@ -440,7 +437,7 @@ export default function TransferPage() {
             Make your first money <br />
             transfer with Durapay
           </h1>
-          {/* FINAL CTA */}
+
           <div className="flex items-center justify-center mt-10">
             <button className=" gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
               Start now

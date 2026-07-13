@@ -75,11 +75,31 @@ const HelpCentre = () => {
   return (
     <main className="bg-white">
       {/* HERO */}
+
+      <section
+        className="bg-black min-h-screen px-6 sm:px-10 lg:px-18"
+        style={{
+          backgroundImage: "url('/bg-help.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "40vh",
+        }}
+      >
+        {" "}
+        <h1 className=" text-white font-bold text-[30px]">
+          Advice and answers from the Durapay Team
+        </h1>
+        <input
+          type="placeholder"
+          className="rounded-[10px] text-white p-3 bg-transparent w-ful"
+        />
+      </section>
       <section className="bg-[#f7f9fc] py-20px-6 sm:px-10 lg:px-10">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
+          {/* <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             Help Center
-          </span>
+          </span> */}
 
           <h1 className="mt-6 text-4xl font-bold text-gray-900 md:text-6xl">
             How can we help you today?
