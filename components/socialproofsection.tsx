@@ -106,7 +106,7 @@ const SocialProofSection = () => {
           <img
             src="/iso.avif"
             alt=""
-            className="w-[280px] sm:w-[260px] lg:w-[70px]"
+            className="w-[80px] sm:w-[90px] lg:w-[70px]"
           />
         </div>
         <h2 className="text-4xl sm:text-5xl lg:text-[66px] font-bold text-gray-900 leading-tight">

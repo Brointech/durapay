@@ -48,6 +48,9 @@ const NAVBAR_THEMES: Record<string, { bg: string; text: string }> = {
   "/contact": { bg: "bg-white", text: "text-[#00246C]" },
   "/about": { bg: "bg-white", text: "text-[#00246C]" },
   "/vlog": { bg: "bg-white", text: "text-[#00246C]" },
+  "/terms-of-use": { bg: "bg-white", text: "text-[#00246C]" },
+  "/privacypolicy": { bg: "bg-white", text: "text-[#00246C]" },
+  "/cookiepolicy": { bg: "bg-white", text: "text-[#00246C]" },
 };
 
 const DEFAULT_THEME = { bg: "bg-[#8C9CC5]", text: "text-white" };
@@ -56,7 +59,7 @@ const DEFAULT_THEME = { bg: "bg-[#8C9CC5]", text: "text-white" };
 type Child = {
   name: string;
   href: string;
-  description?: string;
+  description?: React.ReactNode;
   icon?: LucideIcon;
 };
 
@@ -133,14 +136,14 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
       children: [
         {
           name: "Wallet",
-          description: "Store, send and receive money instantly.",
+          description: "Send and receive money instantly.",
           href: "/wallet",
           icon: Wallet,
         },
 
         {
           name: "Transfers",
-          description: "send money locally and internationally",
+          description: "send money locally",
           href: "/transfer",
           icon: Send,
         },
@@ -158,13 +161,13 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
         },
         {
           name: "Savings",
-          description: "Automate savings and reach your goals.",
+          description: "Automate savings and reach your goals",
           href: "/savings",
           icon: PiggyBank,
         },
         {
           name: "Virtual Cards",
-          description: "Create secure cards for online payments.",
+          description: "Secure digital payment solution",
           href: "/virtualcard",
           icon: CreditCard,
         },
@@ -182,8 +185,7 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
       children: [
         {
           name: "Help Centre",
-          description:
-            "Find answers, guides, and support whenever you need it.",
+          description: "Explore our support resources",
           href: "/help-centre",
           icon: User,
         },
@@ -195,22 +197,19 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
       children: [
         {
           name: "About",
-          description:
-            "Learn about Durapay, our mission, and the team behind it.",
+          description: "Learn about the team",
           href: "/about",
           icon: Building2,
         },
         {
           name: "Blog",
-          description:
-            "Insights, product updates, and financial tips from our experts.",
+          description: "Get a deep dive into our updates",
           href: "/vlog",
           icon: Newspaper,
         },
         {
           name: "Contact",
-          description:
-            "Get in touch with our team for support or business inquiries.",
+          description: "Get in touch with us for support or business inqiuries",
           href: "/contact",
           icon: MessageCircle,
         },
@@ -226,7 +225,7 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
           <div className="w-9 h-9 rounded-lg bg-slate-900 flex items-center justify-center">
             <Wallet className="w-5 h-5 text-white" />
           </div>
-          <span className="font-bold text-[#00246C] text-[20px]">Durapay</span>
+          <span className="font-bold text-black text-[20px]">Durapay</span>
         </a>
         <button
           onClick={() => setIsOpen(false)}
@@ -238,14 +237,14 @@ export const Nnavbar = ({ scrolled: scrolledProp }: { scrolled?: boolean }) => {
       </div>
 
       {/* Nav links */}
-      <div className="flex flex-col justify-between gap-6 divide-y divide-[#dcdee0] text-black px-5">
+      <div className="flex flex-col justify-between gap-6 divide-y divide-[#dcdee0] text-black px-5 overflow-hidden">
         {navLinks.map((link) =>
           link.children ? (
             <NavDropdown
               key={link.name}
               link={link}
               pathname={pathname}
-              triggerClassName="flex items-center justify-between w-full font-semibold text-black text-[17px] py-2 transition-colors"
+              triggerClassName="flex items-center justify-between w-full font-semibold text-black text-[17px] py-3 transition-colors"
             />
           ) : (
             <Link
@@ -438,22 +437,6 @@ const NavDropdown = ({
               {link.children?.map((child) => {
                 const IconComponent = child.icon;
                 return (
-                  // <Link
-                  //   key={child.name}
-                  //   href={child.href}
-                  //   onClick={() => setIsOpen(false)}
-                  //   className="flex items-center gap-2 rounded-xl p-2 hover:bg-[#f5f8ff] transition"
-                  // >
-                  //   {IconComponent && (
-                  //     <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gray-100">
-                  //       <IconComponent className="h-4 w-4 text-[#1154da]" />
-                  //     </div>
-                  //   )}
-                  //   <p className="font-semibold text-[#1154da] text-[14px]">
-                  //     {child.name}
-                  //   </p>
-                  // </Link>
-
                   <Link
                     key={child.name}
                     href={child.href}

@@ -632,7 +632,7 @@ export default function VirtualCardPage() {
             />
           </div>
         </div>
-        {/* Utility Payment */}
+        {/*   Save smarter with Durapay */}
         <div className="mt-28   max-w-7xl mx-auto lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-32 ">
           {/* Left Side: image */}
           <div className="w-full lg:w-1/2 flex justify-center">

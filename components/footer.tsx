@@ -118,22 +118,22 @@ const Footer = () => {
                   Physical Card
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="/rewards"
                   className="hover:text-slate-300 transition-colors"
                 >
                   Rewards
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="/personal"
                   className="hover:text-slate-300 transition-colors"
                 >
                   Pricing
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -180,7 +180,7 @@ const Footer = () => {
             <ul className="space-y-3 min-w-0 text-sm text-slate-400">
               <li>
                 <a
-                  href="/helpcentre"
+                  href="/help-centre"
                   className="hover:text-slate-300 transition-colors"
                 >
                   Help Centre
@@ -193,7 +193,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/b-log"
+                  href="/v-log"
                   className="hover:text-slate-300 transition-colors"
                 >
                   Blogs
