@@ -137,28 +137,29 @@ const HelpCentre = () => {
       {/* ---------------------------------------------------------------- */}
       {/* Hero / search                                                    */}
       {/* ---------------------------------------------------------------- */}
-      <section className="relative overflow-hidden bg-[#00246C] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <section className="relative overflow-hidden bg-[url('/bg-help.png')] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         {/* subtle grid texture */}
+
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
-            backgroundSize: "36px 36px",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
+          //   backgroundSize: "36px 36px",
+          // }}
         />
 
         <div className="relative mx-auto max-w-3xl text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#8FA8E8]">
+          {/* <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#8FA8E8]">
             DuraPay Help Desk
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          </p> */}
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-4xl">
             Advice and answers from the DuraPay team
           </h1>
-          <p className="mt-4 text-base text-[#C4D2F0] sm:text-lg">
+          {/* <p className="mt-4 text-base text-[#C4D2F0] sm:text-lg">
             Search our help center or browse a topic below.
-          </p>
+          </p> */}
 
           <form
             role="search"
@@ -186,7 +187,7 @@ const HelpCentre = () => {
       {/* ---------------------------------------------------------------- */}
       {/* Category grid                                                    */}
       {/* ---------------------------------------------------------------- */}
-      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
         <h2 className="text-lg font-semibold text-[#0B1220] sm:text-xl">
           Browse by topic
         </h2>
@@ -244,7 +245,7 @@ const HelpCentre = () => {
       {/* Popular articles                                                 */}
       {/* ---------------------------------------------------------------- */}
       <section className="border-t border-[#E7ECF6] bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-lg font-semibold text-[#0B1220] sm:text-xl">
             Popular articles
           </h2>
@@ -259,7 +260,7 @@ const HelpCentre = () => {
                   <span className="mt-0.5 font-mono text-xs text-[#9CB0DE]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="flex-1 text-sm leading-relaxed text-slate-700 group-hover:text-[#1154DA] sm:text-base">
+                  <span className="flex-1 text-xl leading-relaxed text-slate-700 group-hover:text-[#1154DA] sm:text-base">
                     {title}
                   </span>
                   <FiArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 group-hover:text-[#1154DA]" />
@@ -273,7 +274,7 @@ const HelpCentre = () => {
       {/* ---------------------------------------------------------------- */}
       {/* Contact strip                                                    */}
       {/* ---------------------------------------------------------------- */}
-      <section className="px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+      {/* <section className="px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 rounded-2xl bg-[#EEF2FD] p-8 text-center sm:p-10">
           <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#1154DA] shadow-sm">
             <FiMail className="h-5 w-5" />
@@ -292,7 +293,7 @@ const HelpCentre = () => {
             <FiArrowRight className="h-4 w-4" />
           </a>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

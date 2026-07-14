@@ -44,7 +44,7 @@ const NAVBAR_THEMES: Record<string, { bg: string; text: string }> = {
   "/savings": { bg: "bg-white", text: "text-[#00246C]" },
   "/virtualcard": { bg: "bg-white", text: "text-[#00246C]" },
   "/physicalcards": { bg: "bg-white", text: "text-[#00246C]" },
-  "/helpcentre": { bg: "bg-white", text: "text-[#00246C]" },
+  "/help-centre": { bg: "bg-white", text: "text-[#00246C]" },
   "/contact": { bg: "bg-white", text: "text-[#00246C]" },
   "/about": { bg: "bg-white", text: "text-[#00246C]" },
   "/vlog": { bg: "bg-white", text: "text-[#00246C]" },
