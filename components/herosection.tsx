@@ -150,7 +150,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden w-full bg-[#DCE8FD] min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col"
+      className="max-w-7xl mx-auto relative overflow-hidden w-full bg-[#DCE8FD] min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col"
     >
       {/* ── BACKGROUND LAYERS ── */}
       {/* Base periwinkle-blue gradient */}

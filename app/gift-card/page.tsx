@@ -401,7 +401,7 @@ export default function Giftcard() {
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-14 tracking-tight order-2 md:order-1">
+          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-4 sm:leading-10 lg:leading-16 tracking-tight order-2 md:order-1">
             How Durapay gift cards <br className="sm:hidden block" />{" "}
             <br className="hidden:lg block" />
             converter works
@@ -492,7 +492,7 @@ export default function Giftcard() {
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-14 tracking-tight order-2 md:order-1">
+          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-4 sm:leading-10 lg:leading-14 tracking-tight order-2 md:order-1">
             Covert gift cards <br className="sm:hidden block" />{" "}
             <br className="hidden:lg block" />
             the easy way

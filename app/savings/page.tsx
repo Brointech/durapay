@@ -600,7 +600,7 @@ export default function VirtualCardPage() {
       </section>
 
       {/* How durapay Savings work  */}
-      <div className="min-h-screen bg-white text-white antialiased px-4 sm:px-10 lg:px-10 py-30">
+      <div className="min-h-screen  max-w-7xl mx-auto bg-white text-white antialiased px-4 sm:px-10 lg:px-10 py-30">
         <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center  ">
           {/* Left Side */}
           <div>
@@ -633,7 +633,7 @@ export default function VirtualCardPage() {
           </div>
         </div>
         {/* Utility Payment */}
-        <div className="mt-28 lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20 ">
+        <div className="mt-28   max-w-7xl mx-auto lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-32 ">
           {/* Left Side: image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -662,8 +662,8 @@ export default function VirtualCardPage() {
             </p>
           </div>
         </div>
-        {/* Airtime APIs */}
-        <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        {/* Everything Durapay Savings */}
+        <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           {/* Left Side */}
           <div>
             <h1 className="text-[#1F1F30] font-semibold text-[32px] leading-[1.05] sm:leading-[1.15]  tracking-tight">
@@ -777,7 +777,7 @@ export default function VirtualCardPage() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
+      <div className="w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
         <div className="mb-20">
           <h1 className="font-semibold text-black text-[48px] xs:text-center lg:text-[42px] leading-[1.05] tracking-[-0.04em] mb-3 lg:mb-3 ">
             Built with your security in mind
