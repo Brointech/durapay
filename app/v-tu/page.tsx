@@ -61,7 +61,7 @@ export default function () {
           </div>
         </div>
         {/* Utility Payment */}
-        <div className="mt-28 lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20 ">
+        <div className=" mt-28 lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-30 ">
           {/* Left Side: image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -110,8 +110,8 @@ export default function () {
       </section>
       {/* HOW IT WORKS */}
       <section className="bg-[#F3F5F9] px-6 sm:px-10 lg:px-10 py-16">
-        <h2 className="text-2xl text-black text-center text-[38px] lg:text-[74px] lg:text-center font-semibold mb-10 leading-21 tracking-tight">
-          Buy your airtime and utility <br /> bills in less than 1 minute
+        <h2 className="text-2xl text-black text-center text-[38px] lg:text-[74px] lg:text-center font-semibold mb-10 leading-12 lg:leading-21 tracking-tight">
+          Recharge your airtime and utility <br /> bills in less than one minute
         </h2>
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10 lg:mt-30">
           <div className="flex flex-col gap-8">

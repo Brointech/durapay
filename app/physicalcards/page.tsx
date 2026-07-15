@@ -210,20 +210,20 @@ export default function VirtualCardPage() {
   return (
     <div className="min-h-screen bg-white text-white antialiased">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-16">
+      <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-12">
         <div className="absolute inset-0 bg-white" />
 
         <div className="relative flex flex-col items-center mx-auto max-w-4xl text-center">
           <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-[#0B0E14] sm:text-6xl md:text-7xl lg:text-[5.0rem]">
-            One international <br className="hidden sm:block" />
-            card for all your <br className="hidden sm:block" />
-            global spending
+            One physical card <br className="hidden sm:block" />
+            for your everyday <br className="hidden sm:block" />
+            spending
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
-            Your Durapay card now works with Apple Pay and Google Pay. Create{" "}
-            multiple cards, spend straight from your balance, and pay at 150
-            million merchants worldwide
+          <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-lg">
+            Use your Durapay Physical Card with confidence. Pay in stores,
+            restaurants, and ATMs—all while enjoying secure, fast, and
+            convenient transactions.
           </p>
           {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text-center">
             Your Durapay card now works with Apple Pay and Google Pay. Create
@@ -242,7 +242,7 @@ export default function VirtualCardPage() {
       <section className="bg-[#F8F8F8] px-4 sm:px-10 lg:px-10 py-16">
         <div className="mt-10 lg:mt-10">
           <h1 className="text-center font-semibold text-[44px] md:text-[44px] lg:text-[48px] text-black leading-12 tracking-tight">
-            Cards built for the borderless
+            Cards built for the everyday use
           </h1>
         </div>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mt-28">
@@ -256,14 +256,14 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
               <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8 lg:leading-10">
-                Create multiple cards for every
-                <br className="hidden lg:block" /> part of your life
+                Get your physical card with ease
+                <br className="hidden lg:block" /> Ready for everyday spending.
               </h1>
               <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
-                One card for subscriptions. One for travel. One for business.{" "}
+                Order your Durapay Physical Card in just a few steps and start
                 <br className="hidden lg:block" />
-                Create as many as you need, each with its own limits and{" "}
-                <br className="hidden lg:block" /> controls.
+                making secure payments wherever card payments
+                <br className="hidden lg:block" /> are accepted.
               </p>
             </div>
           </div>
@@ -277,13 +277,14 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
               <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8">
-                Add to Apple Pay or Google <br className="hidden lg:block" />{" "}
-                Pay
+                Spend directly from your wallet{" "}
+                <br className="hidden lg:block" /> No transfers. No delays.
               </h1>
               <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
-                Pay with a tap. Add your Durapay card to Apple Pay{" "}
+                Your Physical Card is linked to your Durapay Wallet, allowing
+                you
                 <br className="hidden lg:block" />
-                or Google Pay for contactless payments anywhere.
+                to spend directly from your available balance.
               </p>
             </div>
           </div>
@@ -320,14 +321,14 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8.5 p-2">
               <h1 className="text-[24px] md:text-[20px] lg:text-[31px] text-[#1A1A1A] font-semibold leading-7">
-                Extra protection with 3D Secure
+                Pay in-store with ease
               </h1>
               <p className="mt-3 text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
-                Extra protection with 3D Secure. 3DS support{" "}
+                Make seamless in-store purchases at supermarkets,
                 <br className="sm:hidden block" />
-                means you <br className="hidden lg:block" />
-                personally authorize each transaction{" "}
-                <br className="hidden lg:block" /> before it goes through.
+                malls, restaurants, <br className="hidden lg:block" />
+                and millions of merchants using your Durapay
+                <br className="hidden lg:block" /> physical card.
               </p>
             </div>
           </div>
@@ -405,7 +406,7 @@ export default function VirtualCardPage() {
               Everything your Durapay physical card supports
             </h1>
             <p className="text-[17px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] mt-6 lg:leading-6 leading-6">
-              Your Grey virtual Visa card works wherever Visa is accepted:
+              Your Durapay virtual Visa card works wherever Visa is accepted:
               online, in apps, and in physical stores across 150 million
               merchants worldwide. That includes Netflix, Spotify, Apple,
               Amazon, Google Ads, Canva, Coursera, Uber, Namecheap, and more.

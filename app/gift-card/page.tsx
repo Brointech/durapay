@@ -253,7 +253,7 @@ export default function Giftcard() {
 
   return (
     <div className="bg-white max-w-7xl mx-auto">
-      <section className="bg-white min-h-[40vh] sm:min-h-screen mx-auto px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-28 pb-20">
+      <section className="bg-[radial-gradient(circle_at_100%_100%,#c9dffa_0%,#eef4fc_35%,#ffffff_65%)] min-h-[40vh] sm:min-h-screen mx-auto px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-20 pb-20">
         {/* <div className="flex flex-col gap-4 max-w-4xl mx-auto">
           <h1 className="text-[#1F1F30] text-center font-bold text-[28px] md:text-[40px] lg:text-[56px] xl:text-[68px] leading-tight">
             Exchange gift cards
@@ -265,12 +265,12 @@ export default function Giftcard() {
             whenever you need it.
           </p>
         </div> */}
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-5 sm:px-6 md:px-8">
+        <div className=" mx-auto flex max-w-5xl flex-col items-center gap-4 px-5 sm:px-6 md:px-8">
           <h1 className="text-center font-bold text-[#1F1F30] text-[32px] leading-tight sm:text-[40px] md:text-[52px] lg:text-[64px] xl:text-[72px]">
             Exchange gift cards
           </h1>
 
-          <p className="max-w-3xl text-center text-[#363F52] text-[16px] leading-7 sm:text-[17px] md:text-[18px] md:leading-8 lg:text-[20px] lg:leading-9">
+          <p className="max-w-3xl text-center text-[#363F52] text-[16px] leading-7 sm:text-[17px] md:text-[14px] md:leading-8 lg:text-[20px] lg:leading-8">
             Exchange gift cards from top international brands with ease. DuraPay
             offers competitive rates, fast transactions, and secure payouts,
             making it simple to get the value of your gift cards whenever you

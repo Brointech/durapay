@@ -210,20 +210,21 @@ export default function VirtualCardPage() {
   return (
     <div className="min-h-screen max-w-7xl mx-auto bg-white text-white antialiased">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-30">
+      <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-12">
         <div className="absolute inset-0 bg-white" />
 
         <div className="relative flex flex-col items-center mx-auto max-w-4xl text-center">
           <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-[#0B0E14] sm:text-6xl md:text-7xl lg:text-[5.0rem]">
-            One international <br className="hidden sm:block" />
-            card for all your <br className="hidden sm:block" />
-            global spending
+            Your Virtual card for <br className="hidden sm:block" />
+            seamless online
+            <br className="hidden sm:block" />
+            payments
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
-            Your Durapay card now works with Apple Pay and Google Pay. Create{" "}
-            multiple cards, spend straight from your balance, and pay at 150
-            million merchants worldwide
+            Create a Durapay Virtual Card in seconds and pay securely online.
+            Shop at your favorite websites, pay for subscriptions, and spend
+            directly from your wallet balance.
           </p>
           {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text-center">
             Your Durapay card now works with Apple Pay and Google Pay. Create
@@ -256,14 +257,13 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
               <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8 lg:leading-10">
-                Create multiple cards for every
-                <br className="hidden lg:block" /> part of your life
+                Get a new card whenever
+                <br className="hidden lg:block" /> you need one
               </h1>
               <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
-                One card for subscriptions. One for travel. One for business.{" "}
-                <br className="hidden lg:block" />
-                Create as many as you need, each with its own limits and{" "}
-                <br className="hidden lg:block" /> controls.
+                Generate a virtual card instantly for online shopping,
+                subscriptions, <br className="hidden lg:block" />
+                or international payments—all from your Durapay wallet.
               </p>
             </div>
           </div>
@@ -276,14 +276,17 @@ export default function VirtualCardPage() {
               />
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
-              <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8">
-                Add to Apple Pay or Google <br className="hidden lg:block" />{" "}
-                Pay
+              <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8 lg:leading-10">
+                Pay with confidence whenever <br className="hidden lg:block" />{" "}
+                you shop
               </h1>
               <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
-                Pay with a tap. Add your Grey card to Apple Pay{" "}
+                Use your Durapay Virtual Card for secure payments on global
+                websites,
                 <br className="hidden lg:block" />
-                or Google Pay for contactless payments anywhere.
+                apps, & digital services without exposing your primary account
+                details.
+                <br className="hidden lg:block" />
               </p>
             </div>
           </div>
@@ -299,14 +302,14 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
               <h1 className="text-[22px] md:text-[20px] lg:text-[32px] text-[#1A1A1A] font-semibold leading-7 lg:leading-9">
-                Spend directly from your balance,{" "}
+                Spend directly from your wallet{" "}
                 <br className="hidden lg:block" />
-                no manual top-ups
+                No top-ups. No extra steps.
               </h1>
               <p className="text-[15px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tight">
-                Your balance is your card. Spend directly from your USD, EUR, or{" "}
-                <br className="hidden lg:block" /> GBP account, no separate card{" "}
-                funding needed.
+                Your virtual card is linked to your Durapay Wallet, so you
+                <br className="hidden lg:block" /> can pay online instantly
+                using your available balance.
               </p>
             </div>
           </div>
@@ -319,15 +322,17 @@ export default function VirtualCardPage() {
               />
             </div>
             <div className="flex flex-col gap-4 mt-8.5 p-2">
-              <h1 className="text-[24px] md:text-[20px] lg:text-[31px] text-[#1A1A1A] font-semibold leading-7">
-                Extra protection with 3D Secure
+              <h1 className="text-[24px] md:text-[20px] lg:text-[31px] text-[#1A1A1A] font-semibold leading-7 lg:leading-9">
+                Designed for global payments
+                <br className="hidden lg:block" />
+                Pay online across the world.
               </h1>
               <p className="mt-3 text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
-                Extra protection with 3D Secure. 3DS support{" "}
+                Shop from international stores, pay for digital products{" "}
                 <br className="sm:hidden block" />
-                means you <br className="hidden lg:block" />
-                personally authorize each transaction{" "}
-                <br className="hidden lg:block" /> before it goes through.
+                and access global <br className="hidden lg:block" />
+                services with a virtual card made for borderless spending.
+                <br className="hidden lg:block" />
               </p>
             </div>
           </div>
@@ -367,7 +372,7 @@ export default function VirtualCardPage() {
               card cost?
             </h3>
             <p className="text-[17px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] mt-6 lg:leading-6 leading-6">
-              Creating a Grey virtual card costs a one-time fee{" "}
+              Creating a Durapay virtual card costs a one-time fee{" "}
               <br className="hidden lg:block" />
               of $5. To get started, you’ll need a minimum of{" "}
               <br className="hidden lg:block" />
@@ -378,7 +383,7 @@ export default function VirtualCardPage() {
               you confirm, and there are no monthly charges after that.
             </p>
             <p className="text-[17px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] mt-6 lg:leading-6 leading-6">
-              Grey virtual cards are debit cards, so your spending is charged
+              Durapay virtual cards are debit cards, so your spending is charged
               directly to your account balance, with no credit check required.
               You spend in any currency you hold in your balance at the exchange
               rate shown in the Grey app at the time of the transaction.
@@ -393,8 +398,8 @@ export default function VirtualCardPage() {
             />
           </div>
         </div>
-        {/* Utility Payment */}
-        <div className="mt-28 lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20 ">
+        {/* Spend in USD */}
+        <div className="mt-28 lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-30 ">
           {/* Left Side: image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -407,13 +412,13 @@ export default function VirtualCardPage() {
           <div className="w-full lg:w-1/2">
             <h1 className="text-[#1F1F30] font-semibold text-[32px] leading-[1.05] sm:leading-[1.15] lg:leading-10  tracking-tight">
               Spend in USD, EUR, and <br className="hidden lg:block" />
-              GBP with your Grey virtual card
+              GBP with your Durapay virtual card
             </h1>
             <p className="text-[17px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] mt-6 lg:leading-6 leading-6">
-              Your Grey virtual card is linked directly to your account balance.
-              When creating your card, the fee is deducted from your USD
-              balance; if insufficient, the currency balance with the highest
-              available value is used. Card payments are also deducted
+              Your Durapay virtual card is linked directly to your account
+              balance. When creating your card, the fee is deducted from your
+              USD balance; if insufficient, the currency balance with the
+              highest available value is used. Card payments are also deducted
               automatically from your available balance. Currency conversion
               fees apply when making non-USD payments.
             </p>
@@ -424,10 +429,10 @@ export default function VirtualCardPage() {
           {/* Left Side */}
           <div>
             <h1 className="text-[#1F1F30] font-semibold text-[32px] leading-[1.05] sm:leading-[1.15]  tracking-tight">
-              Everything your Grey virtual card supports
+              Everything your Durapay virtual card supports
             </h1>
             <p className="text-[17px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] mt-6 lg:leading-6 leading-6">
-              Your Grey virtual Visa card works wherever Visa is accepted:
+              Your Durapay virtual Visa card works wherever Visa is accepted:
               online, in apps, and in physical stores across 150 million
               merchants worldwide. That includes Netflix, Spotify, Apple,
               Amazon, Google Ads, Canva, Coursera, Uber, Namecheap, and more.

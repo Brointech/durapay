@@ -1,11 +1,10 @@
 "use client";
 
-import { Download, Wallet } from "lucide-react";
+import { Wallet } from "lucide-react";
 import { useState } from "react";
 
 import { Shield, Bell, BadgeCheck } from "lucide-react";
-import { image, img } from "framer-motion/client";
-import { FiArrowRight, FiGlobe } from "react-icons/fi";
+
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
 const ArrowRightIcon = ({ className = "" }: { className?: string }) => (
@@ -147,129 +146,6 @@ const PlayStoreIcon = ({ className = "" }: { className?: string }) => (
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const features = [
-  {
-    icon: ZapIcon,
-    color: "from-emerald-400 to-teal-400",
-    bg: "bg-emerald-500/10",
-    title: "Instant Transfers",
-    desc: "Send money to any Nigerian bank in under 5 seconds — no delays, no excuses.",
-  },
-  {
-    icon: ShieldCheckIcon,
-    color: "from-sky-400 to-blue-400",
-    bg: "bg-sky-500/10",
-    title: "Bank-Grade Security",
-    desc: "256-bit encryption, biometric auth, and real-time fraud detection keep your money safe.",
-  },
-  {
-    icon: GlobeIcon,
-    color: "from-violet-400 to-purple-400",
-    bg: "bg-violet-500/10",
-    title: "All Nigerian Banks",
-    desc: "Send to GTBank, Access, UBA, Zenith, First Bank, Kuda, OPay, and 50+ more.",
-  },
-  {
-    icon: CreditCardIcon,
-    color: "from-amber-400 to-orange-400",
-    bg: "bg-amber-500/10",
-    title: "Zero Hidden Fees",
-    desc: "See exactly what you pay before you confirm. No surprise charges. Ever.",
-  },
-  {
-    icon: UsersIcon,
-    color: "from-pink-400 to-rose-400",
-    bg: "bg-pink-500/10",
-    title: "Save Beneficiaries",
-    desc: "Store your frequent recipients and send money with just two taps next time.",
-  },
-  {
-    icon: SmartphoneIcon,
-    color: "from-lime-400 to-green-400",
-    bg: "bg-lime-500/10",
-    title: "Works Offline",
-    desc: "Queue transfers even without internet. They send the moment you reconnect.",
-  },
-];
-
-const steps = [
-  {
-    num: "01",
-    title: "Enter Amount",
-    desc: "Type how much you want to send or tap a quick amount.",
-  },
-  {
-    num: "02",
-    title: "Choose Recipient",
-    desc: "Search saved contacts or enter a new bank account number.",
-  },
-  {
-    num: "03",
-    title: "Confirm & Send",
-    desc: "Review details, authenticate with face ID or PIN, and you're done.",
-  },
-];
-
-const stats = [
-  { value: "2M+", label: "Active Users" },
-  { value: "₦500B+", label: "Transferred" },
-  { value: "99.98%", label: "Uptime" },
-  { value: "5 sec", label: "Avg. Transfer Time" },
-];
-
-type Feature = {
-  title: string;
-};
-
-const Feature: Feature[] = [
-  { title: "100% digital transfers" },
-  { title: "The best exchange rates" },
-  { title: "Speedy bank transfers" },
-  { title: "Fair and transparent transfer fees" },
-  { title: "Free p2p transfers" },
-  { title: "Multiple payment schemes" },
-  { title: "No virtual accounts required for transfers" },
-  { title: "Enjoy multiple daily transfers" },
-  { title: "Instant transaction notifications" },
-  { title: "Anti-fraud protection" },
-];
-
-const SparkleIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="w-5 h-5 text-violet-500 shrink-0"
-  >
-    <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z" />
-  </svg>
-);
-
-const FeatureCard = ({ title }: Feature) => {
-  return (
-    <div
-      className="
-        flex items-center gap-4
-        rounded-full
-        border border-slate-700/80
-        bg-slate-950/60
-        backdrop-blur-sm
-        px-6 py-5
-        min-h-[88px]
-        shadow-[0_0_0_1px_rgba(255,255,255,0.03)]
-        transition-all duration-300
-        hover:border-violet-500/40
-        hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]
-      "
-    >
-      <SparkleIcon />
-
-      <span className="text-white text-base md:text-lg font-medium">
-        {title}
-      </span>
-    </div>
-  );
-};
-
 const featur = [
   {
     title: "Protected and Regulated",
@@ -293,6 +169,113 @@ const featur = [
     image: "/instant-notification.avif",
   },
 ];
+
+interface Feature {
+  label: string;
+}
+
+const features: Feature[] = [
+  { label: "100% digital account setup" },
+  { label: "Free registration wallet" },
+  { label: "No hidden charges" },
+  { label: "Instant money transfers" },
+  { label: "Built for Fast, Everyday Payments" },
+  { label: "Withdraw to Any Nigerian Bank" },
+  { label: "Access Your Transaction History Anytime" },
+  { label: "Instant transaction notifications" },
+  { label: "Bank-Grade Security & Fraud Protection" },
+  { label: "Low transaction fees" },
+];
+
+function SparkleIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-4 h-4 shrink-0 text-purple-400"
+    >
+      <path d="M12 2c.4 3.6 1.2 5.8 2.6 7.2C16 10.6 18.2 11.4 21.8 11.8c-3.6.4-5.8 1.2-7.2 2.6C13.2 15.8 12.4 18 12 21.6c-.4-3.6-1.2-5.8-2.6-7.2C8 13 5.8 12.2 2.2 11.8c3.6-.4 5.8-1.2 7.2-2.6C10.8 7.8 11.6 5.6 12 2z" />
+    </svg>
+  );
+}
+
+interface Testimonial {
+  quote: string;
+  name: string;
+  role: string;
+  variant: "blue" | "gray" | "purple";
+}
+
+const testimonials: Testimonial[] = [
+  {
+    quote:
+      "As a CEO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+    name: "Tunde Bakare",
+    role: "CEO",
+    variant: "blue",
+  },
+  {
+    quote:
+      "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+    name: "Imisioluwa Adeyeri",
+    role: "Content Marketer",
+    variant: "gray",
+  },
+  {
+    quote:
+      "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+    name: "Emeka Amadi",
+    role: "Digital Nomad",
+    variant: "purple",
+  },
+  {
+    quote:
+      "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+    name: "Sophia Chiedu",
+    role: "IT Consultant",
+    variant: "gray",
+  },
+];
+
+const variantStyles: Record<Testimonial["variant"], string> = {
+  blue: "bg-blue-600 text-white",
+  purple: "bg-purple-700 text-white",
+  gray: "bg-gray-100 text-gray-900",
+};
+
+const subtleTextStyles: Record<Testimonial["variant"], string> = {
+  blue: "text-blue-100",
+  purple: "text-purple-200",
+  gray: "text-gray-500",
+};
+
+function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  return (
+    <div
+      className={`
+        flex flex-col justify-between shrink-0
+        w-[280px] sm:w-[320px] md:w-[360px]
+        h-[280px] sm:h-[300px]
+        rounded-2xl sm:rounded-3xl
+        p-6 sm:p-8
+        ${variantStyles[testimonial.variant]}
+      `}
+    >
+      <p className="text-sm sm:text-base leading-relaxed font-medium">
+        {testimonial.quote}
+      </p>
+      <div>
+        <p className="text-sm sm:text-base font-semibold">{testimonial.name}</p>
+        <p
+          className={`text-xs sm:text-sm ${subtleTextStyles[testimonial.variant]}`}
+        >
+          {testimonial.role}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function TransferPage() {
@@ -305,10 +288,17 @@ export default function TransferPage() {
     if (email) setSubmitted(true);
   };
 
+  const [toggleOn, setToggleOn] = useState(true);
+  const loopedTestimonials = [
+    ...testimonials,
+    ...testimonials,
+    ...testimonials,
+  ];
+
   return (
-    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-8">
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
@@ -317,25 +307,23 @@ export default function TransferPage() {
             {/* LEFT CONTENT */}
             <div className="max-w-2xl ">
               <h1
-                className="text-[52px] leading-[1.09] font-bold tracking-tight text-[#111827]
+                className="text-[52px] leading-[1.06] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
         lg:text-[78px] w-[130%]"
               >
                 Local and
                 <br />
-                international <br className="sm:hidden block" /> money
-                <br />
-                transfers
+                international
+                <br className="sm:hidden block" /> money
+                <br /> transfers
               </h1>
 
               <p className="mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
-                Redefine the way you send money across the globe.
+                Send money, receive payments, pay bills, and manage
                 <br className="hidden lg:block" />
-                Make instant, secure deposits into any bank account
+                your finances — all from your Durapay account
                 <br className="hidden lg:block" />
-                at unrivaled rates.
               </p>
-
               <button className="mt-12 rounded-xl bg-[#1154DA] px-8 py-5 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
                 Make a transfer
               </button>
@@ -361,87 +349,117 @@ export default function TransferPage() {
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-black/90 text-[30px] md:text-[40px] lg:text-[60px] font-bold leading-[1.10] tracking-tight order-2 md:order-1">
-            Send money <br className="sm:hidden block" /> abroad the easy{" "}
-            <br className="hidden:lg block" /> way
+          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[50px] font-bold leading-[1.10] tracking-tight order-2 md:order-1">
+            Send money the easy way <br className="sm:hidden block" />
+            any where with Durapay
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 mt-10 lg:mt-10">
-          <img
-            src="/Screenshot1.png"
-            alt=""
-            className="w-130 md:w-180 lg:w-95"
-          />
-          <img
-            src="/Screenshot2.png"
-            alt=""
-            className="w-130 md:w-180 lg:w-95"
-          />
-          <img
-            src="/Screenshot3.png"
-            alt=""
-            className="w-130 md:w-180 lg:w-95"
-          />
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-11 mt-10 lg:mt-10">
+          <div className="flex flex-col bg-[#2F0D59] rounded-[12px] overflow-hidden">
+            <div className="p-6">
+              <h3 className="text-white text font-bold text-[22px] mb-1">
+                No unnecessary hassles
+              </h3>
+              <p className="text-white font-medium text-[15px]">
+                Receive your foreign payments in an <br />
+                account you can access or withdraw from <br />
+                at any time.
+              </p>
+            </div>
+            <img
+              src="/frame1.svg"
+              alt=""
+              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain mt-14"
+            />
+          </div>
+
+          <div className="flex flex-col bg-[#F0F2F5] rounded-[12px]">
+            <div className="p-6">
+              <h3 className="text-black text font-bold text-[22px] mb-1">
+                No unnecessary hassles
+              </h3>
+              <p className="text-black font-medium text-[16px]">
+                An account where your employers never <br />
+                have to worry about your payments again.
+              </p>
+            </div>
+            <img
+              src="/frame2.svg"
+              alt=""
+              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain"
+            />
+          </div>
+          <div className=" flex flex-col bg-[#1B1F28] rounded-[12px]">
+            <div className="p-6">
+              <h3 className="text-white font-semibold text-[22px] mb-1">
+                Credit from your platforms
+              </h3>
+              <p className="text-white font-medium text-[14px]">
+                Receive payments from platforms like Deel, <br />
+                Upwork, Fiverr, Amazon, and more.
+              </p>
+            </div>
+            <img
+              src="/frame3.svg"
+              alt=""
+              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain"
+            />
+          </div>
         </div>
       </section>
       {/* Next phase */}
       <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
-        <div>
-          <h1 className="text-center lg:text-center text-white text-[42px] lg:text-[65px] font-bold leading-tight tracking-tight">
-            <span> Why you should make </span> <br />
-            <span> money transfers with </span> <br />
-            <span> Durapay</span>
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center justify-center">
+            <img src="grey-logo.svg" alt="" />
+          </div>
+
+          <h1 className="text-center lg:text-center text-white text-[32px] lg:text-[75px] font-bold leading-tight tracking-tight">
+            <span> Everything you can </span> <br />
+            <span className="text-slate-400">do with your </span> <br />
+            <span className="text-slate-400"> Durapay wallet</span>
           </h1>
         </div>
       </section>
-      {/* Next Phase */}
-      <section className="relative overflow-hidden bg-[#040B18] py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-        <div className="absolute left-0 top-0 h-full w-full">
-          <div className="absolute -left-32 top-20 h-[500px] w-[500px] rounded-full bg-violet-900/10 blur-[120px]" />
-          <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-blue-900/10 blur-[100px]" />
-        </div>
+      {/* Wallet features */}
+      <section className="w-full bg-[#0b0d12] px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-5xl mx-auto flex flex-wrap lg:flex-wrap  justify-center gap-2.5 sm:gap-3">
+          {features.map((feature) => (
+            <div
+              key={feature.label}
+              className="
+              flex items-center gap-2
+              rounded-full border border-white/10
+              bg-white/[0.03] hover:bg-white/[0.06]
+              transition-colors duration-200
+              px-4 py-2.5 sm:px-5 sm:py-3
+              whitespace-nowrap
+            "
+            >
+              <SparkleIcon />
+              <span className="text-xs sm:text-sm md:text-[15px] text-gray-200 font-medium">
+                {feature.label}
+              </span>
+            </div>
+          ))}
 
-        <div className="absolute left-0 top-20 hidden lg:block">
-          <div className="h-[420px] w-[220px] border border-slate-800 rounded-r-[120px]" />
-        </div>
-
-        <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="absolute left-[18%] top-[15%] hidden xl:block h-[350px] w-[2px] bg-slate-800" />
-          <div className="absolute left-[18%] top-[42%] hidden xl:block h-[2px] w-[120px] bg-slate-800" />
-
-          <div
-            className="
-            grid
-            gap-6
-            sm:grid-cols-2
-            lg:grid-cols-3
-          "
-          >
-            {features.map((feature) => (
-              <FeatureCard key={feature.title} title={feature.title} />
-            ))}
-          </div>
-        </div>
-
-        <div className=" mt-16 flex justify-center">
-          <img
-            src="/blackhand.webp"
-            alt=""
-            className="lg:w-92 w-50 md:w-70      
-          object-cover"
-          />
-        </div>
-
-        <div>
-          <h1 className="font-bold text-white xs:text-center text-center text-[40px] lg:text-[70px]">
-            Make your first money <br />
-            transfer with Durapay
-          </h1>
-
-          <div className="flex items-center justify-center mt-10">
-            <button className=" gap-3 rounded-2xl bg-[#1154da] px-6 py-3.5 sm:text-lg lg:text-[14px] font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
-              Start now
-            </button>
+          <div>
+            <img
+              src="/black-hand-holding-card.avif"
+              alt=""
+              className="mt-30 w-200 h-100 md:w-200 md:h-100 lg:w-200 lg:h-180"
+            />
+            <h1 className="text-center lg:text-center text-white text-[32px] md:text-[62px] lg:text-[75px] font-bold leading-10 lg:leading-21 tracking-tight">
+              <span> Ready to manage your money</span> <br />
+              <span className="text-slate-400">more confidently with</span>{" "}
+              <br />
+              <span className="text-slate-400"> Durapay?</span>
+            </h1>
+            <div className="text-center">
+              <button className=" mt-12 rounded-xl bg-[#1154DA] px-8 py-5 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
+                Get started - it's free
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -457,7 +475,6 @@ export default function TransferPage() {
             <div className="space-y-6">
               {featur.map((feature, index) => {
                 const Icon = feature.icon;
-
                 return (
                   <button
                     key={index}
@@ -502,8 +519,63 @@ export default function TransferPage() {
           </div>
         </div>
       </section>
+      {/* CTA */}
+      <section className="py-10 lg:py-18 bg-gray-200">
+        <h1 className="text-center lg:text-center text-black text-[32px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
+          <span>Join the professionals </span> <br />
+          <span className="text-black">who trust Durapay with </span> <br />
+          <span className="text-black"> their banking needs</span>
+        </h1>
+      </section>
+      {/* Testimonial */}
+      <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+        {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
+        <style>{`
+        @keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
+  
+// .marquee-outer{
+//     overflow:hidden;
+//     -webkit-mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+//     mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+// }
+
+.marquee-track{
+    display:flex;
+    gap:24px;
+    width:max-content;
+    animation:marquee 25s linear infinite;
+}
+
+.marquee-track:hover{
+    animation-play-state:paused;
+} 
+      `}</style>
+        <div className="mb-8 sm:mb-10 ">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 text-center">
+            What our customers say
+          </h2>
+        </div>
+
+        <div className="marquee-outer">
+          <div className="marquee-track">
+            {loopedTestimonials.map((testimonial, i) => (
+              <TestimonialCard
+                key={`${testimonial.name}-${i}`}
+                testimonial={testimonial}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
       {/* HOW IT WORKS */}
-      <section
+      {/* <section
         id="how-it-works"
         className="py-24 max-w-6xl mx-auto px-4 sm:px-6"
       >
@@ -521,7 +593,7 @@ export default function TransferPage() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 relative">
-          {/* Connector line */}
+         
           <div className="hidden md:block absolute top-10 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-transparent via-black to-transparent" />
 
           {steps.map((s, i) => (
@@ -539,7 +611,7 @@ export default function TransferPage() {
           ))}
         </div>
 
-        {/* CTA */}
+      
         <div className="text-center mt-10">
           <a
             href="#download"
@@ -549,9 +621,9 @@ export default function TransferPage() {
             <ArrowRightIcon className="w-4 h-4" />
           </a>
         </div>
-      </section>
+      </section> */}
       {/* FEATURES  */}
-      <section
+      {/* <section
         id="features"
         className="py-24 bg-white/[0.02] border-y border-white/[0.06]"
       >
@@ -592,11 +664,11 @@ export default function TransferPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ── SECURITY ───────────────────────────────────────────────────────── */}
-      <section id="security" className="py-24 max-w-6xl mx-auto px-4 sm:px-6">
+      {/* <section id="security" className="py-24 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Illustration */}
+        
           <div className="order-2 lg:order-1">
             <div className="bg-[#0d0d0d] border border-white/[0.07] rounded-3xl p-8">
               <div className="flex items-center gap-3 mb-8">
@@ -669,7 +741,7 @@ export default function TransferPage() {
             </div>
           </div>
 
-          {/* Copy */}
+          
           <div className="order-1 lg:order-2">
             <p className="text-[#007A55] text-sm lg:text-lg font-semibold uppercase tracking-widest mb-4">
               Security
@@ -716,10 +788,10 @@ export default function TransferPage() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ── DOWNLOAD ───────────────────────────────────────────────────────── */}
-      <section id="download" className="py-24 relative overflow-hidden">
-        {/* BG */}
+      {/* <section id="download" className="py-24 relative overflow-hidden">
+        
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/20 to-transparent pointer-events-none" />
         <div className="absolute inset-0 grid-bg pointer-events-none opacity-50" />
 
@@ -735,7 +807,7 @@ export default function TransferPage() {
             </span>
           </h2>
           <p className="text-zinc-900 text-lg mb-10 max-w-md mx-auto">
-            Join over 2 million Nigerians already using Swiftpay to send,
+            Join over 2 million Nigerians already using Durapay to send,
             receive, and manage money effortlessly.
           </p>
 
@@ -764,7 +836,7 @@ export default function TransferPage() {
             </a>
           </div>
 
-          {/* Email waitlist */}
+      
           <div className="mt-12 bg-white/[0.03] border border-white/[0.08] rounded-2xl p-6 max-w-sm mx-auto">
             <p className="font-semibold mb-1 text-black/90 text-sm">
               Get early access
@@ -797,7 +869,7 @@ export default function TransferPage() {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ── FOOTER ─────────────────────────────────────────────────────────── */}
       {/* <footer className="border-t border-white/[0.06] py-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">

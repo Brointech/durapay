@@ -175,15 +175,15 @@ interface Feature {
 }
 
 const features: Feature[] = [
-  { label: "100% digital signup" },
-  { label: "No account opening fees" },
-  { label: "Zero maintenance charges" },
-  { label: "An IBAN for business payments" },
-  { label: "Withdrawals to your local account" },
-  { label: "Account statements & proof of account" },
-  { label: "Generate payment invoices" },
+  { label: "100% digital account setup" },
+  { label: "Free registration wallet" },
+  { label: "No hidden charges" },
+  { label: "Instant money transfers" },
+  { label: "Built for Fast, Everyday Payments" },
+  { label: "Withdraw to Any Nigerian Bank" },
+  { label: "Access Your Transaction History Anytime" },
   { label: "Instant transaction notifications" },
-  { label: "Anti-fraud protection" },
+  { label: "Bank-Grade Security & Fraud Protection" },
   { label: "Low transaction fees" },
 ];
 
@@ -307,7 +307,7 @@ export default function TransferPage() {
             {/* LEFT CONTENT */}
             <div className="max-w-2xl ">
               <h1
-                className="text-[52px] leading-[1.06] font-bold tracking-tight text-[#111827]
+                className="text-[42px] leading-[1.06] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
         lg:text-[78px] w-[130%]"
               >
@@ -414,14 +414,14 @@ export default function TransferPage() {
             <img src="grey-logo.svg" alt="" />
           </div>
 
-          <h1 className="text-center lg:text-center text-white text-[42px] lg:text-[75px] font-bold leading-tight tracking-tight">
+          <h1 className="text-center lg:text-center text-white text-[32px] lg:text-[75px] font-bold leading-tight tracking-tight">
             <span> Everything you can </span> <br />
             <span className="text-slate-400">do with your </span> <br />
             <span className="text-slate-400"> Durapay wallet</span>
           </h1>
         </div>
       </section>
-      {/* Next Phase */}
+      {/* Wallet features */}
       <section className="w-full bg-[#0b0d12] px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
         <div className="max-w-5xl mx-auto flex flex-wrap lg:flex-wrap  justify-center gap-2.5 sm:gap-3">
           {features.map((feature) => (
@@ -449,7 +449,7 @@ export default function TransferPage() {
               alt=""
               className="mt-30 w-200 h-100 md:w-200 md:h-100 lg:w-200 lg:h-180"
             />
-            <h1 className="text-center lg:text-center text-white text-[32px] md:text-[62px] lg:text-[75px] font-bold leading-tight tracking-tight">
+            <h1 className="text-center lg:text-center text-white text-[32px] md:text-[62px] lg:text-[75px] font-bold leading-12 lg:leading-21 tracking-tight">
               <span> Ready to manage your </span> <br />
               <span className="text-slate-400">more confidently with</span>{" "}
               <br />
@@ -521,7 +521,7 @@ export default function TransferPage() {
       </section>
       {/* CTA */}
       <section className="py-10 lg:py-18 bg-gray-200">
-        <h1 className="text-center lg:text-center text-black text-[42px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
+        <h1 className="text-center lg:text-center text-black text-[32px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
           <span>Join the professionals </span> <br />
           <span className="text-black">who trust Durapay with </span> <br />
           <span className="text-black"> their banking needs</span>
