@@ -883,6 +883,7 @@ export default function VirtualCardPage() {
           </div>
         </div>
 
+{/* Already have the app */}
         <div
           className="bg-white flex flex-col lg:flex-row items-center justify-between mt-20 lg:mt-20 p-12 border border-blue-600"
           style={{

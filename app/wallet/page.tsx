@@ -4,8 +4,7 @@ import { Wallet } from "lucide-react";
 import { useState } from "react";
 
 import { Shield, Bell, BadgeCheck } from "lucide-react";
-import { div, image, img } from "framer-motion/client";
-import { FiArrowRight, FiGlobe } from "react-icons/fi";
+
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
 const ArrowRightIcon = ({ className = "" }: { className?: string }) => (
@@ -297,9 +296,9 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-8">
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
@@ -308,7 +307,7 @@ export default function TransferPage() {
             {/* LEFT CONTENT */}
             <div className="max-w-2xl ">
               <h1
-                className="text-[52px] leading-[1.09] font-bold tracking-tight text-[#111827]
+                className="text-[52px] leading-[1.06] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
         lg:text-[78px] w-[130%]"
               >
