@@ -42,21 +42,6 @@ const brands: Brand[] = [
 
 const amounts = [10, 25, 50, 100, 200, 500];
 
-const steps = [
-  {
-    title: "Select your gift card",
-    desc: "Choose from top global brands like Amazon, Steam, and Netflix.",
-  },
-  {
-    title: "Choose an amount",
-    desc: "Pick a preset value or enter a custom amount that suits you.",
-  },
-  {
-    title: "Pay and receive instantly",
-    desc: "Get your code delivered straight to your DuraPay wallet in seconds.",
-  },
-];
-
 const features = [
   {
     icon: FiZap,
@@ -79,27 +64,6 @@ const features = [
     desc: "Every purchase is encrypted and protected end-to-end.",
   },
 ];
-
-// const testimonials = [
-//   {
-//     quote:
-//       "Buying gift cards used to mean waiting on a middleman. With DuraPay it lands in my wallet before I've even left the checkout screen.",
-//     name: "Ijeoma Okafor",
-//     role: "Freelance designer",
-//   },
-//   {
-//     quote:
-//       "I send Amazon cards to my nephew abroad every birthday. DuraPay makes it a two-minute job instead of a whole afternoon.",
-//     name: "Tunde Bakare",
-//     role: "Small business owner",
-//   },
-//   {
-//     quote:
-//       "Rates are transparent and there's no waiting around for a code to be manually issued. It just works.",
-//     name: "Chiamaka Nweke",
-//     role: "Content creator",
-//   },
-// ];
 
 const faqs = [
   {
@@ -164,28 +128,28 @@ const feature = [
 const testimonials: Testimonial[] = [
   {
     quote:
-      "As a CEO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+      "As a CEO, I often have to deal with international currencies. Durapay's gift card session has simplified these transactions — reliable and convenient every time.",
     name: "Tunde Bakare",
     role: "CEO",
     variant: "blue",
   },
   {
     quote:
-      "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+      "As a freelancer working with clients globally, Durapay's gift card session has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
     name: "Imisioluwa Adeyeri",
     role: "Content Marketer",
     variant: "gray",
   },
   {
     quote:
-      "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+      "As someone who's always on the move, Durapay's gift card session fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
     name: "Emeka Amadi",
     role: "Digital Nomad",
     variant: "purple",
   },
   {
     quote:
-      "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+      "I regularly deal with clients across countries, and Durapay has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
     name: "Sophia Chiedu",
     role: "IT Consultant",
     variant: "gray",

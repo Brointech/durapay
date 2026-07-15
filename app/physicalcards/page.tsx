@@ -15,33 +15,64 @@ interface Testimonial {
   variant: "blue" | "gray" | "purple";
 }
 
+// const testimonials: Testimonial[] = [
+//   {
+//     quote:
+//       "As a CFO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+//     name: "Tunde Bakare",
+//     role: "CFO",
+//     variant: "blue",
+//   },
+//   {
+//     quote:
+//       "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+//     name: "Imisioluwa Adeyeri",
+//     role: "Content Marketer",
+//     variant: "gray",
+//   },
+//   {
+//     quote:
+//       "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+//     name: "Emeka Amadi",
+//     role: "Digital Nomad",
+//     variant: "purple",
+//   },
+//   {
+//     quote:
+//       "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+//     name: "Sophia Chiedu",
+//     role: "IT Consultant",
+//     variant: "gray",
+//   },
+// ];
+
 const testimonials: Testimonial[] = [
   {
     quote:
-      "As a CEO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+      "My Durapay Physical Card has made everyday spending effortless. From supermarkets to restaurants, every payment is quick, secure, and hassle-free.",
     name: "Tunde Bakare",
-    role: "CEO",
+    role: "Business Owner",
     variant: "blue",
   },
   {
     quote:
-      "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+      "I use my Durapay Physical Card almost every day. Whether I'm shopping, paying for fuel, or dining out, it works seamlessly and I receive instant transaction alerts.",
     name: "Imisioluwa Adeyeri",
-    role: "Content Marketer",
+    role: "Marketing Executive",
     variant: "gray",
   },
   {
     quote:
-      "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+      "Having one card for shopping, ATM withdrawals, and everyday payments makes managing my finances so much easier. Durapay has been incredibly reliable.",
     name: "Emeka Amadi",
-    role: "Digital Nomad",
+    role: "Product Designer",
     variant: "purple",
   },
   {
     quote:
-      "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+      "The security features give me peace of mind. I can monitor every transaction in the app and freeze my card instantly whenever I need to.",
     name: "Sophia Chiedu",
-    role: "IT Consultant",
+    role: "Software Engineer",
     variant: "gray",
   },
 ];
@@ -259,11 +290,11 @@ export default function VirtualCardPage() {
                 Get your physical card with ease
                 <br className="hidden lg:block" /> Ready for everyday spending.
               </h1>
-              <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
-                Order your Durapay Physical Card in just a few steps and start
+              <p className="text-[18px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C]">
+                Order your Durapay Physical Card in just a few steps & start
                 <br className="hidden lg:block" />
-                making secure payments wherever card payments
-                <br className="hidden lg:block" /> are accepted.
+                making secure payments wherever card payments are accepted.
+                <br className="hidden lg:block" />
               </p>
             </div>
           </div>
@@ -276,11 +307,11 @@ export default function VirtualCardPage() {
               />
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
-              <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8">
+              <h1 className="text-[26px] lg:text-[34px] text-[#1A1A1A] font-semibold leading-8 lg:leading-10">
                 Spend directly from your wallet{" "}
                 <br className="hidden lg:block" /> No transfers. No delays.
               </h1>
-              <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
+              <p className="text-[18px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C]">
                 Your Physical Card is linked to your Durapay Wallet, allowing
                 you
                 <br className="hidden lg:block" />
@@ -300,14 +331,14 @@ export default function VirtualCardPage() {
             </div>
             <div className="flex flex-col gap-4 mt-8 p-2">
               <h1 className="text-[22px] md:text-[20px] lg:text-[32px] text-[#1A1A1A] font-semibold leading-7 lg:leading-9">
-                Spend directly from your balance,{" "}
+                Withdraw cash anytime
                 <br className="hidden lg:block" />
-                no manual top-ups
+                Access your money anytime.
               </h1>
               <p className="text-[15px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tight">
-                Your balance is your card. Spend directly from your USD, EUR, or{" "}
-                <br className="hidden lg:block" /> GBP account, no separate card{" "}
-                funding needed.
+                Withdraw cash from supported ATMs and enjoy quick,
+                <br className="hidden lg:block" /> convenient access to your
+                funds wherever you are.
               </p>
             </div>
           </div>
@@ -320,15 +351,16 @@ export default function VirtualCardPage() {
               />
             </div>
             <div className="flex flex-col gap-4 mt-8.5 p-2">
-              <h1 className="text-[24px] md:text-[20px] lg:text-[31px] text-[#1A1A1A] font-semibold leading-7">
-                Pay in-store with ease
+              <h1 className="text-[24px] md:text-[20px] lg:text-[31px] text-[#1A1A1A] font-semibold leading-7 lg:leading-9">
+                Pay in-store with ease <br className="hidden lg:block" />
+                Fast and secure payments.
               </h1>
-              <p className="mt-3 text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
-                Make seamless in-store purchases at supermarkets,
+              <p className=" text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
+                Make seamless in-store purchases at supermarkets,{" "}
                 <br className="sm:hidden block" />
                 malls, restaurants, <br className="hidden lg:block" />
-                and millions of merchants using your Durapay
-                <br className="hidden lg:block" /> physical card.
+                and millions of merchants using your Durapay physical card.
+                <br className="hidden lg:block" />
               </p>
             </div>
           </div>

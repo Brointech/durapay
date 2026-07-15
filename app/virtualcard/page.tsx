@@ -221,7 +221,7 @@ export default function VirtualCardPage() {
             payments
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
             Create a Durapay Virtual Card in seconds and pay securely online.
             Shop at your favorite websites, pay for subscriptions, and spend
             directly from your wallet balance.
@@ -260,7 +260,7 @@ export default function VirtualCardPage() {
                 Get a new card whenever
                 <br className="hidden lg:block" /> you need one
               </h1>
-              <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
+              <p className="text-[18px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C]">
                 Generate a virtual card instantly for online shopping,
                 subscriptions, <br className="hidden lg:block" />
                 or international payments—all from your Durapay wallet.
@@ -280,7 +280,7 @@ export default function VirtualCardPage() {
                 Pay with confidence whenever <br className="hidden lg:block" />{" "}
                 you shop
               </h1>
-              <p className="text-[18px] md:text-[20px] lg:text-[18px] text-[#49546C]">
+              <p className="text-[18px] md:text-[20px] lg:text-[17px] font-medium text-[#49546C]">
                 Use your Durapay Virtual Card for secure payments on global
                 websites,
                 <br className="hidden lg:block" />
@@ -327,7 +327,7 @@ export default function VirtualCardPage() {
                 <br className="hidden lg:block" />
                 Pay online across the world.
               </h1>
-              <p className="mt-3 text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
+              <p className="text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
                 Shop from international stores, pay for digital products{" "}
                 <br className="sm:hidden block" />
                 and access global <br className="hidden lg:block" />

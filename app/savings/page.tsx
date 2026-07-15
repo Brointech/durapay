@@ -308,88 +308,191 @@ const testimonials: Testimonial[] = [
   },
 ];
 
+// const faqs: FAQItem[] = [
+//   {
+//     question: "How do I get the DuraPay virtual card?",
+//     answer: (
+//       <>
+//         You can get a Durapay virtual card right in your Durapay app, and it
+//         takes <br /> less than 5 minutes. Start by creating a Durapay account,
+//         then create <br /> your virtual card directly from your dashboard.
+//         Already have the <br /> app? Go to Cards to create your new virtual Visa
+//         card in seconds.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Which currencies can I spend from?",
+//     answer: (
+//       <>
+//         You can spend directly from any balance of your choice, in USD, <br />{" "}
+//         EUR, GBP, or your local currency. Simply choose the balance you <br />{" "}
+//         want, and your card will be linked automatically.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Do I need to fund my card before spending?",
+//     answer: (
+//       <>
+//         No. Your Durapay virtual card is directly connected to your selected{" "}
+//         <br /> balance. If you have funds in your account, you can spend
+//         instantly <br /> — no extra steps.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Can I use my DuraPay card with Apple Pay or Google Pay?",
+//     answer: (
+//       <>
+//         Yes. You can add your Durapay virtual card to Apple Pay or Google <br />
+//         Pay in supported regions and enjoy fast, contactless payments <br />
+//         online and in-store.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Can I create more than one virtual card?",
+//     answer: (
+//       <>
+//         Yes. You can create multiple virtual cards for different needs like{" "}
+//         <br />
+//         subscriptions, travel, ad spend, or everyday payments. Each card <br />
+//         can have its own limits and controls.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Is my Durapay virtual card secure?",
+//     answer: (
+//       <>
+//         Yes. Durapay virtual cards are protected with 3D Secure, Visa’s global{" "}
+//         <br />
+//         payment network, and in-app controls that let you manage or <br />
+//         pause cards anytime.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "Where can I use my Durapay virtual card?",
+//     answer: (
+//       <>
+//         Anywhere Visa is accepted — online, in apps, and in physical <br />
+//         stores worldwide.
+//       </>
+//     ),
+//   },
+
+//   {
+//     question: "How long does it take to get a Durapay virtual card?",
+//     answer: (
+//       <>
+//         Creating your Durapay virtual card is an instant process. Just open{" "}
+//         <br />
+//         your durapay app, go to Virtual Cards, and follow the prompts.
+//       </>
+//     ),
+//   },
+//   {
+//     question: "What if I need help?",
+//     answer: (
+//       <>
+//         Our Support team is available 24/7 to help you with anything you <br />
+//         need, anytime.
+//       </>
+//     ),
+//   },
+// ];
+
 const faqs: FAQItem[] = [
   {
-    question: "How do I get the DuraPay virtual card?",
+    question: "How do I start saving with Durapay?",
     answer: (
       <>
-        You can get a Durapay virtual card right in your Durapay app, and it
-        takes <br /> less than 5 minutes. Start by creating a Durapay account,
-        then create <br /> your virtual card directly from your dashboard.
-        Already have the <br /> app? Go to Cards to create your new virtual Visa
-        card in seconds.
-      </>
-    ),
-  },
-  {
-    question: "Which currencies can I spend from?",
-    answer: (
-      <>
-        You can spend directly from any balance of your choice, in USD, <br />{" "}
-        EUR, GBP, or your local currency. Simply choose the balance you <br />{" "}
-        want, and your card will be linked automatically.
-      </>
-    ),
-  },
-  {
-    question: "Do I need to fund my card before spending?",
-    answer: (
-      <>
-        No. Your Durapay virtual card is directly connected to your selected{" "}
-        <br /> balance. If you have funds in your account, you can spend
-        instantly <br /> — no extra steps.
-      </>
-    ),
-  },
-  {
-    question: "Can I use my DuraPay card with Apple Pay or Google Pay?",
-    answer: (
-      <>
-        Yes. You can add your Durapay virtual card to Apple Pay or Google <br />
-        Pay in supported regions and enjoy fast, contactless payments <br />
-        online and in-store.
-      </>
-    ),
-  },
-  {
-    question: "Can I create more than one virtual card?",
-    answer: (
-      <>
-        Yes. You can create multiple virtual cards for different needs like{" "}
+        Getting started is easy. Open your Durapay app, go to the Savings <br />
+        section, choose a savings plan that fits your goals, and make your{" "}
         <br />
-        subscriptions, travel, ad spend, or everyday payments. Each card <br />
-        can have its own limits and controls.
+        first deposit in just a few taps.
       </>
     ),
   },
   {
-    question: "Is my Durapay virtual card secure?",
+    question: "What savings plans does Durapay offer?",
     answer: (
       <>
-        Yes. Durapay virtual cards are protected with 3D Secure, Visa’s global{" "}
-        <br />
-        payment network, and in-app controls that let you manage or <br />
-        pause cards anytime.
+        Durapay offers flexible savings options to help you save for <br />
+        everyday goals, future expenses, emergencies, or long-term <br />
+        financial plans.
       </>
     ),
   },
   {
-    question: "Where can I use my Durapay virtual card?",
+    question: "Can I save automatically?",
     answer: (
       <>
-        Anywhere Visa is accepted — online, in apps, and in physical <br />
-        stores worldwide.
+        Yes. You can set up automatic daily, weekly, or monthly deposits <br />
+        into your savings plan so you can build your savings consistently <br />
+        without having to remember each time.
       </>
     ),
   },
-
   {
-    question: "How long does it take to get a Durapay virtual card?",
+    question: "Can I withdraw my savings anytime?",
     answer: (
       <>
-        Creating your Durapay virtual card is an instant process. Just open{" "}
-        <br />
-        your durapay app, go to Virtual Cards, and follow the prompts.
+        Depending on your savings plan, you may be able to withdraw <br />
+        your funds at any time or at the end of your selected savings <br />
+        period.
+      </>
+    ),
+  },
+  {
+    question: "Is there a minimum amount I can save?",
+    answer: (
+      <>
+        Yes. You can start saving with an amount that suits your <br />
+        budget, making it easy for everyone to build healthy <br />
+        saving habits.
+      </>
+    ),
+  },
+  {
+    question: "Will I earn interest on my savings?",
+    answer: (
+      <>
+        Eligible savings plans may earn interest over time. The <br />
+        applicable rate will be displayed before you create your <br />
+        savings plan.
+      </>
+    ),
+  },
+  {
+    question: "Is my money safe with Durapay Savings?",
+    answer: (
+      <>
+        Yes. Your savings are protected with advanced security <br />
+        features, encryption, and continuous monitoring to keep <br />
+        your funds secure.
+      </>
+    ),
+  },
+  {
+    question: "Can I have more than one savings goal?",
+    answer: (
+      <>
+        Absolutely. Create multiple savings plans for different <br />
+        goals like rent, school fees, travel, business, or <br />
+        emergency funds.
+      </>
+    ),
+  },
+  {
+    question: "Can I track my savings progress?",
+    answer: (
+      <>
+        Yes. Monitor your savings balance, contributions, <br />
+        and progress toward your financial goals directly <br />
+        from the Durapay app.
       </>
     ),
   },
@@ -397,8 +500,8 @@ const faqs: FAQItem[] = [
     question: "What if I need help?",
     answer: (
       <>
-        Our Support team is available 24/7 to help you with anything you <br />
-        need, anytime.
+        Our Support team is available 24/7 to assist you with <br />
+        your savings account or any questions you may have.
       </>
     ),
   },
@@ -883,7 +986,7 @@ export default function VirtualCardPage() {
           </div>
         </div>
 
-{/* Already have the app */}
+        {/* Already have the app */}
         <div
           className="bg-white flex flex-col lg:flex-row items-center justify-between mt-20 lg:mt-20 p-12 border border-blue-600"
           style={{

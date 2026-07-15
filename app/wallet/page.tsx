@@ -209,28 +209,28 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "As a CEO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+      "As a CEO, I often have to deal with international currencies. Durapay's wallet has simplified these transactions — reliable and convenient every time.",
     name: "Tunde Bakare",
-    role: "CEO",
+    role: "CFO",
     variant: "blue",
   },
   {
     quote:
-      "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+      "As a freelancer working with clients globally, Durapay's wallet has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
     name: "Imisioluwa Adeyeri",
     role: "Content Marketer",
     variant: "gray",
   },
   {
     quote:
-      "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+      "As someone who's always on the move, Durapay's wallet fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
     name: "Emeka Amadi",
     role: "Digital Nomad",
     variant: "purple",
   },
   {
     quote:
-      "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+      "I regularly deal with clients across countries, and Durapay has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
     name: "Sophia Chiedu",
     role: "IT Consultant",
     variant: "gray",
@@ -449,8 +449,8 @@ export default function TransferPage() {
               alt=""
               className="mt-30 w-200 h-100 md:w-200 md:h-100 lg:w-200 lg:h-180"
             />
-            <h1 className="text-center lg:text-center text-white text-[32px] md:text-[62px] lg:text-[75px] font-bold leading-12 lg:leading-21 tracking-tight">
-              <span> Ready to manage your </span> <br />
+            <h1 className="text-center lg:text-center text-white text-[26px] md:text-[62px] lg:text-[75px] font-bold leading-12 lg:leading-21 tracking-tight">
+              <span> Ready to manage your money </span> <br />
               <span className="text-slate-400">more confidently with</span>{" "}
               <br />
               <span className="text-slate-400"> Durapay?</span>

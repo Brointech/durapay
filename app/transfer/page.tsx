@@ -209,28 +209,28 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "As a CEO, I often have to deal with international currencies. Grey's virtual account has simplified these transactions — reliable and convenient every time.",
+      "As a CEO, I often have to deal with international currencies. Durapy's account has simplified these transactions — reliable and convenient every time.",
     name: "Tunde Bakare",
     role: "CEO",
     variant: "blue",
   },
   {
     quote:
-      "As a freelancer working with clients globally, Grey's virtual foreign account has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
+      "As a freelancer working with clients globally, Durapay's transfer process has made receiving payments so much easier. No more currency headaches and the fees are surprisingly low!",
     name: "Imisioluwa Adeyeri",
     role: "Content Marketer",
     variant: "gray",
   },
   {
     quote:
-      "As someone who's always on the move, Grey's virtual foreign account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
+      "As someone who's always on the move, Durapay's account fits my lifestyle perfectly. Easy access to my funds in different currencies, all in one app – it's brilliant!",
     name: "Emeka Amadi",
     role: "Digital Nomad",
     variant: "purple",
   },
   {
     quote:
-      "I regularly deal with clients across countries, and Grey has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
+      "I regularly deal with clients across countries, and Durapay has made financial transactions incredibly smooth. The ability to handle various currencies without worrying about fees is fantastic.",
     name: "Sophia Chiedu",
     role: "IT Consultant",
     variant: "gray",
