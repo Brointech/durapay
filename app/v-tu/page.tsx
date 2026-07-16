@@ -7,7 +7,7 @@ export default function () {
     <div>
       <section className="max-w-7xl mx-auto min-h-[60vh] md:min-h-[90vh] lg:min-h-screen bg-white px-6 md:px-10 lg:px-10 pt-28 md:pt-32 lg:pt-18 pb-20 ">
         {/* Fisrt Section */}
-        <div className="mx-auto max-w-7xl flex lg:items-center xs:justify-center justify-between ">
+        <div className="flex lg:items-center xs:justify-center justify-between ">
           <div className="lg:-mt-20 md:-mt-20">
             <h1 className="text-[#1F1F30] lg:text-left text-center text-[34px] sm:text-[34px] md:text-[42px] lg:text-[52px] font-bold leading-[1.05] sm:leading-[1.15] lg:leading-[1.03] tracking-tight">
               Your Business <br className="hidden xs:block" /> Airtime{" "}

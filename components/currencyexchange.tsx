@@ -43,7 +43,7 @@ const CurrencyExchange = () => {
     // </section>
 
     <section
-      className="w-full px-6 md:px-10 lg:px-10 py-16 bg-white bg-"
+      className="w-full px-6 md:px-10 lg:px-10 pt-6 bg-white bg-"
       style={{ backgroundImage: "url('/')" }}
     >
       <div className="flex flex-col md:flex-row gap-6">
@@ -52,7 +52,7 @@ const CurrencyExchange = () => {
           <img
             src="/Sent.jpg"
             alt="Currency exchange"
-            className="w-full max-w-[480px] h-full min-h-[420px] md:min-h-[520px] lg:min-h-[620px] object-cover"
+            className="w-full h-full min-h-[420px] md:min-h-[520px] lg:min-h-[620px]  object-cover"
           />
         </div>
         {/* RIGHT - Content */}

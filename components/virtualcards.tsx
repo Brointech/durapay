@@ -104,7 +104,7 @@ const VirtualCardsSection = () => {
     //   </div>
     // </section>
 
-    <section className="w-full bg-white transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 py-16 lg:py-20">
+    <section className="w-full transition-transform duration-300 ease-in-out hover:-translate-y-2 px-6 md:px-8 lg:px-10 pt-6 lg:pt-6">
       <div className="mx-auto max-w-7xl px-6 rounded-[32px] bg-[#edf4df] overflow-hidden grid md:grid-cols-2 items-center gap-10">
         {/* LEFT — content */}
         <div className="px-6 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-12 lg:pb-14 flex flex-col justify-center">

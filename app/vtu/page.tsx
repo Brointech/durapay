@@ -652,9 +652,9 @@ function VTUWidget() {
   return (
     <section
       id="vtu"
-      className="py-16 sm:py-24 bg-gradient-to-b from-white to-[#f0fdf9]"
+      className=" max-w-7xl mx-auto py-16 sm:py-24 bg-gradient-to-b from-white to-[#f0fdf9]"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
           <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#00C896] uppercase bg-[#00C896]/10 px-3 py-1.5 rounded-full mb-4">

@@ -6,16 +6,15 @@ export default function CurvedBlackSection() {
   return (
     <section className="relative w-full bg-white pt-16">
       {/* Black section with curved top-left edge */}
-      <div className="flex items-center justify-between relative w-full bg-[#111111] rounded-tl-[150px] pt-24 px-8 md:px-16 lg:px-24">
+      <div className="flex items-center justify-between relative w-full bg-[#111111] rounded-tl-[150px] pt-24 px-8 md:px-16 lg:px-10">
         {/* Content */}
         <div className="max-w-2xl">
-          <h1 className="text-white text-[32px] md:text-6xl lg:text-[60px] font-semibold leading-[1.1] tracking-tight">
-            A foreign account that is <br className="hidden lg:block" />{" "}
-            genuinely global in scope.
+          <h1 className="text-white text-[32px] md:text-6xl lg:text-[80px] font-semibold leading-[1.01] tracking-tight">
+            A truly global <br className="hidden lg:block" /> foreign account.
           </h1>
-          <p className="mt-6 text-white/70 text-lg md:text-xl leading-relaxed max-w-md">
-            Get a global overseas account, which gives you ultimate control over
-            your money.
+          <p className="mt-6 text-white text-lg md:text-l leading-7 lg:leading-7 max-w-md">
+            Get a global foreign account that puts you in total control of your
+            money.
           </p>
 
           <div className="mb-4">

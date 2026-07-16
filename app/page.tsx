@@ -18,19 +18,19 @@ import Testimonials from "@/components/testimonials";
 export default function Home() {
   return (
     <section>
-      <div>
+      <div className="bg-[#9DAACF]">
         <HeroSection />
-        <SocialProofSection />
-        {/* <Order /> */}
-        <GlobalAccountSection />
-        <CurrencyExchange />
-        <VirtualCardsSection />
-        <MoneyTransfer />
-        <CurvedBlackSection />
-        <Difference />
-        <BeyondBanking />
-        <Testimonials />
       </div>
+      <SocialProofSection />
+      {/* <Order /> */}
+      <GlobalAccountSection />
+      <CurrencyExchange />
+      <VirtualCardsSection />
+      <MoneyTransfer />
+      <CurvedBlackSection />
+      <Difference />
+      <BeyondBanking />
+      <Testimonials />
     </section>
   );
 }

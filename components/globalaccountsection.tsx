@@ -62,7 +62,7 @@ const GlobalAccountSection = () => {
   const router = useRouter();
 
   return (
-    <section className="w-full px-6 md:px-10 lg:px-10  lg:py-16 bg-white">
+    <section className="w-full px-6 md:px-10 lg:px-10  lg:pt-16 bg-white">
       <div
         onClick={() => router.push("/sendandreceive")}
         className="cursor-pointer mx-auto max-w-7xl rounded-2xl overflow-hidden bg-[#dce8fd] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 justify-end transition-transform

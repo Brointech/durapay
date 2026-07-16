@@ -296,13 +296,13 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen max-w-screen-2xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-20 lg:py-18">
+        <div className="relative px-6 md:px-8 lg:px-10 py-20 lg:py-18">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* LEFT CONTENT */}
             <div className="max-w-2xl ">
@@ -344,7 +344,7 @@ export default function TransferPage() {
         <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
@@ -408,7 +408,7 @@ export default function TransferPage() {
         </div>
       </section>
       {/* Next phase */}
-      <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
+      <section className="bg-[#040B18] max-w-screen-2xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col gap-6">
           <div className="flex items-center justify-center">
             <img src="grey-logo.svg" alt="" />
@@ -465,7 +465,7 @@ export default function TransferPage() {
       </section>
       {/* Next Phase */}
       <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="px-6 lg:px-12">
           {/* Section heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-12 max-w-xl">
             Receive payments safely with our account security measures
