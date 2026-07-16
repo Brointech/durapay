@@ -240,7 +240,7 @@ export default function VirtualCardPage() {
       </section>
 
       {/* FEATURES */}
-      <section className="w-full bg-[#F8F8F8] px-4 sm:px-10 lg:px-10 py-16">
+      <section className="max-w-screen-2xl bg-[#F8F8F8] px-4 sm:px-10 lg:px-10 py-16">
         <div className="mt-10 lg:mt-10">
           <h1 className="text-center font-semibold text-[44px] md:text-[44px] lg:text-[48px] text-black leading-12 tracking-tight">
             Cards built for the borderless
@@ -622,7 +622,7 @@ export default function VirtualCardPage() {
       </div>
 
       {/* HOW IT WORKS */}
-      <section className="w-full bg-[#F3F5F9] px-6 sm:px-10 lg:px-10 py-16">
+      <section className="max-w-screen-2xl bg-[#F3F5F9] px-6 sm:px-10 lg:px-10 py-16">
         <h2 className="text-2xl text-black text-center text-[38px] lg:text-[74px] lg:text-center font-semibold mb-10 leading-19 tracking-tight">
           Get your virtual card in <br /> less than 5 minutes
         </h2>
@@ -791,7 +791,7 @@ export default function VirtualCardPage() {
       </section> */}
 
       {/* Testimonial */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {

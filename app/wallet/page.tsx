@@ -528,7 +528,7 @@ export default function TransferPage() {
         </h1>
       </section>
       {/* Testimonial */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {

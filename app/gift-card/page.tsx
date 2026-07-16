@@ -451,7 +451,7 @@ export default function Giftcard() {
         </div>
       </section> */}
 
-      <section className="bg-white max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="bg-white px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
@@ -601,7 +601,7 @@ export default function Giftcard() {
       </section> */}
 
       {/* Testimonial */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {

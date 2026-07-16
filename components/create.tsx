@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 
 export default function CurvedBlackSection() {
   return (
-    <section className="relative w-full bg-white pt-16">
+    <section className="relative  bg-white pt-16">
       {/* Black section with curved top-left edge */}
       <div className="flex items-center justify-between relative w-full bg-[#111111] rounded-tl-[150px] pt-24 px-8 md:px-16 lg:px-10">
         {/* Content */}

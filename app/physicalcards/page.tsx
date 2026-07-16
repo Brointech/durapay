@@ -690,63 +690,6 @@ export default function VirtualCardPage() {
             </div>
           </div>
         </div>
-        {/* 
-        <div className="flex items-center justify-between gap-0">
-          <div className="">
-            <span className="bg-[#E8F0FC] text-[#082F74] font-medium text-[18px] p-2 rounded-[7px] border border-[#A0C0F3]">
-              {" "}
-              STEP ONE
-            </span>
-            <p className="text-[#1B1F28] font-semibold text-[18px] ">
-              Download the Durapay app
-            </p>
-          </div>
-
-          <div className="">
-            <span className="bg-[#E8F0FC] text-[#082F74] font-medium text-[18px] p-2 rounded-[7px] border border-[#A0C0F3]">
-              {" "}
-              STEP TWO
-            </span>
-            <p className="text-[#1B1F28] font-semibold text-[18px] ">
-              Create your account
-            </p>
-          </div>
-          <div className="">
-            <span className="bg-[#E8F0FC] text-[#082F74] font-medium text-[18px] p-2 rounded-[7px] border border-[#A0C0F3]">
-              {" "}
-              STEP THREE
-            </span>
-            <p className="text-[#1B1F28] font-semibold text-[18px] ">
-              Fund your account
-            </p>
-          </div>
-          <div className="">
-            <span className="bg-[#E8F0FC] text-[#082F74] font-medium text-[18px] p-2 rounded-[7px] border border-[#A0C0F3]">
-              {" "}
-              STEP FOUR
-            </span>
-            <p className="text-[#1B1F28] font-semibold text-[18px] ">
-              Create your card instantly
-            </p>
-          </div>
-        </div> */}
-        {/* 
-        <div className="grid md:grid-cols-4 gap-6">
-          {[
-            "Download the Durapay app",
-            "Create your account",
-            "Fund your account",
-            "Create your card instantly",
-          ].map((step, i) => (
-            <div
-              key={i}
-              className="p-5 rounded-xl border border-white/10 bg-black"
-            >
-              <p className="text-white text-sm">Step {i + 1}</p>
-              <p className="mt-2 font-medium">{step}</p>
-            </div>
-          ))}
-        </div> */}
 
         <div
           className="bg-white flex flex-col lg:flex-row items-center justify-between mt-20 lg:mt-20 p-12 border border-blue-600"
@@ -797,8 +740,8 @@ export default function VirtualCardPage() {
       </section> */}
 
       {/* Testimonial */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
-        {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
+      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+        {/* MARQUEE KEYFRAMESmax-w-screen-2xl — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {
   from {
