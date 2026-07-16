@@ -241,7 +241,7 @@ const HeroSection = () => {
 
         {/* TEXT — top section on mobile, overlaid on image */}
         <div className="relative z-10 flex flex-col justify-start pt-16 pb-8 sm:pt-18 lg:pt-20 lg:pb-0">
-          <h1 className="text-[36px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
+          <h1 className="mt-6 text-[36px] font-bold leading-[1.12] tracking-[-1.5px] text-white sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[73px]">
             Inclusive global <br />
             banking designed <br />
             just for you.
