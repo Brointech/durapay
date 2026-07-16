@@ -73,9 +73,9 @@ export default function BeyondBanking() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-white overflow-hidden">
+    <section className="relative min-h-screen bg-white overflow-hidden">
       <div>
-        <div className=" w-full px-6 lg:px-10 py-14 bg-white">
+        <div className=" mx-auto max-w-7xl px-6 lg:px-10 py-14 bg-white">
           <div className="w-16 h-16 rounded-lg bg-black flex items-center justify-center mb-6">
             <Wallet className="w-10 h-10 text-white" />
           </div>

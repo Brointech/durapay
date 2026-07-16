@@ -22,7 +22,6 @@ export default function Home() {
         <HeroSection />
       </div>
       <SocialProofSection />
-      {/* <Order /> */}
       <GlobalAccountSection />
       <CurrencyExchange />
       <VirtualCardsSection />

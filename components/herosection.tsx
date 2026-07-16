@@ -150,7 +150,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden w-full bg-black min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col"
+      className="relative overflow-hidden w-full min-h-[85vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col"
     >
       {/* ── BACKGROUND LAYERS ── */}
       {/* Base periwinkle-blue gradient */}
@@ -166,14 +166,14 @@ const HeroSection = () => {
         }}
       />
       {/* Grain overlay */}
-      <div
+      {/* <div
         className="absolute inset-0 opacity-[0.055] pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           backgroundRepeat: "repeat",
           backgroundSize: "128px 128px",
         }}
-      />
+      /> */}
       {/* Right-side light bloom */}
       <div
         className="absolute top-0 right-0 w-[55%] h-full pointer-events-none"
@@ -220,7 +220,6 @@ const HeroSection = () => {
           <path d="M0 80 Q187.5 0 375 80 Z" fill="white" />
         </svg>
       </div>
-      {/* ── HERO CONTENT ── */}
       <div className="relative z-10 flex-1 flex flex-col md:grid md:grid-cols-2 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-10">
         {/* IMAGE — mobile: full-bleed background behind text */}
         <div className="absolute inset-0 flex sm:hidden pointer-events-none">
@@ -254,7 +253,10 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-6 sm:mt-8 lg:mt-16">
-            <button className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[#023bac] active:scale-95">
+            <button
+              className="flex items-center gap-3 rounded-[10px] bg-[#1154da] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg transition hover:bg-[
+#023bac] active:scale-95"
+            >
               Get started - it's free
             </button>
           </div>
