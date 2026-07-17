@@ -344,7 +344,7 @@ export default function TransferPage() {
         <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className="px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className=" max-w-screen-2xl px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
