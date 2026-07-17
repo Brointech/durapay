@@ -296,13 +296,13 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen mx-auto bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 min-h-[220px] lg:min-h-[250px] xl:min-h-[260px]">
         {/* Background */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
+        <div className="left-1/2 w-screen -translate-x-1/2 absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
-        <div className="relative px-6 md:px-8 lg:px-10 py-20 lg:py-18">
+        <div className="mx-auto max-w-[1280px] relative px-6 md:px-8 lg:px-10 py-20 lg:pt-14 lg:min-h-[520px] min-h-[100px]">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* LEFT CONTENT */}
             <div className="max-w-2xl">
@@ -334,7 +334,7 @@ export default function TransferPage() {
               <img
                 src="/mapp.webp"
                 alt="World Map"
-                className="w-[280px] sm:w-[260px] lg:w-[250px] lg:-mt-8"
+                className="w-[340px] lg:w-[360px] xl:w-[240px] lg:-mt-16"
               />
             </div>
           </div>

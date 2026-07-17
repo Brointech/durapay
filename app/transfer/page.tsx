@@ -298,18 +298,21 @@ export default function TransferPage() {
   return (
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
-      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
+      <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 min-h-[220px] lg:min-h-[250px] xl:min-h-[260px]">
         {/* Background */}
         <div className=" left-1/2 w-screen -translate-x-1/2 absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
-        <div className="relative mx-auto max-w-[1280px] px-6 md:px-8 lg:px-10 py-20 lg:pt-10">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div
+          className="relative mx-auto max-w-[1280px] px-6 md:px-8 lg:px-10 py-20 lg:pt-14 lg:min-h-[520px] min-h-[100px]
+                flex items-center"
+        >
+          <div className="grid items-center lg:gap-16 lg:grid-cols-2 w-full">
             {/* LEFT CONTENT */}
-            <div className="max-w-2xl ">
+            <div className="max-w-2xl">
               <h1
                 className="text-[52px] leading-[1.06] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
-        lg:text-[78px] w-[130%]"
+        lg:text-[80px] w-[130%]"
               >
                 Local and
                 <br />
@@ -317,7 +320,6 @@ export default function TransferPage() {
                 <br className="sm:hidden block" /> money
                 <br /> transfers
               </h1>
-
               <p className="mt-10 max-w-xl text-[18px] leading-[1.49] text-[#232323]">
                 Send money, receive payments, pay bills, and manage
                 <br className="hidden lg:block" />
@@ -334,7 +336,7 @@ export default function TransferPage() {
               <img
                 src="/mapp.webp"
                 alt="World Map"
-                className="w-[280px] sm:w-[260px] lg:w-[250px] lg:-mt-8"
+                className="w-[340px] lg:w-[360px] xl:w-[240px] lg:-mt-16"
               />
             </div>
           </div>
