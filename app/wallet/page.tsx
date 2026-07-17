@@ -520,7 +520,7 @@ export default function TransferPage() {
         </div>
       </section>
       {/* CTA */}
-      <section className="py-10 lg:py-18 bg-gray-200">
+      <section className=" w-full mx-auto py-10 lg:py-18 bg-gray-200">
         <h1 className="text-center lg:text-center text-black text-[32px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
           <span>Join the professionals </span> <br />
           <span className="text-black">who trust Durapay with </span> <br />
@@ -528,7 +528,7 @@ export default function TransferPage() {
         </h1>
       </section>
       {/* Testimonial */}
-      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="w-full mx-auto bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {

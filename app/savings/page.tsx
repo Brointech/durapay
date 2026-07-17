@@ -880,7 +880,7 @@ export default function VirtualCardPage() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
         <div className="mb-20">
           <h1 className="font-semibold text-black text-[48px] xs:text-center lg:text-[42px] leading-[1.05] tracking-[-0.04em] mb-3 lg:mb-3 ">
             Built with your security in mind
@@ -923,7 +923,7 @@ export default function VirtualCardPage() {
       </div>
 
       {/* HOW IT WORKS */}
-      <section className="bg-[#F3F5F9] px-6 sm:px-10 lg:px-10 py-16">
+      <section className="max-w-7xl mx-auto bg-[#F3F5F9] px-6 sm:px-10 lg:px-10 py-16">
         <h2 className="text-2xl text-black text-center text-[38px] lg:text-[74px] lg:text-center font-semibold mb-10 leading-19 tracking-tight">
           Get your virtual card in <br /> less than 5 minutes
         </h2>
@@ -1019,21 +1019,6 @@ export default function VirtualCardPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      {/* <section className="px-6 sm:px-10 lg:px-20 py-20">
-            <div className="rounded-3xl bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-white/10 p-10 text-center">
-              <h2 className="text-3xl text-black font-bold">
-                Start spending globally in minutes
-              </h2>
-              <p className="text-gray-900 mt-3">
-                Get your virtual card and start paying anywhere in the world.
-              </p>
-              <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition">
-                Create Virtual Card
-              </button>
-            </div>
-          </section> */}
 
       {/* Testimonial */}
       <section className="w-screen bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">

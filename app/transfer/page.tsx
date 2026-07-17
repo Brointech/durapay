@@ -410,8 +410,8 @@ export default function TransferPage() {
         </div>
       </section>
       {/* Next phase */}
-      <section className="bg-[#040B18] max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
-        <div className="flex flex-col gap-6">
+      <section className="bg-[#040B18] w-full px-6 lg:px-10 py-20 lg:py-18">
+        <div className=" max-w-7xl mx-auto flex flex-col gap-6">
           <div className="flex items-center justify-center">
             <img src="grey-logo.svg" alt="" />
           </div>
