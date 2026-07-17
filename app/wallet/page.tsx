@@ -296,7 +296,7 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen max-w-screen-2xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}
@@ -305,9 +305,9 @@ export default function TransferPage() {
         <div className="relative px-6 md:px-8 lg:px-10 py-20 lg:py-18">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* LEFT CONTENT */}
-            <div className="max-w-2xl ">
+            <div className="max-w-2xl">
               <h1
-                className="text-[42px] leading-[1.06] font-bold tracking-tight text-[#111827]
+                className="text-[40px] leading-[1.06] font-bold tracking-tight text-[#111827]
         sm:text-[65px]
         lg:text-[78px] w-[130%]"
               >

@@ -250,17 +250,11 @@ export default function VirtualCardPage() {
             for your everyday <br className="hidden sm:block" />
             spending
           </h1>
-
           <p className="mx-auto mt-6 max-w-2xl text-base text-slate-500 sm:mt-8 sm:text-lg md:text-lg">
             Use your Durapay Physical Card with confidence. Pay in stores,
             restaurants, and ATMs—all while enjoying secure, fast, and
             convenient transactions.
           </p>
-          {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text-center">
-            Your Durapay card now works with Apple Pay and Google Pay. Create
-            multiple cards, spend straight from your balance, and pay at 150
-            million merchants worldwide.
-          </p> */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <button className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition">
               Get your new card
@@ -585,7 +579,7 @@ export default function VirtualCardPage() {
         </div>
       </div> */}
 
-      <div className="w-full max-w-7xl px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
+      <div className="px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
         <div className="mb-20">
           <h1 className="font-semibold text-black text-[48px] xs:text-center lg:text-[42px] leading-[1.05] tracking-[-0.04em] mb-3 lg:mb-3 ">
             Built with your security in mind
@@ -740,7 +734,7 @@ export default function VirtualCardPage() {
       </section> */}
 
       {/* Testimonial */}
-      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="w-screen bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMESmax-w-screen-2xl — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {

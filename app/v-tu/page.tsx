@@ -205,22 +205,6 @@ export default function () {
           </div>
         </div>
       </section>
-      {/* Contact & FAQs */}
-      {/* <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center ">
-        <div className="">
-          <h1 className="text-[#1F1F30] font-bold text-[32px]">
-            Need to Speak to us?
-          </h1>
-          <div className="">
-
-          </div>
-        </div>
-        <div className="">
-          <h1 className="text-[#1F1F30] font-bold text-[32px]">
-            Frequently asked questions
-          </h1>
-        </div>
-      </div> */}
     </div>
   );
 }

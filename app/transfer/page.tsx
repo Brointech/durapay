@@ -296,7 +296,7 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen max-w-screen-2xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}

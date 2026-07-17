@@ -233,7 +233,6 @@ export default function Giftcard() {
           <h1 className="text-center font-bold text-[#1F1F30] text-[32px] leading-tight sm:text-[40px] md:text-[52px] lg:text-[64px] xl:text-[72px]">
             Exchange gift cards
           </h1>
-
           <p className="max-w-3xl text-center text-[#363F52] text-[16px] leading-7 sm:text-[17px] md:text-[14px] md:leading-8 lg:text-[20px] lg:leading-8">
             Exchange gift cards from top international brands with ease. DuraPay
             offers competitive rates, fast transactions, and secure payouts,
@@ -241,7 +240,7 @@ export default function Giftcard() {
             need it.
           </p>
         </div>
-        <div className="mx-auto max-w-7xl rounded-[32px] lg:rounded-[40px] bg-white border border-gray-200 p-4 sm:p-6 md:p-8 lg:p-12">
+        <div className="mx-auto rounded-[32px] lg:rounded-[40px] bg-white border border-gray-200 p-4 sm:p-6 md:p-8 lg:p-12">
           {/* Converter */}
           <div className="relative">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-5 lg:gap-6 items-center">
@@ -360,7 +359,7 @@ export default function Giftcard() {
       </section>
 
       {/* Gift cards */}
-      <section className="bg-white max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="bg-white mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
@@ -437,19 +436,6 @@ export default function Giftcard() {
           </div>
         </div>
       </section>
-
-      {/* ---------------------------------------------------------- */}
-      {/* How it works                                                */}
-      {/* ---------------------------------------------------------- */}
-      {/* <section className="w-full px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-2xl font-bold text-[#00246C] sm:text-3xl">
-            How it works
-          </h2>
-
-          
-        </div>
-      </section> */}
 
       <section className="bg-white px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
@@ -601,7 +587,7 @@ export default function Giftcard() {
       </section> */}
 
       {/* Testimonial */}
-      <section className="max-w-screen-2xl bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
+      <section className="w-screen bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-10 overflow-hidden">
         {/* MARQUEE KEYFRAMES — inline so no tailwind config needed */}
         <style>{`
         @keyframes marquee {
