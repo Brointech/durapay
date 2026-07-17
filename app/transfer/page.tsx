@@ -296,11 +296,11 @@ export default function TransferPage() {
   ];
 
   return (
-    <div className="min-h-screen mx-auto bg-white text-white font-sans antialiased overflow-hidden">
+    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 lg:-mt-14">
         {/* Background */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
+        <div className="absolute mx-auto inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
 
         <div className="relative px-6 md:px-8 lg:px-10 py-20 lg:py-18">
           <div className="grid items-center gap-10 lg:grid-cols-2">
