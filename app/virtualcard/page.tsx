@@ -208,7 +208,7 @@ export default function VirtualCardPage() {
   }
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white antialiased">
+    <div className="min-h-screen bg-white text-white antialiased">
       {/* HERO SECTION */}
       <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-12">
         <div className="absolute inset-0 bg-white" />
@@ -221,7 +221,7 @@ export default function VirtualCardPage() {
             payments
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-base font-normal text-slate-500 sm:mt-8 sm:text-lg md:text-xl">
             Create a Durapay Virtual Card in seconds and pay securely online.
             Shop at your favorite websites, pay for subscriptions, and spend
             directly from your wallet balance.
@@ -327,7 +327,7 @@ export default function VirtualCardPage() {
                 <br className="hidden lg:block" />
                 Pay online across the world.
               </h1>
-              <p className="text-[16px] md:text-[20px] lg:text-[18px] font-medium text-[#49546C] tracking-tighter">
+              <p className="text-[16px] md:text-[20px] lg:text-[17px] font-medium text-[#49546C] tracking-tighter">
                 Shop from international stores, pay for digital products{" "}
                 <br className="sm:hidden block" />
                 and access global <br className="hidden lg:block" />
@@ -363,7 +363,7 @@ export default function VirtualCardPage() {
       </section>
 
       {/* Virtual Card  */}
-      <div className="min-h-screen bg-white text-white antialiased px-4 sm:px-10 lg:px-10 py-30">
+      <div className="min-h-screen bg-white text-white antialiased px-4 sm:px-10 lg:px-10 lg:py-16">
         <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center  ">
           {/* Left Side */}
           <div>

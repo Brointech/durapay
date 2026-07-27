@@ -573,12 +573,12 @@ export default function VirtualCardPage() {
   }
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto bg-white text-white antialiased">
+    <div className="min-h-screen bg-white text-white antialiased">
       {/* HERO SECTION */}
       <section className="relative overflow-hidden px-4 sm:px-10 lg:px-10 py-18">
         <div className="absolute inset-0 bg-white" />
 
-        <div className="relative flex flex-col items-center mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-[1280px] relative flex flex-col items-center mx-auto max-w-4xl text-center">
           <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-[#0B0E14] sm:text-6xl md:text-7xl lg:text-[4.5rem]">
             Build better financial <br className="hidden sm:block" />
             habits with every <br className="hidden sm:block" />
@@ -590,11 +590,6 @@ export default function VirtualCardPage() {
             lifestyle. Set goals, automate your savings, and watch your balance
             increase—all from one secure app.
           </p>
-          {/* <p className="mt-5 text-gray-600 max-w-lg text-sm sm:text-base text-center">
-                Your Durapay card now works with Apple Pay and Google Pay. Create
-                multiple cards, spend straight from your balance, and pay at 150
-                million merchants worldwide.
-              </p> */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <button className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition">
               Start saving today
@@ -703,7 +698,7 @@ export default function VirtualCardPage() {
       </section>
 
       {/* How durapay Savings work  */}
-      <div className="min-h-screen  max-w-7xl mx-auto bg-white text-white antialiased px-4 sm:px-10 lg:px-10 py-30">
+      <div className="min-h-screen mx-auto max-w-[1280px] bg-white text-white antialiased px-4 sm:px-10 lg:px-10 py-30">
         <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center  ">
           {/* Left Side */}
           <div>
@@ -736,7 +731,7 @@ export default function VirtualCardPage() {
           </div>
         </div>
         {/*   Save smarter with Durapay */}
-        <div className="mt-28   max-w-7xl mx-auto lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-32 ">
+        <div className="mt-28 mx-auto max-w-[1280px] lg:mt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-32 ">
           {/* Left Side: image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -765,6 +760,7 @@ export default function VirtualCardPage() {
             </p>
           </div>
         </div>
+
         {/* Everything Durapay Savings */}
         <div className="mt-28 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           {/* Left Side */}
@@ -880,7 +876,7 @@ export default function VirtualCardPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
+      <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-10 lg:mb-30 mt-10 lg:mt-50 ">
         <div className="mb-20">
           <h1 className="font-semibold text-black text-[48px] xs:text-center lg:text-[42px] leading-[1.05] tracking-[-0.04em] mb-3 lg:mb-3 ">
             Built with your security in mind

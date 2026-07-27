@@ -2,7 +2,6 @@
 
 import { Wallet } from "lucide-react";
 import { useState } from "react";
-
 import { Shield, Bell, BadgeCheck } from "lucide-react";
 
 // ─── Icon Components ──────────────────────────────────────────────────────────
@@ -299,15 +298,14 @@ export default function TransferPage() {
     <div className="min-h-screen bg-white text-white font-sans antialiased overflow-hidden">
       // ── HERO ─────────────────────────────────────────────────────────────
       <section className="relative overflow-hidden bg-[#f8f9ff] -mt-14 min-h-[220px] lg:min-h-[250px] xl:min-h-[260px]">
-        {/* Background */}
+        {/***************************  Background ****************************/}
         <div className=" left-1/2 w-screen -translate-x-1/2 absolute inset-0 bg-[radial-gradient(circle_at_left,#eef3ff_0%,transparent_45%),radial-gradient(circle_at_bottom_right,#dbe8ff_0%,transparent_35%)]"></div>
-
         <div
           className="relative mx-auto max-w-[1280px] px-6 md:px-8 lg:px-10 py-20 lg:pt-14 lg:min-h-[520px] min-h-[100px]
                 flex items-center"
         >
           <div className="grid items-center lg:gap-16 lg:grid-cols-2 w-full">
-            {/* LEFT CONTENT */}
+            {/********************************* LEFT CONTENT *********************************/}
             <div className="max-w-2xl">
               <h1
                 className="text-[52px] leading-[1.06] font-bold tracking-tight text-[#111827]
@@ -346,85 +344,93 @@ export default function TransferPage() {
         <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[50px] font-bold leading-[1.10] tracking-tight order-2 md:order-1">
-            Send money the easy way <br className="sm:hidden block" />
-            any where with Durapay
+          <h1 className="text-black/90 text-[26px] md:text-[40px] lg:text-[70px] font-semibold leading-[1.10] tracking-tight order-2 md:order-1">
+            Send money abroad <br className="" />
+            the easy way
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-11 mt-10 lg:mt-10">
-          <div className="flex flex-col bg-[#2F0D59] rounded-[12px] overflow-hidden">
-            <div className="p-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 items-stretch">
+          <div className="relative overflow-hidden flex flex-col bg-[#2F0D59] rounded-[12px] h-[400px] md:h-[440px]">
+            <div className="p-4 lg:p-6 xl:p-5">
               <h3 className="text-white text font-bold text-[22px] mb-1">
-                No unnecessary hassles
+                Free transfers with P2P
               </h3>
-              <p className="text-white font-medium text-[15px]">
-                Receive your foreign payments in an <br />
-                account you can access or withdraw from <br />
-                at any time.
+              <p className="text-white font-medium text-[16px] max-w-sm">
+                Save transfer fees and enjoy instant payment deliveries when you
+                send money home or abroad via DuraTag.
               </p>
             </div>
             <img
-              src="/frame1.svg"
+              src="/faces.webp"
               alt=""
-              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain mt-14"
+              className="w-[520px] md:w-[720px] lg:w-[380px] object-contain mt-2"
             />
           </div>
 
-          <div className="flex flex-col bg-[#F0F2F5] rounded-[12px]">
-            <div className="p-6">
+          <div className="relative overflow-hidden flex flex-col bg-[#F0F2F5] rounded-[12px] h-[400px] md:h-[440px]">
+            <div className="p-4 lg:p-6">
               <h3 className="text-black text font-bold text-[22px] mb-1">
-                No unnecessary hassles
+                Local transfers
               </h3>
-              <p className="text-black font-medium text-[16px]">
-                An account where your employers never <br />
-                have to worry about your payments again.
+              <p className="text-[#384152] font-medium text-[17px] max-w-sm">
+                Send money locally. Whether you're sending through mobile app or
+                other means, we've got you covered.
               </p>
             </div>
             <img
-              src="/frame2.svg"
+              src="/globa.svg"
               alt=""
-              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain"
+              className="absolute
+        -bottom-2
+        left-1/2
+        w-[780px]
+        -translate-x-1/2
+        "
             />
           </div>
-          <div className=" flex flex-col bg-[#1B1F28] rounded-[12px]">
-            <div className="p-6">
+          <div className=" relative overflow-hidden flex flex-col bg-[#1B1F28] rounded-[12px] h-[400px] md:h-[440px]">
+            <div className="p-4 lg:p-5">
               <h3 className="text-white font-semibold text-[22px] mb-1">
-                Credit from your platforms
+                No hidden fees
               </h3>
-              <p className="text-white font-medium text-[14px]">
-                Receive payments from platforms like Deel, <br />
-                Upwork, Fiverr, Amazon, and more.
+              <p className="text-white font-medium text-[16px] max-w-sm">
+                We use the best market rates for your transfers, and you'll see
+                what we charge upfront.
               </p>
             </div>
             <img
-              src="/frame3.svg"
+              src="/one.png"
               alt=""
-              className="w-[520px] md:w-[720px] lg:w-[390px] object-contain"
+              className="absolute
+        -bottom-2
+        left-1/2
+        w-[580px]
+        -translate-x-1/2"
             />
           </div>
         </div>
       </section>
       {/* Next phase */}
-      <section className="bg-[#040B18] w-full px-6 lg:px-10 py-20 lg:py-18">
-        <div className=" max-w-7xl mx-auto flex flex-col gap-6">
+      <section className="bg-[#040B18] w-full px-6 lg:px-10 py-20 lg:py-22">
+        <div className="flex flex-col gap-6">
           <div className="flex items-center justify-center">
             <img src="grey-logo.svg" alt="" />
           </div>
 
-          <h1 className="text-center lg:text-center text-white text-[32px] lg:text-[75px] font-bold leading-tight tracking-tight">
-            <span> Everything you can </span> <br />
-            <span className="text-slate-400">do with your </span> <br />
-            <span className="text-slate-400"> Durapay wallet</span>
+          <h1 className="text-center lg:text-center text-white text-[32px] lg:text-[75px] font-bold leading-10 lg:leading-21 tracking-tight">
+            <span> Why you should make </span> <br />
+            <span className="text-[#A9B5CE]">money transfers with</span> <br />
+            <span className="text-[#404754]"> Durapay</span>
           </h1>
         </div>
       </section>
       {/* Wallet features */}
-      <section className="w-full bg-[#0b0d12] px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+      <section className="relative overflow-hidden w-full bg-[#0b0d12] px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
         <div className="max-w-5xl mx-auto flex flex-wrap lg:flex-wrap  justify-center gap-2.5 sm:gap-3">
           {features.map((feature) => (
             <div
@@ -444,33 +450,36 @@ export default function TransferPage() {
               </span>
             </div>
           ))}
-
-          <div>
+          <div className="flex flex-col items-center">
             <img
-              src="/black-hand-holding-card.avif"
-              alt=""
-              className="mt-30 w-200 h-100 md:w-200 md:h-100 lg:w-200 lg:h-180"
+              src="/transfernow.webp"
+              alt="Transfer illustration"
+              className="mt-30 w-200 h-100 md:w-200 md:h-100 lg:w-100 lg:h-180 object-contain"
             />
-            <h1 className="text-center lg:text-center text-white text-[32px] md:text-[62px] lg:text-[75px] font-bold leading-10 lg:leading-21 tracking-tight">
-              <span> Ready to manage your money</span> <br />
-              <span className="text-slate-400">more confidently with</span>{" "}
-              <br />
-              <span className="text-slate-400"> Durapay?</span>
+
+            <h1 className="text-center text-white text-[32px] md:text-[62px] lg:text-[70px] font-bold leading-10 lg:leading-21 tracking-tight">
+              <span>Make your first money</span> <br />
+              <span className="">transfer with Durapay</span>
             </h1>
-            <div className="text-center">
-              <button className=" mt-12 rounded-xl bg-[#1154DA] px-8 py-5 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
-                Get started - it's free
-              </button>
-            </div>
+
+            <button className="mt-12 rounded-xl bg-[#1154DA] px-6 py-4 text-lg font-semibold text-white transition hover:bg-[#0f49be]">
+              Start now
+            </button>
           </div>
         </div>
+        {/* Bottom background image */}
+        <img
+          src="/newtransfer.png"
+          alt=""
+          className="absolute bottom-0 left-0 w-full max-w-[1280px] object-cover "
+        />
       </section>
       {/* Next Phase */}
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="mx-auto py-20 lg:py-32 bg-white">
+        <div className=" px-6 lg:px-12">
           {/* Section heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-12 max-w-xl">
-            Receive payments safely with our account security measures
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black mb-12 max-w-xl">
+            Securely send money with our transfer security measures
           </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* LEFT */}
@@ -491,7 +500,7 @@ export default function TransferPage() {
                       <Icon size={28} className="text-gray-900 shrink-0 mt-1" />
 
                       <div>
-                        <h3 className="text-2xl text-black font-bold mb-3">
+                        <h3 className="text-xl text-black font-bold mb-3">
                           {feature.title}
                         </h3>
 
@@ -508,8 +517,8 @@ export default function TransferPage() {
             </div>
 
             {/* RIGHT VISUAL */}
-            <div className="hidden lg:block sticky top-24 -mt-55 lg:-mt-47">
-              <div className="rounded-3xl overflow-hidden bg-black h-[500px] xl:h-[590px] flex items-center justify-center">
+            <div className="hidden lg:block sticky top-24 -mt-55 lg:-mt-47 justify-self-end">
+              <div className="rounded-xl overflow-hidden bg-black w-[475px] h-[500px] xl:h-[590px] flex items-center justify-center">
                 <img
                   key={active}
                   src={featur[active].image}
@@ -522,11 +531,11 @@ export default function TransferPage() {
         </div>
       </section>
       {/* CTA */}
-      <section className="py-10 lg:py-18 bg-gray-200">
+      <section className="py-10 lg:py-18 bg-white">
         <h1 className="text-center lg:text-center text-black text-[32px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
-          <span>Join the professionals </span> <br />
-          <span className="text-black">who trust Durapay with </span> <br />
-          <span className="text-black"> their banking needs</span>
+          <span>People who make </span> <br />
+          <span className="text-black">transfers </span> <br />
+          <span className="text-black"> with Durapay</span>
         </h1>
       </section>
       {/* Testimonial */}
@@ -559,11 +568,11 @@ export default function TransferPage() {
     animation-play-state:paused;
 } 
       `}</style>
-        <div className="mb-8 sm:mb-10 ">
+        {/* <div className="mb-8 sm:mb-10 ">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 text-center">
             What our customers say
           </h2>
-        </div>
+        </div> */}
 
         <div className="marquee-outer">
           <div className="marquee-track">

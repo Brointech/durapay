@@ -344,7 +344,7 @@ export default function TransferPage() {
         <div className="absolute bottom-0 right-0 h-44 w-[45%] rounded-tl-[120px] bg-white"></div>
       </section>
       {/* Next Phase*/}
-      <section className=" max-w-screen-2xl px-6 md:px-10 lg:px-10 py-20 lg:py-18">
+      <section className="mx-auto px-6 md:px-10 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between md:gap-0">
           <div className="w-16 h-16 md:w-18 md:h-18 lg:w-18 lg:h-18 rounded-lg bg-black flex items-center justify-center order-1 md:order-2 lg:mb-6 md:-mt-4">
             <Wallet className="w-10 h-10 text-white" />
@@ -408,7 +408,7 @@ export default function TransferPage() {
         </div>
       </section>
       {/* Next phase */}
-      <section className="bg-[#040B18] max-w-screen-2xl mx-auto px-6 lg:px-10 py-20 lg:py-18">
+      <section className="bg-[#040B18] w-full px-6 lg:px-10 py-20 lg:py-18">
         <div className="flex flex-col gap-6">
           <div className="flex items-center justify-center">
             <img src="grey-logo.svg" alt="" />
@@ -520,11 +520,11 @@ export default function TransferPage() {
         </div>
       </section>
       {/* CTA */}
-      <section className=" w-full mx-auto py-10 lg:py-18 bg-gray-200">
+      <section className="w-full mx-auto py-10 lg:py-18 bg-white">
         <h1 className="text-center lg:text-center text-black text-[32px] lg:text-[75px] font-semibold leading-[1.03] tracking-tight">
-          <span>Join the professionals </span> <br />
-          <span className="text-black">who trust Durapay with </span> <br />
-          <span className="text-black"> their banking needs</span>
+          <span>People who make </span> <br />
+          <span className="text-black">transfers</span> <br />
+          <span className="text-black"> with Durapay</span>
         </h1>
       </section>
       {/* Testimonial */}
@@ -557,11 +557,11 @@ export default function TransferPage() {
     animation-play-state:paused;
 } 
       `}</style>
-        <div className="mb-8 sm:mb-10 ">
+        {/* <div className="mb-8 sm:mb-10 ">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 text-center">
             What our customers say
           </h2>
-        </div>
+        </div> */}
 
         <div className="marquee-outer">
           <div className="marquee-track">
